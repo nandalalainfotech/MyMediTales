@@ -8,15 +8,15 @@
     .termladyimg {
         flex-shrink: 0;
     }} */
-    .termladyimg {
+.termladyimg {
         position: relative;
         padding-right:40px;
         z-index: 1;
-    }
-    img {
+ }
+img {
         max-width: 100%;
         height: auto;
-    }
+}
     
 .termsrow{
     padding-top:50px;
@@ -36,7 +36,7 @@
 .termstext  .termsparag{
     font-size: 19px;
     font-weight: 550;
-margin-top: 1.25rem;
+    margin-top: 1.25rem;
 }
 /* .termsrow svg{
     background-color: #ffff;
@@ -45,7 +45,7 @@ svg {
     fill:#ffff;
     width:100%;
     margin-bottom: 100px !important;
-  z-index: 1;
+    z-index: 1;
 
 }
 .svg {
@@ -55,8 +55,7 @@ svg {
     bottom: 0;
     z-index: 3;
     width: 100%;
-    height: 4rem
-;
+    height: 4rem;
     fill: #fff;
     margin-top:-50px;
     user-select: none;
@@ -65,9 +64,9 @@ svg {
 /* ----------------------------------- */
 .sticky {
     position: -webkit-sticky;
-  position: -moz-sticky;
-  position: -ms-sticky;
-  position: -o-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
     position: sticky;
     top: 0px;
   }
@@ -213,11 +212,7 @@ button:focus:not(:focus-visible) {
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 1
-rem
- 1.25
-rem
-;
+    padding: 1rem 1.25 rem;
     font-size: 1rem;
     color: #212529;
     text-align: left;
