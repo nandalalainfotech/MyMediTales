@@ -1,0 +1,205 @@
+/* -----------------network-container----------- */
+
+.developer {
+    background-color: #010743;
+    position: relative;
+    z-index: -1;
+    overflow: hidden;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+.developer .developer-wave {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    width: 100%;
+    height: 5rem;
+    fill: #fff;
+}
+
+.full-developer h1 {
+    font-size: 52px;
+    color: #fff;
+    font-family: "Lato",sans-serif;
+    font-weight: 400;
+}
+
+.full-developer p {
+    color: #fff;
+    font-size: 20px;
+    font-family: "Lato",sans-serif;
+}
+
+.full-developer a {
+    padding: 12px 28px;
+    background-color: #4656d6;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 18px;
+    cursor: pointer;
+    border: 0;
+    font-weight: 700;
+}
+
+.full-developer .get a:hover {
+    opacity: 0.8;
+}
+
+.half-developer img {
+    margin-left: -40px;
+    padding-top: 30px;
+}
+
+
+/* ----------------connection-container------------- */
+
+.built {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.built h2 {
+    font-size: 54px;
+    /* letter-spacing: -.5px; */
+    font-family: "Lato",sans-serif;
+    font-weight: 500;
+}
+
+.built p {
+    color: #5c5969;
+    margin-top: 0.75rem;
+    font-size: 18px;
+}
+
+
+/* -------------------double-button-containe------------------ */
+
+.double .providers {
+    color: #fff;
+    background-color: #4b5ee6;
+    border-color: #4b5ee6;
+    cursor: default;
+    padding: 13px 36px;
+    font-size: 16px;
+    border: 1px solid #d9d8e2;
+    border-radius: 5px;
+}
+
+.double .patients {
+    color:  #4b5ee6;
+    background-color: #fff;
+    border-color: 1px solid #d9d8e2;
+    cursor: default;
+    padding: 12px 36px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.textarea {
+    margin-left: 500px;
+}
+
+
+
+
+
+
+
+/* --------------------care-container--------------- */
+
+.equality {
+    margin-left: 430px;
+}
+
+.plus li {
+    content: '';
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    min-width: 1em;
+    margin-right: 0.75em;
+    margin-bottom: -0.125em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNCAxNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTUgNVYwSDlWNUgxNFY5SDlWMTRINVY5SDBWNUg1WiIgZmlsbD0iI2IwYWZiZiIvPgo8L3N2Zz4K);
+}
+
+.plus li {
+    display: inline;
+    list-style-type: none;
+    padding-left: 60px;
+    margin: 0;
+    color: #77748b
+}
+
+.common {
+    border-top: 1px solid #e5e4ec;
+    margin-top: 2rem;
+    padding-top: 2rem;
+}
+
+
+
+
+/* ---------------how-container------------- */
+
+.how {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+
+
+
+/* --------------cases-container-------------- */
+
+.use  {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.public {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+
+/* ------------lines-container---------------- */
+
+.few {
+    text-align: center;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.few h2 {
+    font-size: 54px;
+    font-weight: 400;
+    margin-bottom: 1.875rem;
+    font-family: "Lato",sans-serif;
+}
+
+.few p {
+    color: rgb(92, 89, 105);
+    font-size: 19px;
+}
+
+
+/* ------------------lines-container--------------------- */
+

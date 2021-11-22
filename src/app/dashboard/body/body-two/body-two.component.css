@@ -1,0 +1,393 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+.mobile-box .column {
+    float: left;
+    width: 33%;
+    padding: 10px;
+}
+
+.mobile-box .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    overflow: hidden;
+}
+
+.body-2 {
+    position: relative;
+    margin-bottom: 97px;
+}
+.body-2 .mobile {
+    padding-left: 1px;
+    padding-top: 113px;
+    margin-bottom: 95px;
+
+}
+
+.patient-mobile {
+    padding-top: 120px;
+}
+
+.provider-mobile{
+    padding-top: 120px;
+}
+
+.payer-mobile{
+    margin-top: 124px;
+}
+
+.mobile .record {
+    font-size: 47px;
+    font-weight: bold;
+    color: #262224;
+    font-family:  "Lato",sans-serif;
+    
+}
+
+.mobile .MyMediTales{
+    color: #5c5969;
+    font-family: "Lato",sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+/* -----patient-button----- */
+
+.mobile .patients {
+    margin-top: 10px;
+    display:inline-block;
+    width: 78%;
+    border-color: #f4f5ff;
+    border-right-color: #4b5ee6;
+    border-right: 7px solid #e5e4ec;
+    border-bottom: hidden;
+    border-radius: 5px;
+    padding: 20px;
+    background: none;
+    cursor: pointer;
+    flex-direction: column;
+    box-sizing: border-box;   
+}
+
+.mobile .providers {
+    margin-top: 10px;
+    display:inline-block;
+    width: 78%;
+    border-color: #f4f5ff;
+    border-right: 7px solid #e5e4ec;
+    border-bottom: hidden;
+    border-radius: 5px;
+    padding: 20px;
+    cursor: pointer;
+    background: none;
+    flex-direction: column;
+    box-sizing: border-box;  
+    
+}
+
+.mobile .payers {
+    margin-top: 10px;
+    display:inline-block;
+    width: 78%;
+    border-color: #f4f5ff;
+    /* border-right-color: #4b5ee6; */
+    border-right: 7px solid #e5e4ec;
+    border-bottom: hidden;
+    border-radius: 5px;
+    padding: 20px;
+    cursor: pointer;
+    background: none;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.mobile .patients:hover {
+    border-right: none;
+    background-color: #f4f5ff;
+    border-right: 5px solid #4b5ee6;
+}
+
+.patients:active {
+    border-right: 1px solid #4b5ee6 !important;
+}
+
+.mobile .patients:active {
+    border-right: 7px solid #4b5ee6;
+}
+
+.mobile .providers:hover {
+    background-color: #f4f5ff;
+    border-right: 5px solid #4b5ee6;
+}
+
+.mobile .payers:hover {
+   background-color: #f4f5ff;
+   border-right: 5px solid #4b5ee6;
+}
+
+.mobile .patients .parent {
+    color: #4b5ee6;
+    font-family:  "Lato",sans-serif;
+    font-size: 22px;
+    text-align: left;
+}
+
+.mobile .patients .child {
+    font-family:  "Lato",sans-serif;
+    font-size: 14px;
+    text-align: left;
+}
+
+.mobile .providers .parent {
+    color: #4b5ee6;
+    font-family:  "Lato",sans-serif;
+    font-size: 22px;
+    text-align: left;
+}
+
+.mobile .providers .child {
+    font-family:  "Lato",sans-serif;
+    font-size: 14px;
+    text-align: left;
+}
+
+.mobile .payers .parent {
+    color: #4b5ee6;
+    font-family:  "Lato",sans-serif;
+    font-size: 22px;
+    text-align: left;
+}
+
+.mobile .payers .child {
+    font-family:  "Lato",sans-serif;
+    font-size: 14px;
+    text-align: left;
+}
+
+.patient-mobile {
+    position: relative;
+}
+
+.text-block {
+    padding-left: 20px !important;
+position: absolute;
+width: 114%;
+height: 25%;
+ right: 12px;
+  padding: 7px;
+  background-color: rgba(255,255,255,0.95);
+  color: black;
+  margin-left: 2rem;
+    top: 47%;
+    padding: -3rem;
+  border-radius: 1.5rem;
+  box-shadow: 1px 2px 7px 0 rgb(0 0 0 / 6%), 5px 8px 19px 0 rgb(0 0 0 / 10%);
+}
+
+.text-block3 {
+    position: absolute;
+    width: 55%;
+    height: 28%;
+      bottom: 20px;
+      right: 20px;
+      padding: 30px;
+      background-color: rgba(255,255,255,0.95);
+      color: black;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-bottom: 200px;
+      margin-right: 00px;
+      border-radius: 15px;
+      box-shadow: 1px 2px 7px 0 rgb(0 0 0 / 6%), 5px 8px 19px 0 rgb(0 0 0 / 10%); 
+}
+
+.text-block3 .enable {
+    font-family: "Lato",sans-serif;
+    font-size: 20px;
+    line-height: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 20px; 
+}
+
+.text-block3 .compliant {
+    font-family: "Lato",sans-serif;
+    font-size: 18px;
+    color: #5c5969;
+    line-height: 1.2;
+}
+.text-block2 {
+    position: absolute;
+    display: block;
+    width: 56%;
+    height: 31%;
+      bottom: -33px;
+      right: -74px;
+      padding: 29px;
+      background-color: rgba(255,255,255,0.95);
+      color: black;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-bottom: 250px;
+      margin-right: 100px;
+      border-radius: 24px;
+      box-shadow: 1px 2px 7px 0 rgb(0 0 0 / 6%), 5px 8px 19px 0 rgb(0 0 0 / 10%); 
+}
+
+.text-block3 .connected {
+    padding: 13px 31px;
+    color: #fff;
+    background-color: #4656d6;
+    font-family: "Lato",sans-serif;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 2px;
+    border: none;
+    margin-top: 30px;
+}
+
+.text-block3 .learn {
+    color: #3846b5;
+    font-family: "Lato",sans-serif;
+    font-size: large;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.text-block2 .connect {
+    font-family: "Lato",sans-serif;
+    font-size: 18px;
+    line-height: 1.5rem;
+    font-weight: 700;
+}
+
+.text-block2 .get {
+    font-family: "Lato",sans-serif;
+    font-size: 17px;
+    color: #5c5969;
+    line-height: 1.6;
+}
+
+.text-block2 .connected {
+    padding: 13px 31px;
+    color: #fff;
+    background-color: #4656d6;
+    font-family: "Lato",sans-serif;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 2px;
+    border: none;
+    margin-top: 20px;
+}
+
+.text-block2 .connected:hover {
+    opacity: 0.9;
+}
+
+.text-block3 .connected:hover {
+    opacity: 0.9;
+}
+.text-block2 .learn {
+    color: #3846b5;
+    font-family: "Lato",sans-serif;
+    font-size: large;
+    padding: 20px;
+    cursor: pointer;
+}
+.text-block2 .pointer {
+    height: 1rem;
+    width: 1.5rem;
+    margin-left: 0.5rem;
+}
+.patient-mobile .build {
+    font-family: "Lato",sans-serif;
+    font-size: 20px;
+    line-height: 1.5rem;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.patient-mobile .lab {
+    font-family: "Lato",sans-serif;
+    font-size: 18px;
+    color: #5c5969;
+    margin-top: 20px;
+}
+
+.patient-mobile .free {
+    background-color: #4656d6;
+    color: #fff;
+    border-radius: 2px;
+    padding: 8px 31px;  
+    font-family:  "Lato",sans-serif;
+    align-items: center;
+    border: 0;
+    font-size: 17px;
+    font-weight: 600;
+    bottom: 30px;
+    margin-left: -40px;
+}
+
+.patient-mobile  button:hover {
+    opacity: 0.9;
+}
+
+.apps{
+    margin-left:27px;
+    margin-top: 20px;
+}
+
+.mobile-mango {
+    display: block;
+    width: 765px;
+    position: absolute;
+    top: 30px;
+    bottom: 9rem;
+    right: 0;
+    z-index: -2;
+    transform-origin: center center;
+    transform: scale(0.75);
+    color: #ffb00a;
+    fill:#ffb00a;
+    overflow: hidden;
+    margin-top: 101px;
+    margin-right: -65px;
+}
+
+.mobile-mango1 {
+    display: block;
+    width: 716px;
+    position: absolute;
+    top: 114px;
+    bottom: 1rem;
+    right: 0;
+    z-index: -2;
+    margin-right: 0px;
+    transform-origin: center center;
+    transform: scale(0.75);
+    color: #ffb00a;
+    fill:#ffb00a;
+    overflow: hidden;
+}
+
+.mobile-mango2 {
+    display: block;
+    width: 750px;
+    height: 800px;
+    position: absolute;
+    top: 145;
+    bottom: -3rem;
+    right: 0;
+    z-index: -2;
+    transform-origin: center center;
+    transform: scale(0.75);
+    color: #ffb00a;
+    fill:#ffb00a;
+    overflow: hidden;
+    margin-right: -40px;
+}
+

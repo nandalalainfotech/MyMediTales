@@ -1,0 +1,318 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* -----------section-1-------------- */
+.section-1 {
+  overflow: hidden;
+  background-color: #010743;
+  position: relative;
+  z-index: -1;
+  padding-top: 0px;
+  height: 693px;
+}
+.section-1 .section1-wave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  width: 100%;
+  height: 5rem;
+  fill: #fff;
+}
+.section1-body {
+  margin-top: 100px;
+  margin-left: 50px;
+  /* padding-top: 200px; */
+}
+.section1-header {
+  font-size: 55px;
+  /* font-weight: 100px; */
+  font-family: "Volte-Semibold", sans-serif;
+  color: #fff;
+  letter-spacing: 0px;
+  margin-left: -5px;
+}
+.section1-body .section1-text {
+  font-family: "Lato", sans-serif;
+  color: #fff;
+  font-size: 20px;
+  line-height: 35px;
+  margin-top: 20px;
+}
+.section1-img {
+  margin-left: 15px;
+  /* margin-top: -190px; */
+}
+.section1-svg1 {
+  fill: #ffa51f;
+  margin-top: -188px;
+  margin-left: 656px;
+  width: 700px;
+  height: 700px;
+  z-index: -1;
+}
+.section1-img img {
+  margin-left: 600px;
+  margin-top: -785px;
+  z-index: 2;
+}
+
+/* -----------section-2-------------- */
+.section-2 {
+  position: relative;
+  margin: 120px 45px;
+  /* border: 1px solid red; */
+}
+.section2-body {
+  margin-top: 130px;
+  margin-left: 100px;
+}
+.section2-heading {
+  font-weight: bold;
+  font-size: 50px;
+}
+.section2-text1 {
+  padding-top: 30px;
+  line-height: 28px;
+  font-size: 21px;
+}
+.section2-text2 {
+  padding-top: 30px;
+  line-height: 28px;
+  color: #77748b;
+  font-size: 17px;
+}
+/* -----------section-3-------------- */
+.section-3 {
+  display: inline !important;
+  max-width: 82.5rem;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+}
+.section3-d1 {
+  margin-left: calc(-100vw / 2+100% / 2);
+  margin-right: calc(-100vw / 2+100% / 2);
+  margin-top: 240px;
+  overflow: hidden;
+}
+.section3-d1-1 {
+  display: flex;
+  align-items: flex-end;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+.section3-d1-2 {
+  min-width: 25vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  /* scroll-snap-stop: normal; */
+}
+
+.section3-d1-3 {
+  text-align: center;
+  color: #5c5969;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+.section3-d1-4 {
+  font-family: "Volte-Semibold", sans-serif;
+  font-size: 1.3125em;
+  line-height: 1.125em;
+  font-weight: bold;
+}
+.section3-d1-3 + .section3-d1-4 {
+  margin-top: 0.125rem;
+}
+.section3-d1-img {
+  font-size: 0.9375em;
+  line-height: 2.25em;
+}
+/* -----------section-4-------------- */
+.section-4 {
+  position: relative;
+  margin: 120px 45px;
+  /* border: 1px solid red; */
+}
+.section4-heading {
+  text-align: center;
+  font-size: 55px;
+  font-weight: bold;
+  margin-left: 450px;
+}
+.section4-d1 {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -22px;
+  /* border: 1px solid green; */
+  margin-top: 50px;
+}
+.section4-img {
+  margin-left: 25px;
+  margin-right: 20px;
+}
+.Carequality {
+  margin-top: 10px;
+}
+.Commonwell {
+  margin-top: 10px;
+}
+.Validic {
+  margin-top: 10px;
+}
+.section4-d2 {
+  border-top: 1px solid #e5e4ec;
+  margin-top: 40px;
+  margin-left: 30px;
+  width: 1200px;
+  /* #e5e4ec */
+}
+
+.section4-d2 ul {
+  list-style: none;
+  margin-top: 40px;
+  margin-left: 0px;
+  padding-left: 0px;
+  color: #77748b;
+  display: grid;
+  grid-gap: 3rem;
+  grid: 1fr / auto-flow;
+  justify-content: center;
+}
+.section4-d2 li {
+  line-height: 1.25em;
+  font-family: "Volte-Semibold", sans-serif;
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 15px;
+}
+.section4-d2 li::before {
+  content: "";
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  min-width: 1em;
+  margin-right: 0.75em;
+  margin-bottom: -0.125em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNCAxNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTUgNVYwSDlWNUgxNFY5SDlWMTRINVY5SDBWNUg1WiIgZmlsbD0iI2IwYWZiZiIvPgo8L3N2Zz4K);
+}
+/* -----------section-5-------------- */
+.section-5 {
+  position: relative;
+  margin: 120px 45px;
+  /* border: 1px solid red; */
+}
+.section5-h2 {
+  font-size: 3.375em;
+  font-weight: bold;
+}
+/* -----------section-6-------------- */
+.section-6 {
+  position: relative;
+  margin: 0px 45px;
+  margin-top: -70px;
+  /* border: 1px solid red; */
+  margin-left: 35px;
+}
+.coins {
+  margin-left: 15px;
+}
+.section6-body1 h4 {
+  margin-left: 20px;
+  margin-top: 13px;
+  color: #262224;
+  font-size: 1.4375em;
+ 
+}
+.section6-body1 p {
+  margin-left: 20px;
+  margin-top: 10px;
+  color: #262224;
+  font-size: 0.9375em;
+}
+.Identitycoin-header h4 {
+  margin-left: 140px;
+  margin-top: -80px;
+  font-size: 1.4375em;
+  font-weight: bold;
+}
+.section6-body3 h4 {
+  margin-left: 120px;
+  margin-top: -83px;
+  color: #262224;
+  font-size: 1.4375em;
+  font-weight: bold;
+}
+.section6-body3 p {
+  padding-left: 120px;
+  padding-top: 10px;
+  color: #262224;
+  font-size: 0.9375em;
+}
+/* -----------section-6-------------- */
+/* .section-7 {
+  position: relative;
+  margin: 0px 45px;
+} */
+.tablet {
+  background-color: #4656d6;
+  margin-left: 110px;
+  /* margin-top:100px; */
+  margin-top: 100px;
+  height: 290px;
+  width: 100% !important;
+  box-sizing: border-box;
+  box-shadow: 0 44px 30px -20px rgb(1 7 67 / 25%),
+    0 30px 21px -20px rgb(1 7 67 / 40%);
+  overflow: hidden !important;
+  margin-bottom: 50px !important;
+}
+.getstart {
+  margin-top: 20px;
+  height: 50px;
+  width: 180px;
+  background-color: #010743;
+  font-size: 18px;
+  /* margin-bottom: 5px; */
+  border-radius: 1px;
+  font-weight: bold;
+  color: white;
+}
+.getstart:hover {
+  color: white;
+  opacity: 0.8;
+}
+.tablets1 {
+  /* top: 50%;
+    left: 50%; */
+  text-align: center;
+  padding-top: 60px;
+  color: white;
+  letter-spacing: 1px;
+  padding-left: 212px;
+}
+.tablet .tablets1 .head4 {
+  font-weight: bold;
+  font-size: 35px;
+  /* text-align: center; */
+}
+.tablet .tablets1 .quote {
+  padding-top: 10px;
+  font-size: 22px;
+  opacity: 0.8;
+  font-family: "Lato", sans-serif;
+}
+.tabletimg {
+  /* margin-bottom:100px; */
+  float: right;
+}
