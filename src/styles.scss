@@ -1,3 +1,13 @@
 .cursor-active {
     cursor: pointer !important; 
 }
+
+// ---------------------------------------------body----------------------------------------------
+*{
+    font-family: "Lato",sans-serif;
+    font-family: "Volte-Semibold",sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}

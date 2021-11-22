@@ -9,11 +9,6 @@
     height: 650px;
 } */
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
 
 .wave {
     position: relative;
@@ -164,8 +159,8 @@ img {
 }
 .content4{
     width: 380px;
-        right: 207px;
-        position: absolute;
+    right: 207px;
+    position: absolute;
 }
 
 @media (min-width: 48rem) {
@@ -317,7 +312,7 @@ h1 {
 
 @media (min-width: 64rem) {
     .img_style3 {
-        display: inherit;
+    display: inherit;
     position: absolute;
     left: 22cm;
     top: -318px;
@@ -497,11 +492,6 @@ section {
     padding-right: 1rem;
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
 
 section {
     display: block;
@@ -671,13 +661,6 @@ section {
     padding-left: 1rem;
     padding-right: 1rem;
 }
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
 
 /* mobile simulation 4 */
 
