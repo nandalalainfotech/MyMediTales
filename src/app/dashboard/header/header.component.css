@@ -58,7 +58,7 @@ body {
   flex-direction: row !important;
 }
 .navbar-nav .dropdown {
-  margin-left: 48px !important;
+  padding-right: 48px !important;
   /* margin-right: 22px !important;
   padding-left: 3px; */
 }
