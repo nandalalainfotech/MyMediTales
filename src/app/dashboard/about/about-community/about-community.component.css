@@ -112,7 +112,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
+    /* cursor: pointer; */
     border: 0;
     margin-top: 40px;
 }
