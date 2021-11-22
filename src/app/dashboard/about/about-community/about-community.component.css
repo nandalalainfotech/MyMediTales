@@ -1,0 +1,247 @@
+
+/* ----------lady-container------------- */
+
+.community {
+    overflow: hidden;
+    background-color: #010743;
+    position: relative;
+    z-index: -1;
+    padding-top: 50px;
+}
+
+.full-community h1 {
+    font-size: 52px;
+    font-weight: 500;
+    font-family: "Volte-Semibold",sans-serif;
+    color: #fff;
+    margin-top: 50px;
+    margin-left: 40px;
+    /* letter-spacing: 0.125rem; */
+}
+
+.full-community p {
+    font-family: "Lato",sans-serif;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.full-community .our  {
+    margin-top: 30px;
+}
+
+.community .community-wave {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    width: 100%;
+    height: 5rem;
+    fill: #fff;
+}
+
+.half-community img {
+    margin-top: -550px;
+    margin-left: -70px;
+    z-index: -2;
+}
+
+.half-community .community-mango {
+    fill: #FFA51F;
+    width: 700px;
+    height: 680px;
+    margin-left: -25px;
+    margin-bottom:-100px;
+    z-index: 1;
+}
+
+/* --------------gents-container------------------ */
+
+.men {
+    position: relative;
+    overflow: hidden;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.wow {
+    width: 101%;
+    height: 570px;
+    position: relative;
+    z-index: 1;
+}
+
+.text .potrait {
+    font-size: 54px;
+    letter-spacing: -.5px;
+    font-family: "Lato",sans-serif;
+    font-weight: 900;
+    color: #262224;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.text .suffering {
+    font-size: 22px;
+    font-family: "Lato",sans-serif;
+    display: block;
+    color: #262224;
+}
+
+.text .team {
+    color: #5c5969;
+    font-family: "Lato",sans-serif;
+    font-size: 18px;
+    font-family: 600;
+    margin-top: 40px;
+}
+
+.text a {
+    padding: 12px 28px;
+    background-color: #4656d6;
+    color: #fff;
+    border-radius: 2px;
+    font-family: "Lato",sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 0;
+    margin-top: 40px;
+}
+
+.text a:hover {
+    opacity: 0.9;
+}
+
+.text {
+    padding-left: 50px;
+}
+
+/* ------------modals-container----------- */
+
+.white .breaking {
+    font-size: 54px;
+    color: #262224;
+    letter-spacing: -.5px;
+    font-family: "Lato",sans-serif;
+    font-weight: 800;
+    display: block;
+    /* margin-left: 60px; */
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* .cancer {
+    padding-top: 40px;
+    padding-bottom: 120px;
+    padding-left: 32px;
+    padding-right: 32px;
+    max-width: 1320px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    font-family: "Lato",sans-serif;
+} */
+
+.white1 h4 {
+    margin-bottom: 0;
+    /* margin-top: 15px; */
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    /* line-height: 19px; */
+    font-family: "Lato",sans-serif;
+}
+
+.white1 {
+    padding: 0px 40px 40px 20px;
+}
+.white1 p {
+    font-size: 16px;
+    color: #77748b;
+    margin-bottom: 0;
+    margin-top: 15px;
+    /* line-height: 26px; */
+}
+
+.modals {
+    padding: 20px 20px;
+    margin-left: -10px;
+}
+
+.modals1 {
+    padding: 20px 20px;
+}
+
+.modals2 {
+    padding: 20px 20px;
+}
+
+.modals3 {
+    padding: 20px 20px;
+}
+
+.modals4 {
+    padding: 20px 20px;
+}
+/* -----------------chronic------------------ */
+
+.tablet{   
+    background-color: #4656d6;
+    /* margin-left:200px;
+    margin-top:100px;*/
+    margin-top:100px;
+    height: 290px;
+    width:100% !important;
+    /* box-sizing: border-box; */
+    box-shadow: 0 44px 30px -20px rgb(1 7 67 / 25%), 0 30px 21px -20px rgb(1 7 67 / 40%);
+   overflow:hidden !important;
+   margin-bottom: 50px !important;
+  }
+  .getstart{
+      margin-top: 20px;;
+       height:50px;
+       width:180px;
+       background-color: #010743;
+       font-size: 18px;
+       /* margin-bottom: 5px; */
+       border-radius: 1px;
+       font-weight: bold;
+       color:white;
+    }
+    .getstart:hover{
+        color:white;
+        opacity: 0.8;
+    }
+  .tablets1{
+      /* top: 50%;
+      left: 50%; */
+      text-align: center;
+      padding-top: 60px;
+      color:white;
+      letter-spacing: 1px;
+      padding-left:212px;
+  }
+  .tablet .tablets1 .head4{
+      font-weight: bold;
+      font-size: 35px;
+     /* text-align: center; */
+  }
+  .tablet .tablets1 .quote{
+      padding-top: 10px;
+      font-size: 22px;
+      opacity: 0.8;
+      font-family: "Lato",sans-serif;
+  }
+
+
+

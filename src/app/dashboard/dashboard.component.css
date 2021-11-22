@@ -1,0 +1,13 @@
+.dataView{
+    position: relative;
+	/* top: -100px; */
+	min-height: inherit;
+	/* margin-left: 240px; */
+	overflow-x: inherit;
+	overflow: hidden !important;
+
+}
+
+.container-flow{
+    overflow: hidden !important;
+}
