@@ -5,7 +5,7 @@
         </svg>
         <div class="col-sm-6 full-developer">
             <h1><b>The Network<br> Effect:<br> Interoperability<br> 3.0</b></h1>
-            <p>MyMediTales's API is a single onramp to the Nation's<br> Largest Health Information Networks (HINs);
+            <p>OneRecord's API is a single onramp to the Nation's<br> Largest Health Information Networks (HINs);
                 connect to<br>
                 CareQuality and CommonWell. </p>
             <div class="button" style="margin-top: 40px;">
@@ -14,9 +14,9 @@
             </div>
         </div>
         <div class="col-sm-6 half-developer">
-            <img class="power" width="676" height="579" loading="lazy"
+            <img class="power" width="626" height="559" loading="lazy"
                 src="https://or-marketing-prod.cdn.prismic.io/or-marketing-prod/465f1831-d2f8-441e-8426-92fc82fe76b6_hero-develop.svg"
-                alt="Powered by MyMediTales">
+                alt="Powered by OneRecord">
         </div>
     </div>
 </div>
@@ -28,7 +28,7 @@
     <div class="row built">
         <div class="col-sm-12">
             <h2><b>We built the connections <br> so you don't have to</b></h2>
-            <p class="_3zEPmzuF3BDspw0AxuC2W-">Access data from thousands of locations instantly with MyMediTales’s apis
+            <p class="_3zEPmzuF3BDspw0AxuC2W-">Access data from thousands of locations instantly with OneRecord’s apis
                 and <br>consumer - directed software solutions</p>
         </div>
     </div>
@@ -36,81 +36,85 @@
 
 
 <!-- ---------------------double-button-container--------------- -->
-
 <div class="container-fluid">
     <div class="row double">
-        <div class="col-sm-12 textarea">
-            <button class="providers" role="tab" aria-selected="true" aria-controls="panel-0" id="toggle-0"
-                tabindex="0"><span>Providers</span></button>
-            <button class="patients" role="tab" aria-selected="false" aria-controls="panel-1" id="toggle-1"
-                tabindex="-1"><span>Patients</span></button>
+        <div class="col-sm-12 textarea btn-group">
+
+            <button class="providers" (click)="provider()" role="tab" aria-selected="true" aria-controls="panel-0"
+                id="tab-0" aria-expanded="false" aria-controls="providers" tabindex="0"><span>Providers</span></button>
+            <button class="patients" (click)="patient()" role="tab" aria-selected="true" aria-controls="panel-0"
+                id="tab-0" aria-expanded="false" aria-controls="patients" tabindex="0"><span>Patients</span>
+            </button>
+
         </div>
-    </div>
-    <div class="row first">
-        <div class="col-sm-6">
-            <img class="_1QpL0uT08ZAX65H2PvXpuC" loading="lazy"
-                src="https://or-marketing-prod.cdn.prismic.io/or-marketing-prod/c9ec3142-c7d4-4694-be9c-0cbdaba9b480_twocol-dev-records.svg"
-                alt="The 'Records Found' view of the MyMediTales application."
-                srcset="https://or-marketing-prod.cdn.prismic.io/or-marketing-prod/c9ec3142-c7d4-4694-be9c-0cbdaba9b480_twocol-dev-records.svg 1.5x, https://or-marketing-prod.cdn.prismic.io/or-marketing-prod/c9ec3142-c7d4-4694-be9c-0cbdaba9b480_twocol-dev-records.svg 2x"
-                width="628" height="459">
-        </div>
-        <div class="col-sm-6">
-            <p class="_2VCkrAwSDB06_yn4PQb1xy">Query for Treatment Purposes under HIPAA</p>
-            <h3 class="_2TTq8YzIxe9ZpGWniVum2f">Get medical records in seconds with our API</h3>
-            <p>MyMediTales makes nationwide interoperability easy by abstracting complex technology and policy into
-                easy-to-use API</p>
-            <div class="row">
-                <div class="col-sm-2">
-                    <img class="_94Yx4K3gsFKgDnUIoDrdN" loading="lazy"
-                        src="https://or-marketing-prod.cdn.prismic.io/or-marketing-prod/962874d0-7475-4435-9aa4-5bdf01b13032_icon-checkmark-blue.svg"
-                        alt="Checkmark" width="40" height="40">
-                </div>
-                <div class="col-sm-4">
-                    <h6>Easy implementation</h6>
-                    <p>Embed in your systems with minimal effort</p>
-                </div>
-                <div class="col-sm-2">
-                    <img class="_94Yx4K3gsFKgDnUIoDrdN" loading="lazy"
-                        src="https://or-marketing-prod.cdn.prismic.io/or-marketing-prod/962874d0-7475-4435-9aa4-5bdf01b13032_icon-checkmark-blue.svg"
-                        alt="Checkmark" width="40" height="40">
-                </div>
-                <div class="col-sm-4">
-                    <h6>High success rate</h6>
-                    <p>Continuously improved workflow</p>
+        <div class="row first" id="providers" *ngIf="providers">
+            <div class="col-sm-6">
+                <img class="documents" loading="lazy"
+                    src="https://or-marketing-prod.cdn.prismic.io/or-marketing-prod/c9ec3142-c7d4-4694-be9c-0cbdaba9b480_twocol-dev-records.svg"
+                    alt="The 'Records Found' view of the OneRecord application."
+                    srcset="https://or-marketing-prod.cdn.prismic.io/or-marketing-prod/c9ec3142-c7d4-4694-be9c-0cbdaba9b480_twocol-dev-records.svg 1.5x, https://or-marketing-prod.cdn.prismic.io/or-marketing-prod/c9ec3142-c7d4-4694-be9c-0cbdaba9b480_twocol-dev-records.svg 2x"
+                    width="705" height="504">
+            </div>
+            <div class="col-sm-6 treatment">
+                <p class="query">Query for Treatment Purposes under HIPAA</p>
+                <h3 class="seconds"><b>Get medical records in seconds <br>with our API</b></h3>
+                <p>OneRecord makes nationwide interoperability easy by abstracting complex technology and policy
+                    into
+                    easy-to-use API</p>
+                <div class="row check">
+                    <div class="col-sm-2">
+                        <img class="_94Yx4K3gsFKgDnUIoDrdN" loading="lazy"
+                            src="https://or-marketing-prod.cdn.prismic.io/or-marketing-prod/962874d0-7475-4435-9aa4-5bdf01b13032_icon-checkmark-blue.svg"
+                            alt="Checkmark" width="40" height="40">
+                    </div>
+                    <div class="col-sm-4 easy">
+                        <h6 class="demo">Easy implementation</h6>
+                        <p class="embed">Embed in your systems with minimal effort</p>
+                    </div>
+                    <div class="col-sm-2">
+                        <img class="_94Yx4K3gsFKgDnUIoDrdN" loading="lazy"
+                            src="https://or-marketing-prod.cdn.prismic.io/or-marketing-prod/962874d0-7475-4435-9aa4-5bdf01b13032_icon-checkmark-blue.svg"
+                            alt="Checkmark" width="40" height="40">
+                    </div>
+                    <div class="col-sm-4 easy">
+                        <h6 class="demo">High success rate</h6>
+                        <p class="embed">Continuously improved workflow</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="row second">
+        <div class="row second" id="patients" *ngIf="patients">
             <div class="col-sm-6">
-                <img class="_1QpL0uT08ZAX65H2PvXpuC" loading="lazy"
+                <img class="location" loading="lazy"
                     src="https://or-marketing-prod.cdn.prismic.io/or-marketing-prod/f0d824fe-632e-456b-adb4-a5ed3e2e1050_twocol-api-mobile-care-blue.svg"
-                    alt="MyMediTales using FHIR APIs to retrieve records"
+                    alt="OneRecord using FHIR APIs to retrieve records"
                     srcset="https://or-marketing-prod.cdn.prismic.io/or-marketing-prod/f0d824fe-632e-456b-adb4-a5ed3e2e1050_twocol-api-mobile-care-blue.svg 1.5x, https://or-marketing-prod.cdn.prismic.io/or-marketing-prod/f0d824fe-632e-456b-adb4-a5ed3e2e1050_twocol-api-mobile-care-blue.svg 2x"
-                    width="628" height="566">
+                    width="588" height="546">
             </div>
-            <div class="col-sm-6">
-                <p class="_2VCkrAwSDB06_yn4PQb1xy">Query for Patient Request under HIPAA</p>
-                <h3 class="_2TTq8YzIxe9ZpGWniVum2f">Patients can get medical records in seconds with our API</h3>
+            <div class="col-sm-6 request">
+                <p class="query">Query for Patient Request under HIPAA</p>
+                <h3 class="_2TTq8YzIxe9ZpGWniVum2f">Patients can get medical records in seconds with our API
+                </h3>
                 <p>Integrate patient workflows natively into your application with our FHIR-based API and
                     production-ready integrations.</p>
-                <div class="row">
+                <div class="row check">
                     <div class="col-sm-2">
                         <img class="_94Yx4K3gsFKgDnUIoDrdN" loading="lazy"
                             src="https://or-marketing-prod.cdn.prismic.io/or-marketing-prod/962874d0-7475-4435-9aa4-5bdf01b13032_icon-checkmark-blue.svg"
                             alt="Checkmark" width="40" height="40">
                     </div>
-                    <div class="col-sm-4">
-                        <div class="_LORooLoyUwgT8zGZpR3d">Demographics Based Query</div>
-                        <div class="_2XQnU7yoKY26LsYCeZV0qE">Identity Proofed to IAL2</div>
+                    <div class="col-sm-4 easy">
+                        <h6 class="demo">Demographics Based Query</h6>
+                        <p class="embed">Identity Proofed to IAL2</p>
                     </div>
                     <div class="col-sm-2">
                         <img class="_94Yx4K3gsFKgDnUIoDrdN" loading="lazy"
                             src="https://or-marketing-prod.cdn.prismic.io/or-marketing-prod/962874d0-7475-4435-9aa4-5bdf01b13032_icon-checkmark-blue.svg"
                             alt="Checkmark" width="40" height="40">
                     </div>
-                    <div class="col-sm-4">
-                        <div class="_LORooLoyUwgT8zGZpR3d">Credential Based Query</div>
-                        <div class="_2XQnU7yoKY26LsYCeZV0qE">OAuth2 with OpenID Connect</div>
+                    <div class="col-sm-4 easy">
+                        <h6 class="demo">Credential Based Query</h6>
+                        <p class="embed">OAuth2 with OpenID Connect</p>
                     </div>
                 </div>
                 <div class="row">
@@ -119,29 +123,33 @@
                             src="https://or-marketing-prod.cdn.prismic.io/or-marketing-prod/962874d0-7475-4435-9aa4-5bdf01b13032_icon-checkmark-blue.svg"
                             alt="Checkmark" width="40" height="40">
                     </div>
-                    <div class="col-sm-4">
-                        <div class="_LORooLoyUwgT8zGZpR3d">CARIN Attested</div>
-                        <div class="_2XQnU7yoKY26LsYCeZV0qE">CARIN Code of Conduct Signed</div>
+                    <div class="col-sm-4 easy">
+                        <h6 class="demo">CARIN Attested</h6>
+                        <p class="embed">CARIN Code of Conduct Signed</p>
                     </div>
                     <div class="col-sm-2">
                         <img class="_94Yx4K3gsFKgDnUIoDrdN" loading="lazy"
                             src="https://or-marketing-prod.cdn.prismic.io/or-marketing-prod/962874d0-7475-4435-9aa4-5bdf01b13032_icon-checkmark-blue.svg"
                             alt="Checkmark" width="40" height="40">
                     </div>
-                    <div class="col-sm-4">
-                        <div class="_LORooLoyUwgT8zGZpR3d">Safe and Secure</div>
-                        <div class="_2XQnU7yoKY26LsYCeZV0qE">No webscraping or password storage</div>
+                    <div class="col-sm-4 easy">
+                        <h6 class="demo">Safe and Secure</h6>
+                        <p class="embed">No webscraping or password storage</p>
                     </div>
                 </div>
             </div>
         </div>
+
+
+
+
     </div>
 </div>
 
 
 <!-- --------------care-container---------------------- -->
 
-<div class="container-fluid">
+<div class="container-fluid horizontal">
     <div class="row">
         <div class="col-sm-12 equality">
             <img class="_1kckLhptpu7PEc-neNCXck" loading="lazy"
@@ -149,7 +157,7 @@
                 alt="CareQuality" width="211px" height="40px">
             <img class="_1kckLhptpu7PEc-neNCXck" loading="lazy"
                 src="https://or-marketing-prod.cdn.prismic.io/or-marketing-prod/f7a448b7-f493-4e5b-ba0c-45491e27118d_logo-color-commonwell.svg"
-                alt="Commonwell" width="211px" height="40px">
+                alt="Commonwell" width="211px" height="40px" style="padding-left: 20px;">
         </div>
     </div>
     <div class="row common">
@@ -172,16 +180,29 @@
 <div class="container-fluid">
     <div class="row how">
         <div class="col-sm-6">
-            <h2 class="_3M9iuo0creEevo-MYVrSqS">How it works</h2>
-            <div class="FH8HqqFMFwYZKnouvFyYb">Get electronic medical records without performing complex integrations
-                with our easy-to-use APIs</div>
+            <h2><b>How it works</b></h2>
+            <h5>Get electronic medical records without performing complex
+                integrations
+                with our easy-to-use APIs</h5>
             <ul>
-                <li><strong>Search the Network</strong><br>Use basic demographic information to identify care sites that
-                    have clinical records on a particular patient.</li>
-                <li><strong>Retrieve Documents</strong><br>Automatically import medical records electronically into your
-                    workflow</li>
-                <li><strong>Filter Results</strong><br>Review a complete set of medical records from multiple care sites
-                    to inform patient care.</li>
+                <li>
+                    <h5>Search the Network</h5>
+                    <p>Use basic demographic information to identify care<br> sites
+                        that
+                        have clinical records on a particular patient.</p>
+                </li>
+                <li>
+                    <h5>Retrieve Documents</h5>
+                    <p>Automatically import medical records electronically<br> into
+                        your
+                        workflow</p>
+                </li>
+                <li>
+                    <h5>Filter Results</h5>
+                    <p>Review a complete set of medical records from<br> multiple care
+                        sites
+                        to inform patient care.</p>
+                </li>
             </ul>
         </div>
         <div class="col-sm-6">
@@ -189,7 +210,7 @@
                 src="https://or-marketing-prod.cdn.prismic.io/or-marketing-prod/41d1225d-317d-4fdb-be89-2a0761453e0a_twocol-development.svg"
                 alt="Instant medical record retrieval. Available out of the box as a web-based application, or embed our API into your back-end."
                 srcset="https://or-marketing-prod.cdn.prismic.io/or-marketing-prod/41d1225d-317d-4fdb-be89-2a0761453e0a_twocol-development.svg 1.5x, https://or-marketing-prod.cdn.prismic.io/or-marketing-prod/41d1225d-317d-4fdb-be89-2a0761453e0a_twocol-development.svg 2x"
-                width="831" height="534">
+                width="701" height="504">
         </div>
     </div>
 </div>
@@ -197,7 +218,7 @@
 
 <!-- ---------------cases-container--------------- -->
 
-<div class="container-fluid">
+<div class="container-fluid tube">
     <div class="row use">
         <div class="col-sm-4">
             <h2 class="g3eipcj_CVyBfT-_akAmA">Use Cases</h2>
@@ -278,12 +299,615 @@
 <div class="container-fluid">
     <div class="row few">
         <div class="col-sm-12">
-            <h2 class="_4aIVoWXXjD9edKPFcADqd">With just a few lines of code,<br> MyMediTales fits into whatever <br>you're
-                building</h2>
+            <h2 class="_4aIVoWXXjD9edKPFcADqd">With just a few lines of code,<br> OneRecord fits into whatever
+                <br>you're
+                building
+            </h2>
             <p>Click on an app type to see what kind of data fits the use case.</p>
         </div>
     </div>
+    <div class="row building">
+        <button class="svg enco">
+            <span><svg viewBox="0 0 55 55" fill="none" width="24" height="24">
+                    <g clip-path="url(#icon-medications_inline_svg__clip0)">
+                        <path
+                            d="M23.776 54.8c9.202-1.143 10.004-10.805 15.08-17.34 5.075-6.534 11.29-2.432 14.888-10.008 3.598-7.576-.966-16.457-8.217-21.298C37.068.588 27.401-1.832 17.492 1.556 9.518 4.46 3.233 10.026 1.3 18.497-.875 27.21-.633 36.891 4.442 44.635 9.034 52.138 14.574 55.943 23.776 54.8z"
+                            fill="#F6E1E1"></path>
+                        <path
+                            d="M12.501 16.398A2.399 2.399 0 0114.9 14h25.2a2.399 2.399 0 012.399 2.398V47.6a2.399 2.399 0 01-2.399 2.398H14.9a2.399 2.399 0 01-2.4-2.398V16.398z"
+                            fill="#FFA3A3"></path>
+                        <path
+                            d="M29.195 28.751c.707-5.172 1.378-10.08 7.026-12.68 1.788-.823 3.49-1.39 5.128-1.721a2.397 2.397 0 011.15 2.048V47.6a2.399 2.399 0 01-2.398 2.399H16.917c.013-.268.035-.537.067-.807.49-4.113 2.735-5.56 5.13-7.1 2.116-1.363 4.347-2.8 5.586-6.213.834-2.299 1.168-4.741 1.495-7.128z"
+                            fill="#FF8B8A"></path>
+                        <rect x="15.502" y="5" width="23.999" height="7.5" rx="2.399" fill="#FF6464"></rect>
+                        <path fill="#FF6464" d="M17.001 9.5H38V14H17.001z"></path>
+                        <path fill="#FFC5C8" d="M18.501 23H36.5v14.999H18.501z"></path>
+                        <path
+                            d="M30.286 23c-.55 1.8-.818 3.756-1.091 5.751-.327 2.387-.66 4.83-1.495 7.128-.294.81-.643 1.508-1.034 2.12H36.5v-15h-6.214z"
+                            fill="#FFB9BC"></path>
+                        <path fill="#FF7271" d="M27.5 6.5H38V11H27.5z"></path>
+                    </g>
+                    <defs>
+                        <clipPath id="icon-medications_inline_svg__clip0">
+                            <path fill="#fff" transform="matrix(-1 0 0 1 55 0)" d="M0 0h55v55H0z"></path>
+                        </clipPath>
+                    </defs>
+                </svg></span>
+            <span class="box-text">Medication</span>
+        </button>
+        <button class="svg enco">
+            <span>
+                <svg viewBox="0 0 55 55" fill="none" width="24" height="24">
+                    <path
+                        d="M41.25 14.81c-3.1-5.804-1.39-15-11.465-14.807-9.444.094-8.634 7.895-16.482 10.246C3.891 13.014-.77 16.929.103 24.033c1.412 13.335 14.28 8.394 19.54 17.596 5.858 10.242 14.29 15.924 24.48 12.249 14.178-4.74 11.844-22.193 7.713-28.117-4.131-5.924-7.486-5.146-10.586-10.95z"
+                        fill="#D6F0E0"></path>
+                    <path
+                        d="M13.01 7.348a3.143 3.143 0 100-6.285 3.143 3.143 0 000 6.285zm3.682 6.674a1.571 1.571 0 100-3.143 1.571 1.571 0 000 3.143zM22.5 4.206a1.571 1.571 0 100-3.143 1.571 1.571 0 000 3.143zm11.959 2.711v24.456c0 2.964-3.068 5.484-6.818 5.484-3.75 0-6.818-2.52-6.818-5.484V6.917H34.46z"
+                        fill="#87E7AD"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M19.6 6.917c0-.348.282-.631.631-.631h14.822a.632.632 0 110 1.263H20.23a.632.632 0 01-.631-.632z"
+                        fill="#00C48C"></path>
+                    <path d="M32.832 9h-3.955v9.264h3.955V9z" fill="#A7F0C6"></path>
+                    <path
+                        d="M46.358 36.143C46.358 46.53 37.888 55 27.5 55 17.113 55 8.644 46.53 8.644 36.143c0-2.717.639-5.434 1.598-7.83 3.036-6.553 9.588-11.027 17.099-11.027 10.707.16 19.017 8.47 19.017 18.857z"
+                        fill="#87E7AD"></path>
+                    <path
+                        d="M13.521 29.139c0 8.412 5.553 21.81 14.12 21.81a15.358 15.358 0 0015.424-15.423c0-2.337-.468-4.362-1.403-6.387-11.528.156-13.809 6.854-28.14 0z"
+                        fill="#00C48C"></path>
+                    <path
+                        d="M43.065 35.682c0 8.412-6.855 15.267-15.423 15.267A15.358 15.358 0 0112.22 35.526c0-2.337.467-4.362 1.402-6.387 11.528.156 15.11 13.397 29.443 6.543z"
+                        fill="#01836A"></path>
+                </svg>
+            </span>
+            <span class="box-text">Labs</span>
+        </button>
+        <button class="svg enco">
+            <span><svg viewBox="0 0 55 55" fill="none" width="24" height="24">
+                    <g clip-path="url(#icon-allergies_inline_svg__clip0)">
+                        <path
+                            d="M46.481 25.922C35.007 18.585 42.983-1.593 28.011.1c-9.516.988-7.976 8.749-15.672 11.853C3.102 15.622-1.236 19.996.304 27.051c2.658 13.264 15.532 8.89 21.689 17.638 6.856 9.736 15.532 12.84 25.467 8.184 9.934-4.374 10.494-19.472-.98-26.95z"
+                            fill="#F7F3C5"></path>
+                        <path
+                            d="M38.11 48.248c1.541 0 2.791-1.26 2.791-2.813a2.803 2.803 0 00-2.792-2.814 2.803 2.803 0 00-2.792 2.814 2.803 2.803 0 002.792 2.813z"
+                            fill="#FFA51F"></path>
+                        <path
+                            d="M48.718 30.946c2.313 0 4.188-1.889 4.188-4.22 0-2.33-1.875-4.22-4.188-4.22-2.313 0-4.188 1.89-4.188 4.22 0 2.331 1.875 4.22 4.188 4.22z"
+                            fill="#FFD443"></path>
+                        <path
+                            d="M38.11 10.972a2.803 2.803 0 002.79-2.813c0-1.554-1.25-2.814-2.792-2.814a2.803 2.803 0 00-2.792 2.814 2.803 2.803 0 002.792 2.813z"
+                            fill="#FFA51F"></path>
+                        <path
+                            d="M16.751 12.379c2.313 0 4.188-1.89 4.188-4.22 0-2.331-1.875-4.22-4.188-4.22-2.313 0-4.188 1.889-4.188 4.22 0 2.33 1.875 4.22 4.188 4.22z"
+                            fill="#FFD443"></path>
+                        <path
+                            d="M6.002 29.54a2.803 2.803 0 002.792-2.814 2.803 2.803 0 00-2.792-2.813 2.803 2.803 0 00-2.792 2.813 2.803 2.803 0 002.792 2.814z"
+                            fill="#FFA51F"></path>
+                        <path
+                            d="M16.751 50.44c2.313 0 4.188-1.889 4.188-4.22 0-2.33-1.875-4.22-4.188-4.22-2.313 0-4.188 1.89-4.188 4.22 0 2.331 1.875 4.22 4.188 4.22z"
+                            fill="#FFD443"></path>
+                        <path
+                            d="M39.255 31.798c-2.315 6.522-9.552 9.855-16.065 7.536-6.513-2.319-9.842-9.565-7.526-16.087.434-1.304 1.158-2.609 2.026-3.623 3.33-4.058 8.829-5.798 14.04-3.913 4.341 1.594 7.38 5.507 8.104 9.855.435 1.884.29 4.058-.579 6.232z"
+                            fill="#FFA51F"></path>
+                        <path
+                            d="M39.84 25.478a38.711 38.711 0 01-3.474 1.74c-4.053 1.593-3.329 5.652-8.25 6.231-7.815.87-3.618-9.565-9.697-13.333-.29-.145-.466-.316-.756-.461 3.505-4.199 8.863-5.835 14.073-3.95 4.342 1.594 7.38 5.425 8.104 9.773z"
+                            fill="#FFD443"></path>
+                        <path
+                            d="M27.532 34.697c3.996 0 7.236-3.244 7.236-7.246 0-4.002-3.24-7.247-7.236-7.247-3.997 0-7.237 3.245-7.237 7.247s3.24 7.246 7.237 7.246z"
+                            fill="#FFF279"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M26.92 22.813a.61.61 0 01.612-.607c2.96 0 5.242 2.462 5.242 5.245a.61.61 0 01-.61.607.61.61 0 01-.612-.607c0-2.146-1.769-4.03-4.02-4.03a.61.61 0 01-.611-.608z"
+                            fill="#fff"></path>
+                    </g>
+                    <defs>
+                        <clipPath id="icon-allergies_inline_svg__clip0">
+                            <path fill="#fff" d="M0 0h55v55H0z"></path>
+                        </clipPath>
+                    </defs>
+                </svg></span>
+            <span class="box-text">Allergies</span>
+        </button>
+        <button class="svg enco">
+            <span>
+                <svg viewBox="0 0 55 55" fill="none" width="24" height="24">
+                    <g clip-path="url(#icon-proceedures_inline_svg__clip0)">
+                        <path
+                            d="M6.185 35.176C-14.215 3.87 21.735-8.15 29.439 5.686 41.993 28.188 53.834 21.76 54.975 38.531c.999 16.771-28.247 27.952-48.79-3.355z"
+                            fill="#F6E1E1"></path>
+                        <path
+                            d="M48.1 6.9c-3.867-3.867-10-3.867-13.867 0L6.9 34.233c-3.867 3.867-3.867 10 0 13.867 3.867 3.867 10 3.867 13.867 0L48.1 20.767c3.867-3.867 3.867-10.134 0-13.867z"
+                            fill="#FFA3A3"></path>
+                        <path d="M41.38 27.458l-13.859 13.86-13.859-13.86L27.522 13.6 41.38 27.46z" fill="#FF6464">
+                        </path>
+                        <path
+                            d="M27.567 34.5a2 2 0 110-4 2 2 0 010 4zm4.933-5.067a2 2 0 110-4 2 2 0 010 4zm-10 0a2 2 0 110-4 2 2 0 010 4zm5.067-4.933a2 2 0 110-4 2 2 0 010 4z"
+                            fill="#F4F5FF"></path>
+                    </g>
+                    <defs>
+                        <clipPath id="icon-proceedures_inline_svg__clip0">
+                            <path fill="#fff" transform="matrix(-1 0 0 1 55 0)" d="M0 0h55v55H0z"></path>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </span>
+            <span class="box-text">Proceedures</span>
+        </button>
+        <button class="svg">
+            <span><svg viewBox="0 0 55 55" fill="none" width="24" height="24">
+                    <path
+                        d="M8.534 27.381C-5.912 21.298-.672.641 14.199.075 29.637-1.34 25.388 17.62 32.611 21.581c7.223 3.961 10.339-4.245 17.137 1.839s6.373 14.148 2.266 20.798c-4.107 6.65-11.33 9.62-11.33 9.62-4.816 1.84-10.48 2.406-16.146-5.376-4.39-6.225-4.532-16.129-16.004-21.08z"
+                        fill="#D6F0E0"></path>
+                    <path
+                        d="M44 29.619c0 8.613-7.333 15.56-16.427 15.56-1.613 0-3.226-.279-4.693-.695C15.987 42.539 11 36.564 11 29.48v-.695c.147-4.168 2.2-7.919 5.133-10.697-.88-1.528-1.32-3.334-1.32-5.28 0-4.723 2.934-8.89 7.187-10.697A13.967 13.967 0 0127.427 1C34.32 1 40.04 6.28 40.04 12.948c0 1.945-.44 3.612-1.32 5.279 1.173 1.111 2.347 2.361 3.08 3.75C43.267 24.34 44 26.84 44 29.62z"
+                        fill="#00C48C"></path>
+                    <path
+                        d="M22.263 44.297c-.328-.73-.646-1.48-.968-2.241-2.014-4.753-4.203-9.92-10.288-13.437.194-4.101 2.232-7.79 5.126-10.531-.88-1.528-1.32-3.334-1.32-5.28 0-4.723 2.934-8.89 7.187-10.697l.244-.102c3.014 2.38 4.225 6.515 5.373 10.435 1.149 3.92 2.234 7.623 4.994 9.137 3.364 1.845 5.837 1.05 8.206.29.262-.084.524-.168.785-.248.069.117.135.235.198.355 1.467 2.361 2.2 4.862 2.2 7.64 0 8.614-7.333 15.56-16.427 15.56-1.613 0-3.226-.277-4.693-.694a18.306 18.306 0 01-.617-.187z"
+                        fill="#2BD79A"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M27.575 23.992c.607 0 1.1.467 1.1 1.042v27.924c0 .575-.493 1.042-1.1 1.042-.608 0-1.1-.467-1.1-1.042V25.034c0-.575.492-1.042 1.1-1.042z"
+                        fill="#01836A"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M20.041 25.556a1.144 1.144 0 011.556-.016l6.746 6.251c.435.403.442 1.062.017 1.474a1.144 1.144 0 01-1.555.016l-6.747-6.252a1.004 1.004 0 01-.017-1.473zm14.911 5.826c.43.407.43 1.067 0 1.474l-6.6 6.252a1.144 1.144 0 01-1.555 0 1.003 1.003 0 010-1.474l6.6-6.252a1.144 1.144 0 011.555 0z"
+                        fill="#01836A"></path>
+                </svg>
+            </span>
+            <span class="box-text">Family History</span>
+        </button>
+        <button class="svg">
+            <span><svg viewBox="0 0 55 55" fill="none" width="24" height="24">
+                    <path
+                        d="M54.237 46.07c3.861-11.54-8.059-14.213-10.577-21.812-2.518-7.599 10.913-9.147 6.044-16.886-5.205-8.022-15.446-8.725-24.848-5.77C14.113 4.979 5.047 11.03 1.52 20.459c-2.854 7.74-1.847 15.62 4.365 21.952 6.548 6.614 15.446 11.821 25.855 12.525 10.241.703 20.986-4.503 22.497-8.866z"
+                        fill="#F6E1E1"></path>
+                    <path
+                        d="M41.144 8.973c-5.056-2.237-10.274-.516-13.698 4.13-2.12-2.926-5.056-4.646-8.154-4.99-1.794-.172-3.75 0-5.544.86-4.73 2.065-9.132 8.087-7.339 16.346 3.099 13.938 19.895 21.337 20.71 21.509.163 0 .326.172.49.172.163 0 .326 0 .489-.172.489-.172 11.252-4.818 17.122-13.594a22.683 22.683 0 003.425-7.915c1.63-8.259-2.61-14.281-7.502-16.346z"
+                        fill="#FF6464"></path>
+                    <path
+                        d="M44.761 33.898c-1.091.708-2.303 1.418-3.708 1.823-6.415 2.315-13.336 1.247-17.219-6.056-2.072-3.898-.922-6.02.293-8.262 1.06-1.958 2.171-4.008 1.227-7.413-.696-2.202-2.538-3.92-4.77-5.652 2.614.625 5.039 2.25 6.861 4.765 3.425-4.646 8.643-6.367 13.698-4.13 4.892 2.065 9.132 8.087 7.502 16.346a22.684 22.684 0 01-3.425 7.916c-.15.224-.303.445-.459.663z"
+                        fill="#FF8D89"></path>
+                </svg></span>
+            <span class="box-text">Heart Rate</span>
+        </button>
+        <button class="svg">
+            <svg viewBox="0 0 55 55" fill="none" width="24" height="24">
+                <path
+                    d="M10.068 3.485c-8.767 6.885-15.05 22.31-4.676 38.56C24.826 72.617 74.36 41.63 46.89 25.242 29.794 15.19 35.64 8.443 27.31 2.245c-5.113-3.718-12.565-2.479-17.241 1.24z"
+                    fill="#F6E1E1"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12.877 42.148a.977.977 0 010 1.385l-7.2 7.18a.984.984 0 01-1.39 0 .977.977 0 010-1.385l7.201-7.18a.984.984 0 011.389 0z"
+                    fill="#D13A42"></path>
+                <path
+                    d="M15.98 46.496c4.121 0 7.462-3.332 7.462-7.442s-3.34-7.442-7.462-7.442c-4.121 0-7.462 3.332-7.462 7.442s3.34 7.442 7.462 7.442z"
+                    fill="#F4595C"></path>
+                <path d="M39.044 6.615l-5.555 5.54 9.35 9.323 5.555-5.539-9.35-9.324z" fill="#FF6464"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M28.51 8.2a.984.984 0 011.389.006l16.888 16.972a.977.977 0 01-.005 1.385.984.984 0 01-1.389-.005L28.505 9.586A.977.977 0 0128.51 8.2z"
+                    fill="#FFA3A3"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M37.283 4.283a.984.984 0 011.388.008l12.045 12.141a.977.977 0 01-.008 1.385.984.984 0 01-1.388-.008L37.275 5.668a.977.977 0 01.008-1.385z"
+                    fill="#FF6464"></path>
+                <path d="M43.734 24.693l-1.832 1.958-16.889 16.842-13.485-13.447 9.557-9.53 9.165-9.27 13.484 13.447z"
+                    fill="#FFA3A3"></path>
+                <path
+                    d="M37.711 30.83L22.786 45.712 9.302 32.264l4.844-4.83s1.833 3.003 11.39 3.133c3.01 0 9.819-1.306 12.175.261z"
+                    fill="#FF6464"></path>
+                <path d="M46.465 16.226l-3.463-3.453-4.287 4.274 3.463 3.454 4.287-4.275z" fill="#FF7B7A">
+                </path>
+            </svg>
+            <span class="box-text">Immunizations</span>
+        </button>
+        <button class="svg">
+            <svg viewBox="0 0 55 55" fill="none" width="24" height="24">
+                <g clip-path="url(#icon-conditions_inline_svg__clip0)">
+                    <path class="icon-conditions_inline_svg__blob"
+                        d="M8.534 27.523C-5.912 21.298-.672.783 14.199.075 29.637-1.34 25.388 17.62 32.611 21.581c7.223 3.961 10.339-4.245 17.137 1.839s6.373 14.148 2.266 20.798c-4.107 6.65-11.33 9.62-11.33 9.62-4.816 1.84-10.48 2.406-16.146-5.376-4.39-6.083-4.532-15.987-16.004-20.94z"
+                        fill="#DCDEF6"></path>
+                    <path
+                        d="M29.192 50.326H25.98V55h3.212v-4.674zm4.918-4.87c-.562.546-1.124.955-1.967 1.364-.984.545-3.232 1.227-4.637 1.227-1.687 0-3.654-.545-4.638-1.09-3.372-1.773-4.075-4.773-4.918-8.317-.562-2.182-1.124-4.772-2.53-7.362-.843-1.636-1.967-3.136-3.232-4.772-3.232-4.226-6.324-8.725-4.778-14.997 1.827-7.09 9.134-8.043 12.788-7.498l-.421 2.59c-.281 0-8.01-1.09-9.697 5.454-1.264 5.044 1.406 8.861 4.357 12.679 1.264 1.636 2.389 3.408 3.372 5.18 1.546 3 2.249 5.59 2.67 8.044.843 3.545 1.406 5.453 3.514 6.544.702.273 2.248.818 3.372.818 1.124 0 2.81-.545 3.373-.818 2.248-1.09 2.67-3 3.653-6.544.563-2.318 1.265-5.044 2.811-8.044.984-1.772 2.248-3.408 3.373-5.18 2.95-3.954 5.62-7.635 4.356-12.68-1.686-6.543-9.415-5.725-9.696-5.59l-.422-2.59c3.654-.545 10.961.41 12.788 7.635 1.546 6.408-1.686 10.634-4.778 14.86-1.265 1.637-2.389 3.136-3.232 4.772-1.405 2.727-1.967 5.181-2.53 7.363-.562 2.726-1.124 5.18-2.95 6.953z"
+                        fill="#8296FF"></path>
+                    <path
+                        d="M38.747 30.596l-2.108-1.09c-1.546 2.999-2.248 5.998-2.81 8.18-.844 3.408-1.265 5.044-3.092 5.998-.562.273-1.967.682-2.951.818-.984 0-2.39-.545-2.951-.818-1.827-.954-2.39-2.59-3.092-5.998-.562-2.318-1.264-5.181-2.81-8.18l-2.39 1.09-1.686.818c1.406 2.59 1.968 5.044 2.39 7.226.843 3.544 1.686 6.953 5.34 8.862 1.124.545 3.232 1.227 4.918 1.227s3.794-.682 4.918-1.227c3.654-1.91 4.497-5.318 5.34-8.862.562-2.181 1.125-4.636 2.39-7.226l-1.406-.818zM22.024 7.283c1.265-1.227 1.265-3.136 0-4.363a3.207 3.207 0 00-4.496 0c-1.265 1.227-1.265 3.136 0 4.363a3.207 3.207 0 004.497 0zm15.599.137c1.265-1.228 1.265-3.136 0-4.363a3.207 3.207 0 00-4.497 0c-1.264 1.227-1.264 3.135 0 4.362a3.207 3.207 0 004.497 0z"
+                        fill="#3D4DCD"></path>
+                    <path d="M29.893 45.32h-4.497v5.181h4.497v-5.18z" fill="#3D4DCD"></path>
+                </g>
+                <defs>
+                    <clipPath id="icon-conditions_inline_svg__clip0">
+                        <path fill="#fff" d="M0 0h55v55H0z"></path>
+                    </clipPath>
+                </defs>
+            </svg>
+            <span class="box-text">Encounters</span>
+        </button>
+        <button class="svg enco">
+            <span>
+                <svg viewBox="0 0 55 55" fill="none" width="24" height="24">
+                    <path
+                        d="M27.96 47.828c8.32-10.925 27.177-.7 27.038-16.247 0-9.805-7.764-9.105-9.983-17.369C42.242 4.268 38.498-.635 31.427.066c-13.311 1.4-10.122 17.228-19.274 22.55C1.893 28.64-2.267 35.082 1.2 45.727c3.467 10.785 18.303 13.027 26.761 2.101z"
+                        fill="#DCDEF6"></path>
+                    <path
+                        d="M51 12.373v30.254C51 43.962 49.928 45 48.55 45H6.45C5.072 45 4 43.962 4 42.627V12.373C4 11.038 5.072 10 6.45 10h42.1c1.378 0 2.45 1.038 2.45 2.373z"
+                        fill="#4B5FF7"></path>
+                    <path
+                        d="M51 24.089v18.538C51 43.962 49.927 45 48.55 45H31.403c1.531-1.483 3.062-3.411 3.828-6.229 2.908-10.826 7.348-15.868 15.768-14.682zM18.39 10c0 1.78-.305 3.708-1.07 5.932C15.481 21.42 9.817 24.386 4 23.644V12.373C4 11.038 5.072 10 6.45 10h11.94z"
+                        fill="#3D4DCD"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M23.678 17.424c.526.009.981.33 1.116.786l4.51 15.252 1.603-3.033c.195-.369.608-.604 1.062-.604h12.39c.649 0 1.176.473 1.176 1.057s-.527 1.057-1.177 1.057H32.713l-2.661 5.033c-.212.4-.68.64-1.17.6-.492-.041-.902-.353-1.03-.782l-4.27-14.45-3.66 10.822c-.151.446-.608.75-1.126.75H10.64c-.65 0-1.176-.473-1.176-1.057s.526-1.057 1.176-1.057h7.283l4.608-13.624c.153-.452.62-.758 1.146-.75z"
+                        fill="#F4F5FF"></path>
+                </svg>
+            </span>
+            <span class="box-text">Vital Signs</span>
+        </button>
+        <button class="svg enco">
+            <svg viewBox="0 0 55 55" fill="none" width="24" height="24">
+                <path
+                    d="M31.224.2c-9.202 1.143-10.004 10.805-15.08 17.34-5.074 6.534-11.29 2.432-14.888 10.008-3.598 7.576.967 16.457 8.217 21.298 8.459 5.566 18.126 7.986 28.035 4.598 7.975-2.904 14.258-8.47 16.192-16.941 2.175-8.713 1.933-18.394-3.142-26.138C45.966 2.862 40.426-.943 31.224.2z"
+                    fill="#F7F3C5"></path>
+                <path
+                    d="M5.632 20.896c0 .151.153.151.153.302s.152.151.152.303c.306.453.764.907 1.222 1.36.458.454.916.756 1.374 1.21.153 0 .306.15.306.15.152.152.152.152.305.152 4.276 2.57 9.925 2.116 13.59-1.512 3.665-3.628 4.275-9.373 1.68-13.606 0-.15-.153-.15-.153-.302 0-.151-.153-.151-.153-.302-.305-.454-.763-.908-1.221-1.361-.458-.454-.916-.756-1.375-1.21l-.305-.302c-.153 0-.153-.151-.305-.151-4.276-2.57-9.926-2.117-13.59 1.512-3.818 3.78-4.276 9.524-1.68 13.757z"
+                    fill="#FFD443"></path>
+                <path
+                    d="M5.937 21.198c0 .151.152.151.152.303.306.453.764.907 1.222 1.36.458.454.916.756 1.374 1.21.153 0 .305.15.305.15L24.26 9.105c0-.151-.153-.151-.153-.302-.305-.454-.763-.907-1.221-1.36-.458-.454-.916-.757-1.374-1.21l-.306-.303L5.936 21.2zm27.541-2.195c4.008-4.004 10.507-4.004 14.515 0a10.243 10.243 0 010 14.497l-7.257 7.249L26.22 26.25l7.257-7.248z"
+                    fill="#FFA51F"></path>
+                <path
+                    d="M33.521 47.998C29.513 52 23.014 52 19.006 47.998a10.242 10.242 0 010-14.498l7.258-7.249L40.779 40.75l-7.258 7.248z"
+                    fill="#FFD443"></path>
+                <path
+                    d="M36.056 45.465a6.683 6.683 0 01-9.444 0 6.664 6.664 0 010-9.432l4.722-4.716 9.444 9.432-4.722 4.716z"
+                    fill="#FFDD6C"></path>
+            </svg>
+            <span class="box-text">Med Refills</span>
+        </button>
+        <button class="svg enco">
+            <svg viewBox="0 0 55 55" fill="none" width="24" height="24">
+                <path
+                    d="M29.395 8.71C23.157-5.695 1.137-.98.111 13.704-1.67 29.067 18.556 25.15 22.562 32.438c4.007 7.289-4.79 10.174 1.594 17.092 6.384 6.917 14.834 6.66 22.024 2.635 10.19-5.51 12.212-18.942 2.565-25.783-6.282-4.558-14.387-6.205-19.35-17.672z"
+                    fill="#DCDEF6"></path>
+                <path
+                    d="M46.981 7.801c-.08.935-.488 1.583-1.078 2.148-.59.566-11.023 9.844-11.023 9.844l.196 2.514 2.756 25.133c0 1.885-1.18 3.35-2.559 3.56-.984 0-1.771-.21-2.559-.838-.787-.628-.984-1.466-1.18-2.513-.788-3.351-1.97-11.52-2.166-13.195h-4.134c0 1.047-1.378 9.634-2.165 12.986-.197 1.047-.394 1.885-1.181 2.513-.59.419-1.378.838-2.165.838h-.394c-1.575-.21-2.56-1.676-2.56-3.351l1.773-11.73 1.771-15.917L9.29 9.95C7.912 8.902 7.518 6.808 8.7 5.342c.393-.629 1.18-1.047 1.968-1.257.787-.21 1.575 0 2.362.628.394.21 6.299 5.236 9.252 7.96.793.675 1.335 1.465 2.362 1.465-1.181-1.047-1.969-2.513-1.969-4.189 0-2.722 2.165-5.236 4.921-5.236 2.756 0 4.921 2.304 4.921 5.236 0 1.676-.787 3.351-1.968 4.19.653.308 2.007-1.089 2.165-1.257 3.15-2.723 8.576-7.455 9.449-8.169C43.035 4 43.768 4 44.48 4c.713 0 1.619.713 2.012 1.342.394.628.568 1.524.488 2.46z"
+                    fill="#4B5FF7"></path>
+                <path
+                    d="M35.164 23.108l2.668 24.33c0 1.886-1.181 3.352-2.56 3.561-.983 0-1.77-.21-2.558-.838-.787-.628-.984-1.466-1.181-2.513-.788-3.351-1.969-11.52-2.166-13.195h-4.133c0 1.047-1.378 9.634-2.166 12.985-.196 1.048-.393 1.886-1.18 2.514-.591.419-1.378.838-2.166.838h-.394c-1.574-.21-2.558-1.676-2.558-3.352l1.77-11.728.496-4.454c.7-.15 1.43-.267 2.193-.351 2.95-.336 4.98-2.197 6.966-4.016 2.05-1.878 4.052-3.712 6.968-3.78zm-4.554-8.947a.428.428 0 01-.062-.023c1.18-.838 1.968-2.514 1.968-4.19 0-2.931-2.165-5.235-4.921-5.235-2.756 0-4.921 2.513-4.921 5.236 0 1.675.787 3.142 1.968 4.189h-.046a5.346 5.346 0 003.116.985 4.88 4.88 0 002.898-.962z"
+                    fill="#7583FF"></path>
+            </svg>
+            <span class="box-text">Diagnostics</span>
+        </button>
+    </div>
     <div class="row list">
-        
+        <button class="square" data-id="care">
+            <div class="sodx"><svg viewBox="0 0 55 55" fill="none" width="81" height="81">
+                    <path class="icon-care-coordination_inline_svg__blob"
+                        d="M27.039 47.828C18.719 36.903-.138 47.128 0 31.581c0-9.805 7.765-9.105 9.983-17.369C12.757 4.268 16.501-.635 23.573.066c13.31 1.4 10.121 17.228 19.273 22.55 10.26 6.023 14.42 12.466 10.954 23.111-3.467 10.785-18.303 13.027-26.761 2.101z"
+                        fill="#F6E1E1"></path>
+                    <path
+                        d="M39.24 13.798c-4.35-1.835-8.84-.423-11.787 3.389-1.824-2.4-4.35-3.812-7.016-4.095-1.543-.14-3.227 0-4.77.706-4.07 1.694-7.858 6.636-6.315 13.413 2.666 11.436 17.119 17.507 17.82 17.648.14 0 .28.141.421.141.14 0 .28 0 .421-.141.421-.141 9.682-3.953 14.733-11.154 1.404-1.976 2.386-4.094 2.947-6.494 1.403-6.777-2.245-11.718-6.455-13.413z"
+                        fill="#FF6464"></path>
+                    <path
+                        d="M42.353 34.25c-.94.58-1.982 1.163-3.19 1.495-5.52 1.9-11.475 1.023-14.816-4.969-1.783-3.198-.794-4.94.251-6.779.913-1.607 1.869-3.288 1.056-6.082-.598-1.806-2.183-3.216-4.103-4.637 2.248.513 4.335 1.845 5.903 3.909 2.946-3.812 7.436-5.224 11.786-3.389 4.21 1.694 7.858 6.636 6.455 13.413-.562 2.4-1.544 4.518-2.947 6.494-.129.184-.26.366-.395.545z"
+                        fill="#FF8D89"></path>
+                    <path
+                        d="M46.266 42c-.41 0-.82.31-.82.828 0 3.31-2.668 6.103-6.054 6.103H13.744l2.257-2.276a.817.817 0 000-1.138.8.8 0 00-1.128 0l-3.59 3.62c-.103.104-.103.208-.206.208a.665.665 0 000 .62c0 .104.103.207.205.207l3.59 3.621a.78.78 0 00.514.207.78.78 0 00.513-.207.817.817 0 000-1.138l-2.257-2.276h25.75c4.206 0 7.592-3.413 7.592-7.655.103-.414-.308-.724-.718-.724zM8.819 13a.81.81 0 00.819-.826c0-3.303 2.66-6.09 6.038-6.09h25.689l-2.252 2.27a.815.815 0 000 1.136.778.778 0 00.512.207c.204 0 .41-.103.511-.207l3.583-3.613c.102-.103.102-.206.204-.206a.663.663 0 000-.62c0-.103-.102-.206-.204-.206l-3.583-3.613a.798.798 0 00-1.125 0 .815.815 0 000 1.136l2.251 2.27H15.574C11.377 4.639 8 8.046 8 12.279c0 .31.307.722.819.722z"
+                        fill="#FFA3A3"></path>
+                </svg></div>
+
+            <div class="care">Care Coordination</div>
+
+        </button>
+        <button class="square" data-id="pharmacy">
+            <div class="sodx"><svg viewBox="0 0 55 55" fill="none" width="81" height="81">
+                    <path class="icon-pharmacy_inline_svg__blob"
+                        d="M27.358 49.283c8.505-11.248 27.783-.721 27.641-16.728 0-10.095-23.001-5.746-23.001-13.983C31.998 6.732 26.887-.61 20.753.04 7.145 1.482 5.929 10.336 12.574 21.146 18.197 30.294 0 30.927 0 42.253c0 11.325 18.711 18.278 27.358 7.03z"
+                        fill="#F6E1E1"></path>
+                    <path
+                        d="M42.597 48H12.403C11.076 48 10 46.986 10 45.734c0-1.251 1.076-2.266 2.403-2.266h30.194c1.327 0 2.403 1.015 2.403 2.266C44.964 46.986 43.888 48 42.597 48zM38.832 1c1.9 0 3.443 1.42 3.443 3.213 0 1.183-.682 2.232-1.722 2.773-1.111.642-2.116 1.454-2.832 2.502l-2.29 3.424h7.166c1.327 0 2.403 1.014 2.403 2.265-.036 1.252-1.111 2.266-2.403 2.266H12.403c-1.327 0-2.403-1.014-2.403-2.266 0-1.25 1.076-2.265 2.403-2.265h18.23l3.645-5.453c.717-1.048 1.075-2.232 1.183-3.483v-.034C35.605 2.32 37.111 1 38.831 1z"
+                        fill="#FFA3A3"></path>
+                    <path
+                        d="M43.028 16.556H11.973l4.626 10.146a8.791 8.791 0 010 7.474L11.973 44.32h31.055l-4.626-10.145a8.791 8.791 0 010-7.474l4.626-10.146z"
+                        fill="#FF6464"></path>
+                    <path
+                        d="M21.08 17.385c1.225 2.927 2.571 6.14 6.018 7.533 7.752 3.207 8.92 11.907 3.294 15.346-5.385 3.462-10.777 2.703-15.771-1.75l1.978-4.338a8.791 8.791 0 000-7.474l-4.626-10.146h8.757c.117.273.233.55.35.83z"
+                        fill="#FF7E7D"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M39.958 2.326c-1.145 0-2.084.88-2.084 1.955 0 .096-.082.173-.184.173s-.184-.077-.184-.173c0-1.266 1.103-2.301 2.452-2.301.102 0 .184.077.184.173 0 .095-.082.173-.184.173z"
+                        fill="#FFEAF1"></path>
+                </svg></div>
+
+            <div class="care">Pharmacy</div>
+
+
+        </button>
+        <button class="square" data-id="primary">
+            <div class="sodx"><svg viewBox="0 0 55 55" fill="none" width="81" height="81">
+                    <g clip-path="url(#icon-conditions_inline_svg__clip0)">
+                        <path class="icon-conditions_inline_svg__blob"
+                            d="M8.534 27.523C-5.912 21.298-.672.783 14.199.075 29.637-1.34 25.388 17.62 32.611 21.581c7.223 3.961 10.339-4.245 17.137 1.839s6.373 14.148 2.266 20.798c-4.107 6.65-11.33 9.62-11.33 9.62-4.816 1.84-10.48 2.406-16.146-5.376-4.39-6.083-4.532-15.987-16.004-20.94z"
+                            fill="#DCDEF6"></path>
+                        <path
+                            d="M29.192 50.326H25.98V55h3.212v-4.674zm4.918-4.87c-.562.546-1.124.955-1.967 1.364-.984.545-3.232 1.227-4.637 1.227-1.687 0-3.654-.545-4.638-1.09-3.372-1.773-4.075-4.773-4.918-8.317-.562-2.182-1.124-4.772-2.53-7.362-.843-1.636-1.967-3.136-3.232-4.772-3.232-4.226-6.324-8.725-4.778-14.997 1.827-7.09 9.134-8.043 12.788-7.498l-.421 2.59c-.281 0-8.01-1.09-9.697 5.454-1.264 5.044 1.406 8.861 4.357 12.679 1.264 1.636 2.389 3.408 3.372 5.18 1.546 3 2.249 5.59 2.67 8.044.843 3.545 1.406 5.453 3.514 6.544.702.273 2.248.818 3.372.818 1.124 0 2.81-.545 3.373-.818 2.248-1.09 2.67-3 3.653-6.544.563-2.318 1.265-5.044 2.811-8.044.984-1.772 2.248-3.408 3.373-5.18 2.95-3.954 5.62-7.635 4.356-12.68-1.686-6.543-9.415-5.725-9.696-5.59l-.422-2.59c3.654-.545 10.961.41 12.788 7.635 1.546 6.408-1.686 10.634-4.778 14.86-1.265 1.637-2.389 3.136-3.232 4.772-1.405 2.727-1.967 5.181-2.53 7.363-.562 2.726-1.124 5.18-2.95 6.953z"
+                            fill="#8296FF"></path>
+                        <path
+                            d="M38.747 30.596l-2.108-1.09c-1.546 2.999-2.248 5.998-2.81 8.18-.844 3.408-1.265 5.044-3.092 5.998-.562.273-1.967.682-2.951.818-.984 0-2.39-.545-2.951-.818-1.827-.954-2.39-2.59-3.092-5.998-.562-2.318-1.264-5.181-2.81-8.18l-2.39 1.09-1.686.818c1.406 2.59 1.968 5.044 2.39 7.226.843 3.544 1.686 6.953 5.34 8.862 1.124.545 3.232 1.227 4.918 1.227s3.794-.682 4.918-1.227c3.654-1.91 4.497-5.318 5.34-8.862.562-2.181 1.125-4.636 2.39-7.226l-1.406-.818zM22.024 7.283c1.265-1.227 1.265-3.136 0-4.363a3.207 3.207 0 00-4.496 0c-1.265 1.227-1.265 3.136 0 4.363a3.207 3.207 0 004.497 0zm15.599.137c1.265-1.228 1.265-3.136 0-4.363a3.207 3.207 0 00-4.497 0c-1.264 1.227-1.264 3.135 0 4.362a3.207 3.207 0 004.497 0z"
+                            fill="#3D4DCD"></path>
+                        <path d="M29.893 45.32h-4.497v5.181h4.497v-5.18z" fill="#3D4DCD"></path>
+                    </g>
+                    <defs>
+                        <clipPath id="icon-conditions_inline_svg__clip0">
+                            <path fill="#fff" d="M0 0h55v55H0z"></path>
+                        </clipPath>
+                    </defs>
+                </svg></div>
+
+            <div class="care">Primary Care</div>
+
+        </button>
+        <button class="square" data-id="home">
+            <div class="sodx"><svg viewBox="0 0 55 55" fill="none" width="81" height="81">
+                    <path class="icon-homecare_inline_svg__blob" opacity="0.5"
+                        d="M42.853 50.316c-8.133 5.184-18.124 6.072-26.467 2.629a27.203 27.203 0 01-5.925-3.406c-3.82-2.925-6.8-6.887-8.588-11.404A27 27 0 01.05 26.584C.891 13.514 13.722-1.443 27.498.112 33.773.778 37.91 5.406 39.663 11.07c.946 3.036 2.138 5.516 4.277 7.775 1.928 2 4.592 2.777 6.765 4.369 2.139 1.592 3.295 3.887 3.962 6.516 2.068 8.182-5.925 16.846-11.814 20.585z"
+                        fill="#FFF279"></path>
+                    <path
+                        d="M46 24.395V46.86c0 .38-.154.722-.422.912a.85.85 0 01-.576.228H10.036a.947.947 0 01-.614-.228C9.154 47.582 9 47.24 9 46.86V24.395c0-1.977.96-3.763 2.533-4.714L25.658 9.608A3.636 3.636 0 0127.27 9h.499a3.025 3.025 0 011.612.608l3.53 2.509.346.266 10.248 7.298C45.04 20.594 46 22.418 46 24.395z"
+                        fill="#FFD443"></path>
+                    <path
+                        d="M43.582 33.404c-1.92 8.21-9.058 10.149-10.363 10.453-4.798 1.026-9.788-1.597-10.978-6.5-1.42-9.313-7.369-8.857-12.857-11.1-.116-.038-.23-.114-.346-.152v-2.509c0-1.862.921-3.573 2.38-4.485l13.357-9.54c.46-.343.998-.533 1.535-.571h.46a3.31 3.31 0 011.65.57l3.609 2.395a.536.536 0 01-.077.228c-.46 1.673-1.497 3.269-.46 6.12 1.88 5.17 14.239 6.006 12.09 15.09z"
+                        fill="#FFC619"></path>
+                    <path
+                        d="M27.615 31.997c-3.224 0-5.834 2.585-5.834 5.778V48H33.45V37.775c0-3.193-2.61-5.778-5.834-5.778z"
+                        fill="#FFAB00"></path>
+                    <path
+                        d="M9.482 24c-.84 0-1.643-.47-2.101-1.29-.726-1.29-.382-2.97.764-3.791L26.182 6.41a2.323 2.323 0 012.636 0l18.037 12.51c1.146.82 1.49 2.501.764 3.791s-2.254 1.68-3.4.86L27.48 12l-16.7 11.57c-.382.273-.84.43-1.299.43z"
+                        fill="#FFD443"></path>
+                </svg></div>
+
+            <div class="care">Home Care &amp; Remote <br>Monitoring</div>
+
+
+        </button>
+        <button class="square" data-id="telemedicine">
+            <div class="sodx"><svg viewBox="0 0 55 55" fill="none" width="81" height="81">
+                    <g clip-path="url(#icon-telemedicine_inline_svg__clip0)">
+                        <path class="icon-telemedicine_inline_svg__blob"
+                            d="M36.383 44.087c5.584 3.669 12.537 1.376 15.923-4.28.936-1.528 5.656-10.317-.144-20.176-6.412-10.891-18.408.19-24.82-3.02C20.93 13.402 24.244 7.9 16.75 6.6 9.294 5.3 2.88 11.415.9 19.63c-2.018 8.178 0 16.394 0 16.394 1.404 5.388 6.484 12.764 13.58 9.668 7.097-3.095 12.068-9.285 21.902-1.605z"
+                            fill="#D6F0E0"></path>
+                        <path
+                            d="M41 8.215v38.57C41 49.098 39.132 51 36.86 51H18.14C15.868 51 14 49.098 14 46.785V8.215c0-.634.146-1.194.366-1.716C15.026 5.007 16.454 4 18.14 4h18.72C39.168 4 41 5.902 41 8.215z"
+                            fill="#00C48C"></path>
+                        <path
+                            d="M14 45.888V8.125c0-.62.146-1.168.366-1.679l.007-.014c.777-.026 1.572.027 2.378.168 4.058.704 4.946 2.64 5.926 4.778.83 1.81 1.725 3.762 4.665 5.234 2.466 1.234 5.758.355 9.24-.576 1.455-.388 2.943-.786 4.418-1.042v30.8c-1.574-.185-3.143-.738-4.617-1.707-7.815-6.104-12.56-3.447-17.74-.545-1.338.75-2.705 1.515-4.162 2.15-.161.07-.322.136-.481.196z"
+                            fill="#00B984"></path>
+                        <path
+                            d="M29.445 8h-3.894C25.236 8 25 7.786 25 7.5c0-.286.236-.5.55-.5h3.895c.315 0 .551.214.551.5.04.286-.236.5-.55.5z"
+                            fill="#01836A"></path>
+                        <path
+                            d="M30.87 25.323h-1.338V23.98c0-1.144-.942-2.09-2.081-2.09-1.14 0-2.032.946-2.032 2.09v1.344H24.08c-1.14 0-2.081.896-2.081 2.041s.941 2.09 2.081 2.09h1.338v1.344c0 1.145.941 2.09 2.081 2.09 1.14 0 2.081-.945 2.081-2.09v-1.343h1.338c1.14 0 2.081-.946 2.081-2.091a2.132 2.132 0 00-2.13-2.04z"
+                            fill="#87E7AD"></path>
+                        <path
+                            d="M32.915 26.852c-.664-.507-1.452-.687-2.419-.524-2.305.4-2.899 1.88-3.508 3.398-.317.788-.637 1.586-1.203 2.25a2.087 2.087 0 001.715.913c1.14 0 2.08-.946 2.08-2.09v-1.345h1.339c1.14 0 2.08-.945 2.08-2.09a2.141 2.141 0 00-.084-.512z"
+                            fill="#9CEABC"></path>
+                    </g>
+                    <defs>
+                        <clipPath id="icon-telemedicine_inline_svg__clip0">
+                            <path fill="#fff" d="M0 0h55v55H0z"></path>
+                        </clipPath>
+                    </defs>
+                </svg></div>
+
+            <div class="care">Telemedice &amp; Virtual <br>Health</div>
+
+
+        </button>
+    </div>
+</div>
+
+
+<!-- ------------------tablet-container---------------- -->
+
+<div class="container tablet">
+    <div class="row">
+        <div class="tablets1 col-sm-9">
+            <h2 class="head4">Need access to our sandbox?</h2>
+            <h4 class="quote">Contact our sales team and tell us about your use case</h4>
+            <button class="btn getstart"> Get Started </button>
+        </div>
+        <div class="tabletimg col-sm-3" style="padding-bottom: 100px;">
+            <svg viewBox="10 20 300 400" fill="none" class="ekHaR6hVGAzlNHMxm6uoc">
+                <path
+                    d="M248.807 227.194a9.729 9.729 0 01-10.31 7.227 9.765 9.765 0 01-3.101-.833c-4.267-1.908-6.66-6.682-5.432-11.362a9.728 9.728 0 0110.31-7.228 9.773 9.773 0 013.101.833c4.267 1.908 6.66 6.683 5.432 11.363z"
+                    fill="#00C48C"></path>
+                <path
+                    d="M243.375 215.831l-4.878 18.59a9.765 9.765 0 01-3.101-.833l4.878-18.59a9.773 9.773 0 013.101.833z"
+                    fill="#01836A"></path>
+                <path
+                    d="M196.816 232.438c3.407 5.902 10.96 7.953 16.882 4.534 5.895-3.403 7.937-10.958 4.514-16.887l-5.615-9.726-21.396 12.353 5.615 9.726z"
+                    fill="#0F1551" fill-opacity="0.75"></path>
+                <path
+                    d="M212.613 210.386l-5.616-9.726c-3.407-5.902-10.959-7.953-16.882-4.534-5.894 3.404-7.937 10.958-4.514 16.887l5.615 9.726 21.397-12.353z"
+                    fill="#0F1551" fill-opacity="0.2"></path>
+                <path
+                    d="M206.67 17.542c-5.895 3.403-7.938 10.958-4.515 16.886 3.407 5.902 10.959 7.953 16.882 4.534l9.715-5.61-12.367-21.42-9.715 5.61z"
+                    fill="#0F1551" fill-opacity="0.75"></path>
+                <path
+                    d="M228.736 33.325l9.716-5.609c5.895-3.403 7.937-10.958 4.514-16.887-3.407-5.901-10.959-7.952-16.881-4.533l-9.716 5.61 12.367 21.42z"
+                    fill="#0F1551" fill-opacity="0.2"></path>
+                <path
+                    d="M283.168 217.191c-3.407-5.902-10.959-7.953-16.881-4.534-5.895 3.403-7.938 10.958-4.515 16.887l5.616 9.726 21.396-12.353-5.616-9.726z"
+                    fill="#0F1551" fill-opacity="0.75"></path>
+                <path
+                    d="M267.388 239.27l5.615 9.727c3.407 5.901 10.96 7.952 16.882 4.533 5.895-3.403 7.938-10.958 4.515-16.886l-5.616-9.727-21.396 12.353z"
+                    fill="#0F1551" fill-opacity="0.2"></path>
+                <path
+                    d="M272.604 152.946a9.729 9.729 0 01-10.31 7.227 9.765 9.765 0 01-3.101-.833c-4.267-1.907-6.66-6.682-5.432-11.362a9.728 9.728 0 0110.31-7.228 9.766 9.766 0 013.101.833c4.251 1.881 6.66 6.683 5.432 11.363z"
+                    fill="#00C48C"></path>
+                <path
+                    d="M267.156 141.556l-4.878 18.59a9.766 9.766 0 01-3.1-.833l4.893-18.563c.54.053 1.068.149 1.585.287a12.27 12.27 0 011.5.519z"
+                    fill="#01836A"></path>
+                <path
+                    d="M222.548 181.813a9.728 9.728 0 01-10.31 7.227 9.646 9.646 0 01-3.1-.832c-4.268-1.908-6.66-6.683-5.432-11.363a9.727 9.727 0 0110.309-7.227 9.639 9.639 0 013.101.832c4.252 1.881 6.66 6.683 5.432 11.363z"
+                    fill="#00C48C"></path>
+                <path
+                    d="M217.101 170.423l-4.878 18.59a9.773 9.773 0 01-3.101-.833l4.894-18.562a9.677 9.677 0 011.585.287c.516.138 1.022.32 1.5.518z"
+                    fill="#01836A"></path>
+                <path
+                    d="M122.438 239.547a9.728 9.728 0 01-10.31 7.228 9.766 9.766 0 01-3.1-.833c-4.268-1.908-6.661-6.683-5.432-11.363 1.228-4.679 5.651-7.67 10.309-7.227a9.765 9.765 0 013.101.833c4.251 1.88 6.66 6.682 5.432 11.362z"
+                    fill="#00C48C"></path>
+                <path
+                    d="M116.99 228.157l-4.877 18.59a9.658 9.658 0 01-3.101-.833l4.894-18.562a9.753 9.753 0 011.584.287c.517.139 1.022.321 1.5.518z"
+                    fill="#01836A"></path>
+                <path
+                    d="M259.767 108.337c-5.895 3.403-7.938 10.958-4.515 16.887 3.407 5.901 10.959 7.952 16.881 4.533l9.716-5.609-12.367-21.42-9.715 5.609z"
+                    fill="#0F1551" fill-opacity="0.75"></path>
+                <path
+                    d="M281.849 124.149l9.716-5.61c5.895-3.403 7.937-10.958 4.514-16.886-3.407-5.902-10.959-7.953-16.881-4.534l-9.716 5.609 12.367 21.421z"
+                    fill="#0F1551" fill-opacity="0.2"></path>
+                <path
+                    d="M306.964 142.944c-3.407-5.901-10.959-7.952-16.881-4.533-5.895 3.403-7.938 10.958-4.515 16.887l5.616 9.726 21.396-12.353-5.616-9.727z"
+                    fill="#0F1551" fill-opacity="0.75"></path>
+                <path
+                    d="M291.184 165.024l5.615 9.727c3.408 5.901 10.96 7.952 16.882 4.533 5.895-3.403 7.938-10.958 4.515-16.886l-5.616-9.727-21.396 12.353z"
+                    fill="#0F1551" fill-opacity="0.2"></path>
+                <path
+                    d="M259.415 291.45c-3.407-5.902-10.96-7.953-16.882-4.534-5.895 3.404-7.937 10.958-4.514 16.887l5.615 9.727 21.396-12.354-5.615-9.726z"
+                    fill="#0F1551" fill-opacity="0.75"></path>
+                <path
+                    d="M243.634 313.53l5.616 9.726c3.407 5.902 10.959 7.953 16.881 4.534 5.895-3.404 7.938-10.958 4.515-16.887l-5.615-9.727-21.397 12.354z"
+                    fill="#0F1551" fill-opacity="0.2"></path>
+                <path
+                    d="M248.807 227.194a9.729 9.729 0 01-10.31 7.227 9.765 9.765 0 01-3.101-.833c-4.267-1.908-6.66-6.682-5.432-11.362a9.728 9.728 0 0110.31-7.228 9.773 9.773 0 013.101.833c4.267 1.908 6.66 6.683 5.432 11.363z"
+                    fill="#00C48C"></path>
+                <path
+                    d="M243.375 215.831l-4.878 18.59a9.765 9.765 0 01-3.101-.833l4.878-18.59a9.773 9.773 0 013.101.833z"
+                    fill="#01836A"></path>
+                <path
+                    d="M195.775 136.285a9.728 9.728 0 01-10.31 7.227 9.658 9.658 0 01-3.101-.832c-4.267-1.908-6.66-6.683-5.432-11.363a9.728 9.728 0 0110.31-7.227 9.658 9.658 0 013.1.832c4.268 1.908 6.661 6.683 5.433 11.363z"
+                    fill="#00C48C"></path>
+                <path
+                    d="M190.343 124.922l-4.878 18.59a9.765 9.765 0 01-3.101-.833l4.878-18.589a9.658 9.658 0 013.101.832z"
+                    fill="#01836A"></path>
+                <path
+                    d="M143.8 141.558c3.408 5.901 10.96 7.953 16.882 4.533 5.895-3.403 7.938-10.957 4.515-16.886l-5.616-9.727-21.396 12.353 5.615 9.727z"
+                    fill="#0F1551" fill-opacity="0.75"></path>
+                <path
+                    d="M159.581 119.478l-5.616-9.726c-3.423-5.929-10.986-7.937-16.881-4.534-5.895 3.404-7.938 10.958-4.515 16.887l5.616 9.726 21.396-12.353z"
+                    fill="#0F1551" fill-opacity="0.2"></path>
+                <path
+                    d="M182.953 91.704c-5.895 3.403-7.937 10.957-4.514 16.886 3.407 5.902 10.959 7.953 16.881 4.534l9.716-5.61-12.367-21.42-9.716 5.61z"
+                    fill="#0F1551" fill-opacity="0.75"></path>
+                <path
+                    d="M205.036 107.515l9.715-5.609c5.895-3.404 7.938-10.958 4.515-16.887-3.407-5.901-10.959-7.953-16.881-4.533l-9.716 5.609 12.367 21.42z"
+                    fill="#0F1551" fill-opacity="0.2"></path>
+                <path
+                    d="M199.246 255.808a9.729 9.729 0 01-10.31 7.227 9.765 9.765 0 01-3.101-.833c-4.267-1.907-6.66-6.682-5.432-11.362a9.727 9.727 0 0110.31-7.227 9.658 9.658 0 013.101.832c4.267 1.908 6.66 6.683 5.432 11.363z"
+                    fill="#00C48C"></path>
+                <path
+                    d="M193.814 244.445l-4.878 18.59a9.765 9.765 0 01-3.101-.833l4.878-18.59a9.766 9.766 0 013.101.833z"
+                    fill="#01836A"></path>
+                <path
+                    d="M173.035 306.713c3.407 5.902 10.96 7.953 16.882 4.534 5.895-3.404 7.938-10.958 4.515-16.887l-5.616-9.726-21.396 12.353 5.615 9.726z"
+                    fill="#0F1551" fill-opacity="0.75"></path>
+                <path
+                    d="M188.816 284.634l-5.616-9.727c-3.407-5.901-10.959-7.953-16.881-4.533-5.895 3.403-7.938 10.957-4.515 16.886l5.616 9.727 21.396-12.353z"
+                    fill="#0F1551" fill-opacity="0.2"></path>
+                <path
+                    d="M349.087 169.515a9.727 9.727 0 01-10.309 7.227 9.639 9.639 0 01-3.101-.832c-4.267-1.908-6.66-6.683-5.432-11.363a9.727 9.727 0 0110.309-7.227 9.639 9.639 0 013.101.833c4.267 1.907 6.66 6.682 5.432 11.362z"
+                    fill="#00C48C"></path>
+                <path
+                    d="M343.655 158.152l-4.877 18.59a9.658 9.658 0 01-3.101-.832l4.878-18.59c.54.052 1.068.148 1.585.287.532.166 1.022.32 1.515.545z"
+                    fill="#01836A"></path>
+                <path
+                    d="M336.266 124.933c-5.895 3.404-7.938 10.958-4.515 16.887 3.408 5.901 10.96 7.953 16.882 4.533l9.716-5.609-12.367-21.42-9.716 5.609z"
+                    fill="#0F1551" fill-opacity="0.75"></path>
+                <path
+                    d="M358.349 140.745l9.715-5.609c5.895-3.404 7.938-10.958 4.515-16.887-3.407-5.902-10.959-7.953-16.882-4.534l-9.715 5.61 12.367 21.42z"
+                    fill="#0F1551" fill-opacity="0.2"></path>
+                <path
+                    d="M383.464 159.54c-3.407-5.901-10.959-7.953-16.882-4.534-5.895 3.404-7.937 10.958-4.514 16.887l5.615 9.727 21.397-12.353-5.616-9.727z"
+                    fill="#0F1551" fill-opacity="0.75"></path>
+                <path
+                    d="M367.667 181.592l5.616 9.727c3.407 5.901 10.959 7.953 16.882 4.533 5.895-3.403 7.937-10.957 4.514-16.886l-5.615-9.727-21.397 12.353z"
+                    fill="#0F1551" fill-opacity="0.2"></path>
+                <path
+                    d="M372.857 95.283a9.728 9.728 0 01-10.31 7.228 9.773 9.773 0 01-3.101-.833c-4.267-1.908-6.66-6.683-5.432-11.362a9.728 9.728 0 0110.31-7.228 9.743 9.743 0 013.101.833c4.267 1.908 6.66 6.683 5.432 11.362z"
+                    fill="#00C48C"></path>
+                <path
+                    d="M367.409 83.894l-4.878 18.589a9.646 9.646 0 01-3.1-.832l4.893-18.563c.54.053 1.068.149 1.585.287.517.139 1.022.32 1.5.519z"
+                    fill="#01836A"></path>
+                <path
+                    d="M322.886 124.134a9.727 9.727 0 01-10.309 7.227 9.639 9.639 0 01-3.101-.833c-4.267-1.907-6.66-6.682-5.432-11.362a9.727 9.727 0 0110.31-7.227 9.646 9.646 0 013.1.832c4.267 1.908 6.66 6.683 5.432 11.363z"
+                    fill="#00C48C"></path>
+                <path
+                    d="M317.439 112.744l-4.878 18.59a9.766 9.766 0 01-3.101-.833l4.878-18.59c.54.053 1.068.148 1.585.287.532.166 1.038.348 1.516.546z"
+                    fill="#01836A"></path>
+                <path
+                    d="M320.865 100.529c3.408 5.902 10.96 7.953 16.882 4.534 5.895-3.404 7.938-10.958 4.515-16.887l-5.616-9.727-21.396 12.353 5.615 9.727z"
+                    fill="#0F1551" fill-opacity="0.75"></path>
+                <path
+                    d="M336.646 78.45l-5.615-9.727c-3.408-5.902-10.96-7.953-16.882-4.534-5.895 3.404-7.938 10.958-4.515 16.887l5.616 9.726 21.396-12.353z"
+                    fill="#0F1551" fill-opacity="0.2"></path>
+                <path
+                    d="M360.02 50.674c-5.895 3.404-7.938 10.958-4.515 16.887 3.407 5.901 10.96 7.953 16.882 4.533l9.715-5.609-12.367-21.42-9.715 5.61z"
+                    fill="#0F1551" fill-opacity="0.75"></path>
+                <path
+                    d="M382.102 66.486l9.716-5.61c5.922-3.419 7.938-10.957 4.515-16.886-3.408-5.902-10.96-7.953-16.882-4.534l-9.716 5.61 12.367 21.42z"
+                    fill="#0F1551" fill-opacity="0.2"></path>
+                <path
+                    d="M407.218 85.281c-3.408-5.902-10.96-7.953-16.882-4.534-5.895 3.404-7.938 10.958-4.515 16.887l5.616 9.727 21.396-12.354-5.615-9.726z"
+                    fill="#0F1551" fill-opacity="0.75"></path>
+                <path
+                    d="M391.437 107.361l5.616 9.726c3.407 5.902 10.959 7.953 16.881 4.534 5.895-3.404 7.938-10.958 4.515-16.887l-5.616-9.726-21.396 12.353z"
+                    fill="#0F1551" fill-opacity="0.2"></path>
+                <path
+                    d="M325.306 243.79a9.727 9.727 0 01-10.309 7.227 9.639 9.639 0 01-3.101-.832c-4.267-1.908-6.66-6.683-5.432-11.363a9.727 9.727 0 0110.309-7.227 9.639 9.639 0 013.101.832c4.267 1.908 6.66 6.683 5.432 11.363z"
+                    fill="#00C48C"></path>
+                <path
+                    d="M319.874 232.427l-4.877 18.59a9.639 9.639 0 01-3.101-.833l4.878-18.589a9.646 9.646 0 013.1.832z"
+                    fill="#01836A"></path>
+                <path
+                    d="M275.118 272.766a9.728 9.728 0 01-10.31 7.228 9.773 9.773 0 01-3.101-.833c-4.267-1.908-6.66-6.683-5.432-11.363a9.729 9.729 0 0110.31-7.227 9.765 9.765 0 013.101.833c4.267 1.908 6.66 6.682 5.432 11.362z"
+                    fill="#00C48C"></path>
+                <path
+                    d="M269.686 261.404l-4.878 18.589a9.658 9.658 0 01-3.101-.832l4.878-18.59a9.765 9.765 0 013.101.833z"
+                    fill="#01836A"></path>
+                <path
+                    d="M359.668 233.787c-3.407-5.902-10.959-7.953-16.882-4.534-5.895 3.404-7.937 10.958-4.514 16.887l5.615 9.727 21.397-12.354-5.616-9.726z"
+                    fill="#0F1551" fill-opacity="0.75"></path>
+                <path
+                    d="M343.887 255.867l5.616 9.726c3.407 5.902 10.959 7.953 16.882 4.534 5.894-3.404 7.937-10.958 4.514-16.887l-5.615-9.726-21.397 12.353z"
+                    fill="#0F1551" fill-opacity="0.2"></path>
+                <path
+                    d="M349.087 169.515a9.727 9.727 0 01-10.309 7.227 9.639 9.639 0 01-3.101-.832c-4.267-1.908-6.66-6.683-5.432-11.363a9.727 9.727 0 0110.309-7.227 9.639 9.639 0 013.101.833c4.267 1.907 6.66 6.682 5.432 11.362z"
+                    fill="#00C48C"></path>
+                <path
+                    d="M343.655 158.152l-4.877 18.59a9.658 9.658 0 01-3.101-.832l4.878-18.59c.54.052 1.068.148 1.585.287.532.166 1.022.32 1.515.545z"
+                    fill="#01836A"></path>
+                <path
+                    d="M259.454 108.299c-5.895 3.403-7.938 10.958-4.515 16.887 3.408 5.901 10.96 7.952 16.882 4.533l9.716-5.609-12.367-21.42-9.716 5.609z"
+                    fill="#0F1551" fill-opacity="0.75"></path>
+                <path
+                    d="M281.521 124.083l9.715-5.609c5.895-3.404 7.938-10.958 4.515-16.887-3.407-5.902-10.96-7.953-16.882-4.534l-9.715 5.61 12.367 21.42z"
+                    fill="#0F1551" fill-opacity="0.2"></path>
+                <path
+                    d="M296.071 78.634a9.728 9.728 0 01-10.31 7.227 9.743 9.743 0 01-3.1-.833c-4.268-1.907-6.661-6.682-5.433-11.362a9.728 9.728 0 0110.31-7.227 9.743 9.743 0 013.101.832c4.267 1.908 6.66 6.683 5.432 11.363z"
+                    fill="#00C48C"></path>
+                <path
+                    d="M290.623 67.244l-4.877 18.59a9.743 9.743 0 01-3.101-.833l4.893-18.563c.54.053 1.069.149 1.585.287.517.14 1.022.321 1.5.519z"
+                    fill="#01836A"></path>
+                <path
+                    d="M283.234 34.024c-5.895 3.404-7.938 10.958-4.515 16.887 3.408 5.901 10.96 7.953 16.882 4.534l9.716-5.61-12.367-21.42-9.716 5.61z"
+                    fill="#0F1551" fill-opacity="0.75"></path>
+                <path
+                    d="M305.316 49.836l9.716-5.61c5.895-3.403 7.938-10.957 4.515-16.886-3.407-5.902-10.96-7.953-16.882-4.534l-9.716 5.61 12.367 21.42z"
+                    fill="#0F1551" fill-opacity="0.2"></path>
+                <path
+                    d="M299.499 198.145a9.728 9.728 0 01-10.31 7.227 9.658 9.658 0 01-3.101-.832c-4.267-1.908-6.66-6.683-5.432-11.363a9.728 9.728 0 0110.31-7.227 9.658 9.658 0 013.101.832c4.267 1.908 6.66 6.683 5.432 11.363z"
+                    fill="#00C48C"></path>
+                <path
+                    d="M294.067 186.782l-4.878 18.59a9.784 9.784 0 01-1.585-.287 9.762 9.762 0 01-1.515-.546l4.877-18.589c.54.052 1.068.148 1.585.287.533.166 1.022.32 1.516.545z"
+                    fill="#01836A"></path>
+                <path
+                    d="M10.714 208.911c-5.895 3.403-7.938 10.957-4.515 16.886 3.407 5.902 10.96 7.953 16.882 4.534l9.715-5.61-12.367-21.42-9.715 5.61z"
+                    fill="#0F1551" fill-opacity="0.75"></path>
+                <path
+                    d="M32.78 224.694l9.716-5.609c5.895-3.403 7.938-10.958 4.515-16.887-3.408-5.901-10.96-7.952-16.882-4.533l-9.716 5.609 12.367 21.42z"
+                    fill="#0F1551" fill-opacity="0.2" width="100" height="100" style="height: 100px;width: 100px;">
+                </path>
+            </svg>
+        </div>
     </div>
 </div>
