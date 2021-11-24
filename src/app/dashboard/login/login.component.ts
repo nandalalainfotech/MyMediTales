@@ -6,10 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-
+  public checkboxarray : any;
   constructor() { }
 
   ngOnInit(): void {
+  }
+  checkbox() {
+    this.checkboxarray = [
+      {
+       name: 'Remember',
+       //checked : true,
+       checkboxlabelname: 'Remainder  Me'
+      } 
+     ]
   }
 
 }
