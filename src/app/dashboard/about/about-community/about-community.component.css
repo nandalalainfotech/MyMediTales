@@ -1,5 +1,5 @@
+/* 
 
-/* ----------lady-container------------- */
 
 .community {
     overflow: hidden;
@@ -10,20 +10,19 @@
 }
 
 .full-community h1 {
-    font-size: 52px;
+    font-size: 49px;
     font-weight: 500;
     font-family: "Volte-Semibold",sans-serif;
     color: #fff;
-    margin-top: 50px;
-    margin-left: 40px;
-    /* letter-spacing: 0.125rem; */
+    margin-top: 30px;
+    margin-left: 20px;
 }
 
 .full-community p {
     font-family: "Lato",sans-serif;
     color: #fff;
-    font-size: 20px;
-    margin-left: 40px;
+    font-size: 18px;
+    margin-left: 20px;
     margin-top: 20px;
 }
 
@@ -43,40 +42,37 @@
 }
 
 .half-community img {
-    margin-top: -550px;
+    margin-top: -400px;
     margin-left: -70px;
     z-index: -2;
 }
 
 .half-community .community-mango {
     fill: #FFA51F;
-    width: 700px;
-    height: 680px;
-    margin-left: -25px;
-    margin-bottom:-100px;
+    width: 605px;
+    height: 580px;
+    margin-left: -40px;
+    margin-bottom:-180px;
     z-index: 1;
 }
-
-/* --------------gents-container------------------ */
 
 .men {
     position: relative;
     overflow: hidden;
     padding-top: 120px;
     padding-bottom: 120px;
-    padding-left: 32px;
-    padding-right: 32px;
 }
 
 .wow {
-    width: 101%;
+    width: 120%;
     height: 570px;
     position: relative;
     z-index: 1;
+    margin-left: -64px;
 }
 
 .text .potrait {
-    font-size: 54px;
+    font-size: 51px;
     letter-spacing: -.5px;
     font-family: "Lato",sans-serif;
     font-weight: 900;
@@ -86,7 +82,7 @@
 }
 
 .text .suffering {
-    font-size: 22px;
+    font-size: 20px;
     font-family: "Lato",sans-serif;
     display: block;
     color: #262224;
@@ -95,7 +91,7 @@
 .text .team {
     color: #5c5969;
     font-family: "Lato",sans-serif;
-    font-size: 18px;
+    font-size: 17px;
     font-family: 600;
     margin-top: 40px;
 }
@@ -112,9 +108,8 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    /* cursor: pointer; */
     border: 0;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .text a:hover {
@@ -122,10 +117,9 @@
 }
 
 .text {
-    padding-left: 50px;
+    padding-left: 80px;
 }
 
-/* ------------modals-container----------- */
 
 .white .breaking {
     font-size: 54px;
@@ -134,43 +128,25 @@
     font-family: "Lato",sans-serif;
     font-weight: 800;
     display: block;
-    /* margin-left: 60px; */
     margin-top: 0;
     margin-bottom: 10px;
+    margin-left: -38px;
 }
-
-/* .cancer {
-    padding-top: 40px;
-    padding-bottom: 120px;
-    padding-left: 32px;
-    padding-right: 32px;
-    max-width: 1320px;
-    margin-top: 0;
-    margin-right: auto;
-    margin-bottom: 0;
-    margin-left: auto;
-    font-family: "Lato",sans-serif;
-} */
 
 .white1 h4 {
     margin-bottom: 0;
-    /* margin-top: 15px; */
     font-size: 30px;
     font-weight: 900;
     letter-spacing: 1px;
-    /* line-height: 19px; */
     font-family: "Lato",sans-serif;
 }
 
-.white1 {
-    padding: 0px 40px 40px 20px;
-}
 .white1 p {
     font-size: 16px;
     color: #77748b;
     margin-bottom: 0;
     margin-top: 15px;
-    /* line-height: 26px; */
+    font-family: "Lato",sans-serif;
 }
 
 .modals {
@@ -179,30 +155,43 @@
 }
 
 .modals1 {
-    padding: 20px 20px;
+    padding: 20px 0px;
 }
 
 .modals2 {
-    padding: 20px 20px;
+    padding: 20px 0px;
 }
 
 .modals3 {
-    padding: 20px 20px;
+    padding: 20px 0px;
 }
 
 .modals4 {
-    padding: 20px 20px;
+    padding: 20px 0px;
 }
-/* -----------------chronic------------------ */
+
+.white1 .charles {
+    margin-left: -10px !important;
+}
+
+.white1 .tina {
+    margin-left: -10px !important;
+}
+
+.white1 .pam {
+    margin-left: -10px !important;
+}
+
+.white1 .devri {
+    margin-left: -10px !important;
+}
+
 
 .tablet{   
     background-color: #4656d6;
-    /* margin-left:200px;
-    margin-top:100px;*/
     margin-top:100px;
     height: 290px;
     width:100% !important;
-    /* box-sizing: border-box; */
     box-shadow: 0 44px 30px -20px rgb(1 7 67 / 25%), 0 30px 21px -20px rgb(1 7 67 / 40%);
    overflow:hidden !important;
    margin-bottom: 50px !important;
@@ -213,7 +202,6 @@
        width:180px;
        background-color: #010743;
        font-size: 18px;
-       /* margin-bottom: 5px; */
        border-radius: 1px;
        font-weight: bold;
        color:white;
@@ -222,9 +210,7 @@
         color:white;
         opacity: 0.8;
     }
-  .tablets1{
-      /* top: 50%;
-      left: 50%; */
+  .tablets1 {
       text-align: center;
       padding-top: 60px;
       color:white;
@@ -233,8 +219,7 @@
   }
   .tablet .tablets1 .head4{
       font-weight: bold;
-      font-size: 35px;
-     /* text-align: center; */
+      font-size: 30px;
   }
   .tablet .tablets1 .quote{
       padding-top: 10px;
@@ -244,4 +229,18 @@
   }
 
 
-
+ */
+ .getstart{
+    margin-top: 20px;;
+     height:50px;
+     width:180px;
+     background-color: #010743;
+     font-size: 18px;
+     border-radius: 1px;
+     font-weight: bold;
+     color:white;
+  }
+  .getstart:hover{
+      color:white;
+      opacity: 0.8;
+  }
