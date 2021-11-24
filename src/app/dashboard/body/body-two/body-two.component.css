@@ -1,6 +1,4 @@
-* {
-    box-sizing: border-box;
-}
+/* 
 
 
 
@@ -22,7 +20,6 @@
     margin-bottom: 97px;
 }
 .body-2 .mobile {
-    padding-left: 1px;
     padding-top: 113px;
     margin-bottom: 95px;
 
@@ -56,7 +53,7 @@
     margin-top: 10px;
 }
 
-/* -----patient-button----- */
+
 
 .mobile .patients {
     margin-top: 10px;
@@ -69,7 +66,6 @@
     border-radius: 5px;
     padding: 20px;
     background: none;
-    /* cursor: pointer; */
     flex-direction: column;
     box-sizing: border-box;   
 }
@@ -83,7 +79,6 @@
     border-bottom: hidden;
     border-radius: 5px;
     padding: 20px;
-    /* cursor: pointer; */
     background: none;
     flex-direction: column;
     box-sizing: border-box;  
@@ -95,12 +90,10 @@
     display:inline-block;
     width: 78%;
     border-color: #f4f5ff;
-    /* border-right-color: #4b5ee6; */
     border-right: 7px solid #e5e4ec;
     border-bottom: hidden;
     border-radius: 5px;
     padding: 20px;
-    /* cursor: pointer; */
     background: none;
     flex-direction: column;
     box-sizing: border-box;
@@ -247,7 +240,7 @@ box-shadow: 1px 2px 7px 0 rgb(0 0 0 / 6%), 5px 8px 19px 0 rgb(0 0 0 / 10%);
     font-weight: bold;
     border-radius: 2px;
     border: none;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .text-block3 .learn {
@@ -255,14 +248,14 @@ box-shadow: 1px 2px 7px 0 rgb(0 0 0 / 6%), 5px 8px 19px 0 rgb(0 0 0 / 10%);
     font-family: "Lato",sans-serif;
     font-size: large;
     padding: 20px;
-    /* cursor: pointer; */
 }
 
 .text-block2 .connect {
     font-family: "Lato",sans-serif;
-    font-size: 18px;
+    font-size: 19px;
     line-height: 1.5rem;
-    font-weight: 700;
+    font-weight: 500;
+    margin-bottom: 20px; 
 }
 
 .text-block2 .get {
@@ -296,7 +289,6 @@ box-shadow: 1px 2px 7px 0 rgb(0 0 0 / 6%), 5px 8px 19px 0 rgb(0 0 0 / 10%);
     font-family: "Lato",sans-serif;
     font-size: large;
     padding: 20px;
-    /* cursor: pointer; */
 }
 .text-block2 .pointer {
     height: 1rem;
@@ -305,9 +297,9 @@ box-shadow: 1px 2px 7px 0 rgb(0 0 0 / 6%), 5px 8px 19px 0 rgb(0 0 0 / 10%);
 }
 .patient-mobile .build {
     font-family: "Lato",sans-serif;
-    font-size: 20px;
+    font-size: 19px;
     line-height: 1.5rem;
-    font-weight: 700;
+    font-weight: 500;
     margin-top: 30px;
 }
 
@@ -329,14 +321,14 @@ box-shadow: 1px 2px 7px 0 rgb(0 0 0 / 6%), 5px 8px 19px 0 rgb(0 0 0 / 10%);
     font-size: 17px;
     font-weight: 600;
     bottom: 30px;
-    margin-left: -40px;
+    margin-left: 0px;
 }
 
 .patient-mobile  button:hover {
     opacity: 0.9;
 }
 
-.apps{
+.apps {
     margin-left:27px;
     margin-top: 20px;
 }
@@ -390,4 +382,4 @@ box-shadow: 1px 2px 7px 0 rgb(0 0 0 / 6%), 5px 8px 19px 0 rgb(0 0 0 / 10%);
     overflow: hidden;
     margin-right: -40px;
 }
-
+   */
