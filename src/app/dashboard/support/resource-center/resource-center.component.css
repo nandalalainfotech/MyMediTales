@@ -55,11 +55,6 @@ body {
     margin-top: -78px;
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
 
 div {
     display: block;
@@ -227,11 +222,7 @@ section {
     }
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
+
 
 div {
     display: block;
@@ -388,11 +379,7 @@ body {
     padding-bottom: 0.375 rem;
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
+
 
 
 /* 

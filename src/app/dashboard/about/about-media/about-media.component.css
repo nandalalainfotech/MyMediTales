@@ -1,4 +1,4 @@
-/* -----------speaker-container----------- */
+/* 
 
 .media {
     overflow: hidden;
@@ -11,8 +11,7 @@
 .full-media h1 {
     color: #fff;
     margin: 0;
-    font-size: 55px;
-    /* line-height: 16px; */
+    font-size: 45px;
     letter-spacing: -.5px;
     font-family: "Lato",sans-serif;
     font-weight: 400;
@@ -20,16 +19,15 @@
 
 .full-media p {
     color: #fff;
-    font-size: 20px;
+    font-size: 17px;
     margin-bottom: 0;
     margin-top: 17px;
-    /* line-height: 25px; */
     font-family: "Lato",sans-serif;
 }
 
 .full-media {
-    margin-top: 100px;
-    padding-left: 50px;
+    margin-top: 130px;
+    padding-left: 30px;
 }
 
 .media .media-wave {
@@ -46,22 +44,18 @@
 .half-media img {
     position: relative;
     z-index: 1;
-    margin-left: -70px;
-    /* max-width: 100%; */
-    /* height: auto; */
+    margin-left: -90px;
 }
 
-/* -----------resources-container------------- */
+
 
 .downloads {
     padding-top: 7.5rem;
     padding-bottom: 4.5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
 }
 
-.downloads h2 {
-    font-size: 54px;
+.downloads .black {
+    font-size: 48px;
     letter-spacing: -.5px;
     font-family: "Lato",sans-serif;
     font-weight: 400;
@@ -69,7 +63,8 @@
 
 .downloads p {
     color: #5c5969;
-    font-size: 18px;
+    font-size: 16px;
+    font-family: "Lato",sans-serif;
 }
 
 .button a {
@@ -78,15 +73,13 @@
     color: #fff;
     text-decoration: none;
     border-radius: 2px;
-    font-size: 16px;
+    font-size: 14px;
     border: 0;
-    cursor: pointer;
     font-family: "Lato",sans-serif;
 }
 
 .button {
     margin-top: 50px;
-    padding-left: 60px;
 }
 
 .button a:hover {
@@ -104,7 +97,6 @@
 .downloads1 .logo-box {
     padding: 2rem;
     background-color: #f6f6f9;
-    /* border-radius: 30px; */
 }
 
 .downloads2 .logo-box {
@@ -121,12 +113,8 @@
     padding-top: 70px;
 }
 
-.downloads1 {
-    padding-left: 30px;
-}
-
 .downloads1 h5 {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500;
     font-family: "Lato",sans-serif;
     color: #262224;
@@ -135,17 +123,18 @@
 .downloads1 p {
     color: #5c5969;
     font-family: "Lato",sans-serif;
-    font-size: 18px;
+    font-size: 15px;
+    margin-top: 20px;
 }
 
 .downloads1 .scenes {
     color: #4b5ee6;
     text-decoration: none;
-    cursor: pointer;
     font-family: "Lato",sans-serif;
-    font-size: 18px;
+    margin-top: 10px;
+    font-size: 16px;
 }
-.arrow{
+.arrow {
     margin-left: -90px;
     color: #4b5ee6;
     font-weight: lighter;
@@ -159,25 +148,25 @@
     background-color: #f6f6f9;
     width: 612px;
     height: 87px;
-    font-size: 1.125em;
+    font-size: 18px;
+    font-weight: lighter;
     border-radius: 0.5rem;
-    cursor: pointer;
-    margin-left: 30px;
-    padding-right: 194px;
+    font-family: "Lato",sans-serif;
+    margin-left: -18px;
+    padding-right: 103px;
 }
-/* --------------announcements-container------------- */
+
 .api {
-    padding-top: 7.5rem;
-    padding-bottom: 4.5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-top: 6.0rem;
+    padding-bottom: 3.0rem;
+    margin-left: -20px;
 }
 
 .announcement h2 {
-    font-size: 52px;
+    font-size: 46px;
     font-family: "Lato",sans-serif;
     line-height: 17px;
-    font-weight: 900;
+    font-weight: 500;
     padding-bottom: 50px;
     padding-top: 100px;
     padding-left: 10px;
@@ -188,7 +177,6 @@
     text-transform: uppercase;
     text-decoration: none;
     font-size: 16px;
-    /* line-height: 1.125em; */
     letter-spacing: 1px;
     color: #3846b5;
     font-weight: 400;
@@ -199,14 +187,11 @@
 .announcement1 .bold {
     text-decoration: none;
     color: rgb(63, 78, 197);
-    cursor: pointer;
     font-family: "Lato",sans-serif;
-    /* font-weight: 900; */
-    /* margin-top: 0.75rem; */
 }
 
 .announcement1 .bold h3 {
-    font-size: 39px;
+    font-size: 30px;
 }
 
 .announcement1 .bold h3:hover {
@@ -224,35 +209,27 @@
     margin-bottom: 160px;
     margin-left: -5px;
 }
-.announcement1 .newyork {
-    /* position: absolute; */
-    /* top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;  */
+.boom .newyork {
     object-fit: cover;
     z-index: -1;
 }
-.announcement1 .newyork:hover {
-    transform: scale(1.075);
-    /* transition: 0.3s; */
-    /* z-index: -1; */
+.boom .newyork:hover {
+    transition: .2s ease;
+    width: 350px;
+    height: 270px;
+    z-index: 1;
 }
 
-/* ------------------learn-container--------------- */
+
 .last {
-    padding-top: 7.5rem;
+    padding-top: 6.0rem;
     padding-bottom: 7.9rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
 
 }
 
 
 .learn h2 {
-    font-size: 54px;
+    font-size: 49px;
     font-family: "Lato",sans-serif;
     padding-left: 10px;
     padding-bottom: 30px;
@@ -278,7 +255,6 @@
 
 .learn2 {
     padding-left: 10px;
-    /* padding-bottom: 100px; */
 }
 
 .learn2 h6 {
@@ -290,25 +266,24 @@
 
 .learn2 p {
     color: #5c5969;
-    font-size: 18px;
+    font-size: 16px;
     padding-bottom: 20px;
+    font-family: "Lato",sans-serif;
 }
 
 .learn2 a {
     background-color: #4656d6;
     color: #fff;
     border-radius: 0.125rem;
-    padding: 0.75em 1.25em;
+    padding: 0.80em 1.50em;
     text-decoration: none;
     font-family: "Lato",sans-serif;
     font-size: 17px;
-    cursor: pointer;
     border: 0;
     display: inline-flex;
-    font-weight: bold;
-    letter-spacing: 1px;
+    font-weight: 600;
 }
 
 .learn2 a:hover {
     opacity: 0.9;
-}
+} */

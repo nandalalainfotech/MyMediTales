@@ -23,7 +23,7 @@
             "tsConfig": "tsconfig.app.json",
             "aot": true,
             "assets": [
-              "src/mymeditales-logo.ico",
+              "src/MyMeditales_Logo.ico",
               "src/assets"
             ],
             "styles": [
@@ -89,7 +89,7 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "assets": [
-              "src/mymeditales-logo.ico",
+              "src/MyMeditales_Logo.ico",
               "src/assets"
             ],
             "styles": [

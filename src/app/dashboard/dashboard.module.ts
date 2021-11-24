@@ -12,6 +12,7 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -29,11 +30,7 @@ import { HeaderComponent } from './header/header.component';
     Body7Component,
     Body8Component,
     AboutComponent,
-  
-
-    
-
-
+    LoginComponent,
 
   ],
   imports: [

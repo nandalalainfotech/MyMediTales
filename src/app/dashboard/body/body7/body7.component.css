@@ -2,9 +2,10 @@
 
 .care1{
     margin-top: 119px;
-    /* margin-left: -12%; */
     font-weight: 700;
     font-size: 28px;
+    font-family: "Lato",sans-serif;
+    letter-spacing: 1.2;
 }
 
 .care1.info { 
@@ -13,34 +14,21 @@
 .info { 
     margin: 0;
 }
-/* .info2{
-    font-size: 16px;
-} */
-*, *::before, *::after {
-    box-sizing: border-box;
-}
 .text1{
-    font-size: 16px;
-    font-family: 'lacto sanserif' sans-serif;
+    font-size: 15px;
+    font-family: "Lato",sans-serif;
 }
 .record{
     margin-left: 67px;
 
 }
-/* section p:last-child {
-    margin-bottom: 0;
-}
-section h1:first-child, section h2:first-child, section h3:first-child, section h4:first-child, section h5:first-child, section h6:first-child, section p:first-child {
-    margin-top: 0;
-} */
+
 p {
     color: #5c5969;
 }
 p {
     font-size: 15px;
-    /* line-height: 1.5em; */
-    /* margin-left: -12%; */
-    font-family: 'Lato sanserif' sans-serif!important;
+    font-family: "Lato",sans-serif;
     margin-top: 21px;
 }
 
@@ -49,16 +37,14 @@ p {
     color: #3846b5;
     transition: color .2s ease;
     text-decoration: none;
-    /* display: inline-flex; */
     align-self: flex-start;
     align-items: center;
     font-size: 1.125em;
-    /* margin-left: -11%; */
     margin-top: 1.25rem;
+    font-family: "Lato",sans-serif;
 }
 
 .learn2{
-     /* margin-right:10px; */
      height: 1rem;
      width: 1rem;
      margin-left: 1rem;
@@ -107,7 +93,6 @@ h4 .care1{
 
 .prof{
     position: relative;
-    margin-bottom: 51%;
-    margin-left: 46px;
-    /* margin-left: -100px; */
+    margin-bottom: 60%;
+    margin-left: 6px;
 }

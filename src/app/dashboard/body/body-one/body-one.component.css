@@ -1,20 +1,14 @@
-/*--------------------- CONTAINER-1------------ */
+/* 
 .container1 {
     background-color: #010743;
-    /* width: 100%; */
-    /* height: 120%; */
     position: relative;
     overflow: hidden;
     z-index: -2;
-    /* margin: 0%; */
-    /* padding: 0%; */
-    /* display: inline-block; */
 }
 
 .wave {
         fill: #fff;
         height: -5rem;
-        /* position: static; */
  }
 
 .wave {
@@ -27,48 +21,31 @@
     width: 100%;
     height: -5rem;
      fill: #fff;
-     /* user-select: none;  */
-     /* transform: scaleY(1.001); */
 }
 
 .container1 .full {
-    /* margin-left: -100px; */
-    /* padding-right: 100px; */
     padding-top: 20px;
-    padding-left: 80px;
+    padding-left: 50px;
 }
-
-/* .container1 .half {
-    margin-left: 300px;
-} */
 
 .container1 .full .medical {
     color: #fff;
     display: block;
     margin-top: 110px;
     text-align: left;
-    /* font-family: "Volte-Semibold",sans-serif; */
     font-family: "Lato",sans-serif;
-    font-size: 58px;
-    font-weight: bold;
+    font-size: 52px;
     line-height: 1em;
     letter-spacing: 2px;
-    /* padding-left: 50px; */
 }
-/* -------------- */
-
-/* --------------- */
 .container1 .full .where {
     color: #fff;
     display: block;
     font-size: 19px;
-    /* line-height: 1.5em; */
     font-family: "Lato",sans-serif;
-    /* box-sizing: border-box; */
     font-weight: 100;
     letter-spacing: 2.0;
     margin-top: 20px;
-    /* padding-left: 50px; */
 }
 
 .container1 .full .records {
@@ -77,18 +54,15 @@
     color: #fff;
     border: hidden;
     font-family: "Lato",sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
     letter-spacing: 1px;
-    cursor: pointer;
-    /* padding: 10px; */
     width: 32%;
     height: 52px;
 }
 
 .container1 .full .search {
     display: inline;  
-    /* padding: 5px; */
     height: 52px;
     width: 64%;
     font-size: 14px;
@@ -96,9 +70,7 @@
     color:rgb(119, 116, 139);
     margin-top: 20px;
     margin-left: 2px;
-    /* padding-bottom: 30px; */
     border: hidden;
-    /* border: 2px solid pink; */
 }
 
 .full .search .fa {
@@ -130,25 +102,19 @@
 
 .half .lady {
     z-index: 2;  
-    /* --------------------changas-----------   */
-    margin-left: 550px;   
+    margin-left: 480px;   
     margin-top: -300px;   
-    width: 624px;    
-    height: 535px;     
-    /* --------------------changas-----------   */
+    width: 544px;    
+    height: 475px;     
 }
 
 .half .mango {
-    /* --------------------changas-----------   */
-    margin-left: 600px;   
+    margin-left: 500px;   
     margin-top: -300px; 
-     width: 1100px;
-    height: 1000px;
-    /* --------------------changas-----------   */
+     width: 900px;
+    height: 900px;
     top: -4rem;
-    /* bottom: 10rem; */
     left: -15rem;
-    /* bottom: 3rem; */
 }
 * {
     box-sizing: border-box;
@@ -159,13 +125,12 @@
   .club input[type=text] {
     padding: 12px;
     font-size: 17px;
-    /* border: 1px solid white; */
     border-right: 0px solid black;
     float: left;
     width: 50%;
-    margin-left: -2px;
+    margin-left: -1px;
     border-left: 1px solid white ;
-    margin-top: -1.5px;
+    margin-top: 20px;
   }
 
   .club button {
@@ -175,12 +140,7 @@
     background: white;
     color: black;
     font-size: 17px;
+    margin-top: 20px;
     border: 1px solid grey;
-  
-    cursor: pointer;
-    
-
   }
-  /* .records{
-    margin-top: 2px;
-  } */
+   */
