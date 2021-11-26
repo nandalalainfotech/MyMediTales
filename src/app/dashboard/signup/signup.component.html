@@ -1,10 +1,5 @@
 <mat-horizontal-stepper [linear]="isLinear" #stepper class="card bg_img">
-
     <mat-step [stepControl]="formNameGroup" label="Name">
-        <!-- <mat-progress-bar class="mat-progress-bar filex-container" mode="determinate" value="17"></mat-progress-bar>
-        <div class="pg_nation">
-            <p>1/6</p>
-        </div> -->
         <!-- <i class="fa fa-home" style="margin-top: 22px;"></i> -->
         <!-- <div class="mat-step-icon">
             <span class="home">&#xe851;</span></div> -->
@@ -16,7 +11,6 @@
             <p class="text-muted">First,Choose Your Username.</p>
             <p class="username"><b>Username</b></p>
             <form [formGroup]="formNameGroup" class="form" apperance="Fill">
-
                 <div class="example-form">
                     <mat-form-field class="example-full-width">
                         <input class="input" matInput placeholder="" required formControlName="userName" />
@@ -31,20 +25,10 @@
                     <p class="text-muted acc-already">Have an Account Already?</p>
                     <p class="login"><a href="">Log In</a> &nbsp; <i class="fa fa-chevron-right icon " aria-hidden="true"></i></p>
                 </div>
-
             </form>
         </div>
-
-
-
     </mat-step>
-
-
     <mat-step [stepControl]="formEmailGroup" label="Email">
-        <!-- <mat-progress-bar class="mat-progress-bar filex-container" mode="determinate" value="34"></mat-progress-bar>
-        <div class="pg_nation">
-            <p>2/6</p>
-        </div> -->
         <div class="home7">
             <mat-icon class="home1">&#xe0be;</mat-icon>
         </div>
@@ -71,10 +55,6 @@
         </div>
     </mat-step>
     <mat-step [stepControl]="formPasswordGroup" label="Password">
-        <!-- <mat-progress-bar class="mat-progress-bar filex-container" mode="determinate" value="50"></mat-progress-bar>
-        <div class="pg_nation">
-            <p>3/6</p>
-        </div> -->
         <div class="home7">
             <mat-icon class="home2">&#xe897;</mat-icon>
         </div>
@@ -108,10 +88,6 @@
                             </mat-form-field>
                         </div>
                     </div>
-                    <!-- <div class="toggle_btn">
-                        <mat-slide-toggle>Show Password</mat-slide-toggle>
-                    </div> -->
-
                 </div>
                 <br />
                 <button class="button" mat-raised-button color="primary" matStepperNext>Create password</button>
@@ -154,8 +130,6 @@
         </div>
     </mat-step>
     <mat-step [stepControl]="formPinGroup" label="Pin">
-        <!-- <mat-progress-bar mode="determinate" value=80 class="git"></mat-progress-bar>
-        <p class="slit">5/6</p> -->
         <div class="home7">
             <mat-icon class="home4">&#xe0da;</mat-icon>
         </div>
@@ -191,8 +165,6 @@
     </mat-step>
     <mat-step [stepControl]="formTermGroup" label="Terms">
         <form [formGroup]="formTermGroup">
-            <!-- <mat-progress-bar mode="determinate" value=100 class="git"></mat-progress-bar>
-        <p class="slit">6/6</p> -->
             <div class="home7">
                 <mat-icon class="home5">&#xe560;</mat-icon>
             </div>
