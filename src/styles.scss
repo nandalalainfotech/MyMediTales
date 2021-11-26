@@ -32,12 +32,12 @@ body {
   font-family: "Lato", sans-serif;
 }
 .headermain {
-  height: 70px;
+  height: 83px;
   position: relative;
   text-decoration: none;
   list-style-type: none;
   // border: 1px solid red;
-  left: 7px;
+  left: -2%;
   width: 102.3% !important;
 }
 .headermain .imglogo {
@@ -46,9 +46,11 @@ body {
   flex-direction: row;
   margin: 7px 50px;
   font-size: 18px;
+  cursor: pointer;
 }
 .headermain .brandname {
-  padding-top: 13px;
+  padding-top: 21px;
+  cursor: pointer;
 }
 .dropdown-toggle::after {
   display: none !important;
@@ -63,7 +65,7 @@ body {
 .headermain .navbar-nav {
   display: flex !important;
   flex-direction: row !important;
-  margin: 7px 0;
+  margin: 16px 0;
   margin-left: 15px;
 }
 
@@ -470,7 +472,7 @@ body {
 /* --------------------login area----------------- */
 
 .headermain .navbar-right {
-  margin: 22px 0;
+  margin: 31px 0;
   margin-left: 20px;
 }
 .headermain .navbar-right li {
@@ -487,6 +489,7 @@ body {
   color: #4b5ee6 !important;
   text-decoration: none;
   list-style-type: none;
+  cursor: pointer;
 }
 .headermain .signup-li {
   margin-top: -4px;
@@ -4727,7 +4730,7 @@ section+section .mobile_tabview_style {
 // ------------------------------------------SOLUTION PROVIDERS END AREA---------------------
 
  // **************************support/resource center*****************************************//
-.section1 {
+.sectionre1 {
   background-color: #010743;
   overflow: hidden;
   position: relative;
