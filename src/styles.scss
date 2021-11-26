@@ -3628,8 +3628,8 @@ grid-gap: 4rem 29rem;
 
 .mappingstep1 {
     display: grid;
-    grid-gap: 50px 500px;
-    padding-left: 236px;
+    grid-gap: 50px 410px;
+    padding-left: 265px;
     grid-template-columns: auto auto;
 }
 
@@ -3641,7 +3641,7 @@ grid-gap: 4rem 29rem;
     }
     .imgright {
         text-align: right;
-        width: 337px;
+        width: 326px;
         display: block;
     }
 }
@@ -3653,7 +3653,7 @@ grid-gap: 4rem 29rem;
     margin-left: -9rem;
     margin-top: 49px;
     margin-bottom: -64px;
-    margin-left: -103px;
+    margin-left: -26px;
     width: 133px;
 }
 
@@ -3662,7 +3662,7 @@ grid-gap: 4rem 29rem;
     border-top: 1px dashed #1d34d9;
     margin-top: 49px;
     margin-bottom: -51px;
-    margin-left: 91px;
+    margin-left: 110px;
 }
 
 .mappingimg {
@@ -3676,11 +3676,10 @@ grid-gap: 4rem 29rem;
     }
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
+// img {
+//     max-width: 100%;
+//     height: auto;
+// }
 .mappingimg {
     display: flex;
     flex-direction: column;
@@ -3689,6 +3688,7 @@ img {
 .img_1 {
     display: flex;
     align-items: center;
+    margin-left: 44px;
 }
 
 .img_1+.step,
@@ -3767,6 +3767,7 @@ p {
     width: 25px;
     height: 1rem;
     color: #00C48C;
+    margin-right: 10px;
 }
 
 .img_style1+.mob_content1 {
@@ -4314,7 +4315,7 @@ p {
 
 @media (min-width: 48rem) {
     .mob_img {
-        width: 70%;
+        width: 65%;
         margin-right: 2rem;
         margin-bottom: 0;
     }
@@ -4353,8 +4354,8 @@ p {
     z-index: 1;
     position: absolute;
     width: 369px;
-    top: -185rem;
-    margin-left: 764px;
+    top: -175rem;
+    margin-left: 695px;
     bottom: 0px;
     font-size: medium;
 }
@@ -4368,9 +4369,9 @@ p {
 
 .section_style1.section_style2 {
     position: absolute;
-    top: 88rem;
-    left: 0rem;
-    width: 100rem;
+    top: 85rem;
+    left: 5rem;
+    width: 80rem;
     margin-right: 19px;
     padding-bottom: 0px;
 }
@@ -4399,6 +4400,11 @@ p {
     margin-left: 0rem;
     margin-right: 0rem;
     padding-right: 22px;
+}
+
+.img_logos {
+    max-width: 110px !important;
+    height: auto !important;
 }
 
 
@@ -4609,7 +4615,7 @@ p {
 
 .img_onerec_style+.img_onrec_content {
     margin-top: 2.5rem;
-    margin-right: -70px;
+    margin-right: 45px;
 }
 
 @media (min-width: 48rem) {
@@ -4685,6 +4691,14 @@ p {
 //         transform: scale(1.075);
 //     }
 // }
+.count:hover {
+    transform: scale(1.75);
+}
+
+.rule_content {
+    margin: 10px 0px 0px 45px;
+}
+
 .rule_content_para {
     width: 259px;
 }
