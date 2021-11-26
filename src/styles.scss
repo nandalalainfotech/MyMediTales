@@ -31,31 +31,28 @@
 /* -------------------- HEADER PART ----------------- */
 
 body {
-    box-sizing: border-box;
-    width: 100% !important;
-    overflow-x: hidden;
-    font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+  width: 100% !important;
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif;
 }
-
 .headermain {
-    height: 83px;
-    position: relative;
-    text-decoration: none;
-    list-style-type: none;
-    // border: 1px solid red;
-    left: -2%;
-    width: 102.3% !important;
+  height: 83px;
+  position: relative;
+  text-decoration: none;
+  list-style-type: none;
+  // border: 1px solid red;
+  left: -2%;
+  width: 102.3% !important;
 }
-
 .headermain .imglogo {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    margin: 7px 50px;
-    font-size: 18px;
-    cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin: 7px 50px;
+  font-size: 18px;
+  cursor: pointer;
 }
-
 .headermain .brandname {
     padding-top: 21px;
     cursor: pointer;
@@ -165,11 +162,11 @@ body {
 }
 
 .headermain .navbar-collapse .row-2 .developers {
-    margin-top: -15px;
+  margin-top: 0px !important;
 }
 
 .headermain .navbar-collapse .row-1 .payers {
-    margin-top: 10px;
+  margin-top: 10px !important;
 }
 
 .headermain .navbar-collapse .media-body {
@@ -201,10 +198,10 @@ body {
 }
 
 .headermain .navbar-collapse .row-3 {
-    margin: 0 !important;
-    margin-top: -10px !important;
-    background-color: #f6f6f9;
-    padding: 20px 0px !important;
+  margin: 0 !important;
+  margin-top: 30px !important;
+  background-color: #f6f6f9;
+  padding: 20px 0px !important;
 }
 
 .headermain .navbar-collapse .row3-li {
@@ -616,54 +613,301 @@ body {
 
 /* --------------------Header end area----------------- */
 
-.navbar-right {
-    margin-left: 20px;
-    margin-top: 20px;
-}
-
-.navbar-right li {
-    margin-left: 30px;
-}
-
-.signin {
-    color: #010743 !important;
-    font-size: 16px;
-}
-
-.signin span {
-    margin-left: 10px;
-}
-
-.signin:hover {
-    color: #4b5ee6 !important;
-    text-decoration: none;
-    list-style-type: none;
-}
-
-.signup-li {
-    margin-top: -3px;
-}
-
-.signup {
-    background-color: #4b5ee6 !important;
-    border-radius: 1px;
-    outline: none !important;
-    height: 33px !important;
-    width: 80px !important;
-    font-size: 16px;
-    padding-bottom: 4px !important;
-    color: white;
-    box-shadow: none !important;
-}
-
-.signup:hover {
-    opacity: 0.8 !important;
-    text-decoration: none;
-    list-style-type: none;
-}
-
 
 /* --------------------login end area----------------- */
+/* --------------------About-team starting area----------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.about-vision {
+  // border: 1px solid green;
+  /* overflow: hidden; */
+  width: 100%;
+}
+.about-vision .row {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+/* -----------section-1-------------- */
+.about-vision .section-1 {
+  overflow: hidden;
+  background-color: #010743;
+  position: relative;
+  z-index: -1;
+  margin: 0px;
+  padding: 0px;
+  //  padding-top: 0px;
+  height: 630px;
+  // border: 1px solid red;
+}
+.about-vision .section-1 .section1-wave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  width: 100%;
+  height: 5rem;
+  fill: #fff;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.about-vision .section-1 .section1-body {
+  margin-top: 170px;
+  margin-left: 50px;
+  /* padding-top: 200px; */
+}
+.about-vision .section-1 .section1-header {
+  font-size: 55px;
+  /* font-weight: 100px; */
+  font-family: "Lato", sans-serif;
+  color: #fff;
+  letter-spacing: 0px;
+  margin-left: -5px;
+}
+.about-vision .section-1 .section1-body .section1-text {
+  font-family: "Lato", sans-serif;
+  color: #fff;
+  font-size: 20px;
+  line-height: 35px;
+  margin-top: 20px;
+}
+
+.about-vision .section-1 .section1-svg1 {
+  /* position: absolute; */
+  fill: #ffa51f;
+  margin-top: 80px;
+  margin-left: 0px;
+  width: 600px;
+  height: 603px;
+  z-index: 1;
+}
+.about-vision .section-1 .section1-img .section1-img1 {
+  /* position: absolute; */
+  margin-left: -40px !important;
+  margin-top: -645px !important;
+  z-index: -2;
+  height: 510px !important;
+}
+
+/* -----------section-2-------------- */
+.about-vision .section-2 {
+  position: relative;
+  margin: 120px 0px;
+  // border: 1px solid red;
+}
+.about-vision .section-2 .section2-body {
+  margin-top: 100px;
+  margin-left: 50px;
+}
+.about-vision .section-2 .section2-heading {
+  font-weight: bold;
+  font-size: 50px;
+}
+.about-vision .section-2 .section2-text1 {
+  font-family: "Lato", sans-serif;
+  padding-top: 10px;
+  line-height: 25px;
+  font-size: 1.375rem;
+}
+.about-vision .section-2 .section2-text2 {
+  font-family: "Lato", sans-serif;
+  padding-top: 10px;
+  line-height: 1.5em;
+  color: #77748b;
+  font-size: 1.125em;
+}
+
+/* -----------section-4-------------- */
+.about-vision .section-4 {
+  position: relative;
+  margin: 120px 0px;
+  // border: 1px solid red;
+}
+.about-vision .section-4 .section4-heading {
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.about-vision .section-4 .section4-d1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.about-vision .section-4 .section4-img {
+  margin-left: 25px;
+  margin-right: 20px;
+}
+.about-vision .section-4 .Carequality {
+  margin-top: 10px;
+}
+.about-vision .section-4 .Commonwell {
+  margin-top: 10px;
+}
+.about-vision .section-4 .Validic {
+  margin-top: 10px;
+}
+.about-vision .section-4 .section4-d2 {
+  border-top: 1px solid #e5e4ec;
+  margin-top: 40px;
+  margin-left: 25px;
+  margin-right: 25px;
+  /* width: 200px; */
+  /* #e5e4ec */
+}
+
+.about-vision .section-4 .section4-d2 ul {
+  list-style: none;
+  margin-top: 40px;
+  margin-left: 0px;
+  padding-left: 0px;
+  color: #77748b;
+  display: grid;
+  grid-gap: 3rem;
+  grid: 1fr / auto-flow;
+  justify-content: center;
+}
+.about-vision .section-4 .section4-d2 li {
+  line-height: 1.25em;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 15px;
+}
+.about-vision .section-4 .section4-d2 li::before {
+  content: "";
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  min-width: 1em;
+  margin-right: 0.75em;
+  margin-bottom: -0.125em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNCAxNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTUgNVYwSDlWNUgxNFY5SDlWMTRINVY5SDBWNUg1WiIgZmlsbD0iI2IwYWZiZiIvPgo8L3N2Zz4K);
+}
+/* -----------section-5-------------- */
+.about-vision .section-5 {
+  position: relative;
+  margin: 120px 0px;
+  // border: 1px solid red;
+}
+.about-vision .section-5 .section5-h2 {
+  font-size: 3.375em;
+  font-weight: bold;
+  margin-left: -10px !important;
+}
+/* -----------section-6-------------- */
+.about-vision .section-6 {
+  position: relative;
+  margin-top: -70px;
+  // border: 1px solid red;
+  // height: 115px;
+}
+.about-vision .section-6 .coins {
+  margin-left: -25px !important;
+}
+.about-vision .section-6 .section6-body1 {
+  margin-left: 130px;
+  margin-top: -90px;
+}
+.about-vision .section-6 .section6-body1 h4 {
+  color: #262224;
+  font-size: 17px;
+  font-weight: bold;
+}
+.about-vision .section-6 .section6-body1 p {
+  /* margin-left: 20px; */
+  /* margin-top: 10px; */
+  color: #262224;
+  font-size: 0.9375em;
+}
+.about-vision .section-6 .section6-img .Identitycoin {
+  margin-left: 30px;
+  height: 112px;
+}
+.about-vision .section-6 .Identitycoin-header h4 {
+  margin-left: 160px;
+  margin-top: -80px;
+  font-size: 17px;
+  font-weight: bold;
+}
+.about-vision .section-6 .section6-body3 h4 {
+  margin-left: 130px;
+  margin-top: -90px;
+  color: #262224;
+  font-size: 17px;
+  font-weight: bold;
+}
+.about-vision .section-6 .section6-body3 p {
+  padding-left: 130px;
+  padding-top: -10px;
+  color: #262224;
+  font-size: 0.9375em;
+}
+/* -----------section-7-------------- */
+
+.section-7 {
+  background-color: #4656d6;
+  /* margin-left: 110px; */
+  /* margin-top:100px; */
+  margin-top: 100px;
+  height: 290px;
+  width: 100% !important;
+  box-sizing: border-box;
+  box-shadow: 0 44px 30px -20px rgb(1 7 67 / 25%),
+    0 30px 21px -20px rgb(1 7 67 / 40%);
+  overflow: hidden !important;
+  margin-bottom: 50px !important;
+  // border: 1px solid red;
+}
+.section-7 .section7-getstart {
+  margin-top: 20px;
+  height: 50px;
+  width: 180px;
+  background-color: #010743;
+  font-size: 18px;
+  /* margin-bottom: 5px; */
+  border-radius: 1px;
+  font-weight: bold;
+  color: white;
+}
+.section-7 .section7-getstart:hover {
+  color: white;
+  opacity: 0.8;
+}
+.section-7 .section7-1 {
+  /* top: 50%;
+    left: 50%; */
+  text-align: center;
+  padding-top: 60px;
+  color: white;
+  letter-spacing: 1px;
+  padding-left: 212px;
+}
+.section-7 .section7-1 .header2 {
+  font-weight: bold;
+  font-size: 35px;
+  /* text-align: center; */
+}
+.section-7 .section7-1 .header4 {
+  padding-top: 10px;
+  font-size: 22px;
+  opacity: 0.8;
+  font-family: "Lato", sans-serif;
+}
+.section-7 .section7-img1 {
+  margin-bottom: 100px;
+  float: right;
+  left: 25px !important;
+  z-index: 1;
+}
+
+/* --------------------About-team end area----------------- */
 
 
 /* -------------------- Footer ----------------- */
@@ -3051,56 +3295,53 @@ h4 .care1 {
 /* ---------------------------termcontainer-1------------------------------ */
 
 .termcontainer1 {
-    background-color: #010743;
-    overflow: hidden;
-    height: 650px;
-    position: relative;
-    z-index: -1;
-    /* top: 0; */
+  background-color: #010743;
+  overflow: hidden;
+  height: 620px !important;
+  position: relative;
+  z-index: -1;
+  /* top: 0; */
 }
-
-.termcontainer1 .termladyimg {
-    position: relative;
-    margin-top: 100px;
-    margin-left: 0px;
-    z-index: 1;
+.termcontainer1 .termsrow .termladyimg {
+  position: relative;
+  margin-top: 30px;
+  margin-left: 0px;
+  z-index: 1;
+  height: 550px;
 }
-
-.termcontainer1 .termstext {
-    padding-left: 100px;
-    margin-top: 120px;
-    color: white;
-    font-family: "Lato", sans-serif;
+.termcontainer1 .termsrow .termstext {
+  padding-left: 100px;
+  margin-top: 60px;
+  color: white;
+  font-family: "Lato", sans-serif;
 }
-
 .termcontainer1 .termstext h1 {
-    font-weight: bold;
-    font-size: 55px;
-    letter-spacing: 1.5px;
-    color: #fff;
+  font-weight: bold;
+  font-size: 55px;
+  letter-spacing: 1.5px;
+  color: #fff;
 }
-
-.termcontainer1 .termstext .termsparag {
-    font-size: 1.12em;
-    line-height: 1.5em;
-    margin-top: 20px;
-    color: #fff;
+.termcontainer1 .termstext .termsparag p {
+  font-size: 18px;
+  line-height: 1.5em;
+  // margin-top: 10px;
+  color: #fff;
 }
 
 .termcontainer1 .wavelenth {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 3;
-    width: 100%;
-    height: 4rem;
-    fill: #fff;
-    margin-top: -50px;
-    user-select: none;
-    transform: scaleY(1.001);
-    padding-right: 0;
-    padding-left: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  width: 100%;
+  height: 4rem;
+  fill: #fff;
+  margin-top: -50px;
+  user-select: none;
+  transform: scaleY(1.001);
+  padding-right: 0;
+  padding-left: 0;
 }
 
 
@@ -3111,38 +3352,36 @@ h4 .care1 {
     position: relative;
     //   height: 610px;
 }
-
-.mainmenu {
-    //   position: relative;
-    width: 25%;
-    float: left;
-    overflow-y: scroll;
+.termcontainer2 .sidemenu {
+  position: sticky;
+  top: 0;
 }
 
 // --------------------------sidemenu start-------------------------------------
 .termcontainer2 .sidemenu {
-    position: sticky;
-    height: 640px;
-    top: 0;
-    bottom: 0;
-    //   max-height: 100vh;
+  // position: sticky;
+  width: 25%;
+  float: left;
+  overflow-y: scroll;
+  height: 640px;
+  // top: 0;
+  // bottom: 0;
+  //   max-height: 100vh;
 }
-
-.menutable {
-    font-size: 1.125em;
-    line-height: 1.0625em;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding-bottom: 1.75rem;
-    border-bottom: 1px solid #E5E4EC;
-    margin-bottom: 1.75rem;
-    margin-top: 1.5rem;
+.termcontainer2 .menutable {
+  font-size: 1.125em;
+  line-height: 1.0625em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid #e5e4ec;
+  margin-bottom: 1.75rem;
+  margin-top: 1.5rem;
 }
-
-.privacy-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.termcontainer2 .sidemenu .privacy-ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .termcontainer2 .sidemenu .privacy-ul .privacy-li {
@@ -3151,16 +3390,14 @@ h4 .care1 {
     line-height: 1.375em;
     color: #4656D6;
 }
-
-.sidemenu .privacy-li .link {
-    text-decoration: none;
-    color: #4656D6;
-    line-height: 1.375em;
-    list-style: none;
+.termcontainer2 .sidemenu .privacy-li .link {
+  text-decoration: none;
+  color: #4656d6;
+  line-height: 1.375em;
+  list-style: none;
 }
-
-.sidemenu .privacy-li .link:hover {
-    text-decoration: underline;
+.termcontainer2 .sidemenu .privacy-li .link:hover {
+  text-decoration: underline;
 }
 
 // --------------------------sidemenu end-------------------------------------
@@ -3191,26 +3428,23 @@ h4 .care1 {
 .termcontainer2 .date .link:hover {
     text-decoration: none;
 }
-
-.bodymenu ul li {
-    list-style-type: disc;
+.termcontainer2 .bodymenu ul li {
+  list-style-type: disc;
 }
-
-.bodymenu .p1 {
-    color: #413D46;
-    font-size: 1em;
-    font-family: "Lato", sans-serif;
-    line-height: 1.75em;
+.termcontainer2 .bodymenu .p1 {
+  color: #413d46;
+  font-size: 1em;
+  font-family: "Lato", sans-serif;
+  line-height: 1.75em;
 }
-
-.bodymenu .p2 {
-    font-family: "Lato", sans-serif;
-    line-height: 1.3em;
-    color: #262224;
-    font-size: 1.125em;
-    font-weight: 700;
-    letter-spacing: 1px;
-    padding: 20px 0px;
+.termcontainer2 .bodymenu .p2 {
+  font-family: "Lato", sans-serif;
+  line-height: 1.3em;
+  color: #262224;
+  font-size: 1.125em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 20px 0px;
 }
 
 .termcontainer2 .bodymenu h1 {
