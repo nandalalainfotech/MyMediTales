@@ -13,4 +13,8 @@ export class SolutionComponent implements OnInit {
     console.log("called")
   }
 
+  onActivate(event: any) {
+    window.scroll(0,0);
+  }
+  
 }

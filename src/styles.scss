@@ -1018,11 +1018,11 @@ body {
 }
 // -----------------------------policy-privacy end--------------------------------------------
 /* -------------------- Footer ----------------- */
-.row {
+.footertabcontainer .row {
   display: flex !important;
   flex-wrap: wrap !important;
-  margin-right: 0px !important; 
-  margin-left: -19px !important;
+  // margin-right: 0px !important; 
+  // margin-left: -19px !important;
 }
 .footertabcontainer{
 background-color: #F6F6F9;
@@ -1057,43 +1057,45 @@ padding:5px 0px;
 .navigationlink a:hover{
   color:black;
 }
-.media{
+.mediaimgs{
 margin-right:0px !important;
-float:right;
-padding-top:0px;
+padding-right:0px;
+// float:right;
+padding-top:5px;
 }
-.media img{
+.mediaimgs img{
   margin:15px 10px;
   margin-right:0px;
-  padding-left:4px;
+  padding-left:15px;
   cursor:pointer;
-
-
-  
-  // padding-left: 4px;
-  // cursor: pointer;
 }
-.media img:hover{
+.mediaimgs img:hover{
   opacity:0.6;
 }
-.onerec{
+.onereclogo{
   color: #5217ae;
   display: inline-block;
   font-size: 20px;
   font-weight: bolder;
-
 }
 .playstore{
+  margin-right: 0px !important;
   margin: 10px 10px;
  float:right !important;
+ margin-bottom:20px;
 }
 .footerlinks .parag01{
+  font-family: "Lato",sans-serif;
   font-size: 14px !important;
   line-height: 22px;
   color: #5c5969;
   text-align: right !important;
 //   padding-left: 70px !important;
 padding-top: 15px !important;
+}
+.footerlinks .parag02{
+  padding-top:0px !important;
+  font-size: 16px !important;
 }
 div .footerlinks svg{
   color:rgb(132, 62, 197);
@@ -1104,16 +1106,13 @@ div .footerlinks{
 .playstore1, .playstore2{
 cursor:pointer;
 }
-
 svg {
   fill: currentColor;
 }
-
 .red
 .fgddg {
   color: #00F076
 }
-
 /* ----------message box css style-------------- */
 .message-box svg .glyphicon-comment {
   z-index: 1029;
