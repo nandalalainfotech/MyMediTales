@@ -911,116 +911,102 @@ body {
 
 
 /* -------------------- Footer ----------------- */
-
-.row {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    margin-right: 0px !important;
-    margin-left: -19px !important;
+.footertabcontainer .row {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  // margin-right: 0px !important; 
+  // margin-left: -19px !important;
 }
-
-.footertabcontainer {
-    background-color: #F6F6F9;
+.footertabcontainer{
+background-color: #F6F6F9;
 }
-
-.footertab {
-    padding: 100px 0px;
+.footertab{
+padding:100px 0px;
 }
-
-.headings a:hover {
-    text-decoration: underline !important;
+.headings a:hover{
+text-decoration: underline !important;
 }
-
-.headings {
-    line-height: 30px;
-    background-color: #F6F6F9;
+.headings{
+  line-height: 30px;
+  background-color: #F6F6F9;
+  
 }
-
-.headings h5 {
-    padding: 5px 0px;
+.headings h5{
+padding:5px 0px;
 }
-
-.top {
-    font-weight: bold;
-    font-size: 16px;
-    padding-bottom: 18px !important;
-    letter-spacing: 0.5px;
-    color: #262224;
-    cursor: default;
+.top{
+  font-weight: bold;
+  font-size: 16px;
+  padding-bottom: 18px !important;
+  letter-spacing: 0.5px;
+  color:#262224;
+  cursor:default;
 }
-
-.navigationlink a {
-    color: #5c5969;
-    font-size: 15px;
-    cursor: pointer !important;
+.navigationlink a{
+  color: #5c5969;
+  font-size:15px;
+  cursor:pointer !important;
 }
-
-.navigationlink a:hover {
-    color: black;
+.navigationlink a:hover{
+  color:black;
 }
-
-.media {
-    margin-right: 0px !important;
-    float: right;
-    padding-top: 0px;
+.mediaimgs{
+margin-right:0px !important;
+padding-right:0px;
+// float:right;
+padding-top:5px;
 }
-
-.media img {
-    margin: 15px 10px;
-    margin-right: 0px;
-    padding-left: 4px;
-    cursor: pointer;
-    // padding-left: 4px;
-    // cursor: pointer;
+.mediaimgs img{
+  margin:15px 10px;
+  margin-right:0px;
+  padding-left:15px;
+  cursor:pointer;
 }
-
-.media img:hover {
-    opacity: 0.6;
+.mediaimgs img:hover{
+  opacity:0.6;
 }
-
-.onerec {
-    color: #5217ae;
-    display: inline-block;
-    font-size: 20px;
-    font-weight: bolder;
+.onereclogo{
+  color: #5217ae;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bolder;
 }
-
-.playstore {
-    margin: 10px 10px;
-    float: right !important;
+.playstore{
+  margin-right: 0px !important;
+  margin: 10px 10px;
+ float:right !important;
+ margin-bottom:20px;
 }
-
-.footerlinks .parag01 {
-    font-size: 14px !important;
-    line-height: 22px;
-    color: #5c5969;
-    text-align: right !important;
-    //   padding-left: 70px !important;
-    padding-top: 15px !important;
+.footerlinks .parag01{
+  font-family: "Lato",sans-serif;
+  font-size: 14px !important;
+  line-height: 22px;
+  color: #5c5969;
+  text-align: right !important;
+//   padding-left: 70px !important;
+padding-top: 15px !important;
 }
-
-div .footerlinks svg {
-    color: rgb(132, 62, 197);
+.footerlinks .parag02{
+  padding-top:0px !important;
+  font-size: 16px !important;
 }
-
-div .footerlinks {
-    text-align: right;
+div .footerlinks svg{
+  color:rgb(132, 62, 197);
 }
-
-.playstore1,
-.playstore2 {
-    cursor: pointer;
+div .footerlinks{
+ text-align: right;
 }
-
+.playstore1, .playstore2{
+cursor:pointer;
+}
 svg {
-    fill: currentColor;
+  fill: currentColor;
 }
-
-.red .fgddg {
-    color: #00F076
+.red
+.fgddg {
+  color: #00F076
 }
-
-
+// --------------------------Footer END--------------------------------------
 /* ----------message box css style-------------- */
 
 .message-box svg .glyphicon-comment {
