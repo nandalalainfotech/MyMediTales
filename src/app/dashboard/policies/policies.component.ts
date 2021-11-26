@@ -12,4 +12,8 @@ export class PoliciesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onActivate(event: any) {
+    window.scroll(0,0);
+  } 
+  
 }

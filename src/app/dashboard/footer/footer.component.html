@@ -3,37 +3,38 @@
         <div class="row headings">
             <div class="col-sm-2 col-md-2 col-xs-2 c1">
                 <h5 class="top"> Solutions </h5>
-                <p class="navigationlink"><a>Patients</a></p>
-                <p class="navigationlink"><a>Providers</a></p>
-                <p class="navigationlink"><a>Payers</a></p>
-                <p class="navigationlink"><a>Developers</a></p>
+                <p class="navigationlink"><a routerLink="../app-solution/app-patient-solution">Patients</a></p>
+                <p class="navigationlink"><a routerLink="../app-solution/app-providers-solution">Providers</a></p>
+                <p class="navigationlink"><a routerLink="../app-solution/app-payers-solution">Payers</a></p>
+                <p class="navigationlink"><a routerLink="../app-solution/app-developers-solution">Developers</a></p>
             </div>
             <div class="col-sm-2 col-md-2 col-xs-2 c1 c2">
                 <h5 class="top"> About </h5>
-                <p class="navigationlink"><a>Team</a></p>
-                <p class="navigationlink"><a>Patient Partners</a></p>
-                <p class="navigationlink"><a>Community</a></p>
-                <p class="navigationlink"><a>Media</a></p>
+                <p class="navigationlink"><a routerLink="./app-about/app-about-team">Team</a></p>
+                <p class="navigationlink"><a routerLink="./app-about/app-about-patient-partners">Patient Partners</a>
+                </p>
+                <p class="navigationlink"><a routerLink="./app-about/app-about-community">Community</a></p>
+                <p class="navigationlink"><a routerLink="./app-about/app-about-media">Media</a></p>
                 <p class="navigationlink"><a>Blog</a></p>
             </div>
             <div class="col-sm-2 col-md-2 col-xs-2 c1 c2">
                 <h5 class="top"> Support </h5>
-                <p class="navigationlink"><a>Help Center</a></p>
-                <p class="navigationlink"><a>Resource Center</a></p>
-                <p class="navigationlink"><a>Contact Us</a></p>
+                <p class="navigationlink"><a routerLink="./app-support/app-help-center">Help Center</a></p>
+                <p class="navigationlink"><a routerLink="./app-support/app-resource-center">Resource Center</a></p>
+                <p class="navigationlink"><a routerLink="./app-support/app-contactus">Contact Us</a></p>
             </div>
             <div class="col-sm-2 col-md-2 col-xs-2 c1 c2">
                 <h5 class="top"> Policies </h5>
-                <p class="navigationlink"><a>Privacy Policy</a></p>
-                <p class="navigationlink"><a>Terms</a></p>
-                <p class="navigationlink"><a>CARIN Code</a></p>
-                <p class="navigationlink"><a>Security</a></p>
-                <p class="navigationlink"><a>Policy Archive</a></p>
+                <p class="navigationlink"><a routerLink="./app-policies/app-privacy-policy">Privacy Policy</a></p>
+                <p class="navigationlink"><a routerLink="./app-policies/app-terms">Terms</a></p>
+                <p class="navigationlink"><a routerLink="./app-policies/app-carin-code">CARIN Code</a></p>
+                <p class="navigationlink"><a routerLink="./app-policies/app-security">Security</a></p>
+                <p class="navigationlink"><a routerLink="./app-policies/app-archive">Policy Archive</a></p>
             </div>
             <div class="col-sm-4 col-md-4 col-xs-4 footerlinks c1">
                 <!-- <img src="../../assets/"> -->
-                <div class="row">
-                    <div class="col-sm-12 col-xs-12 onerec">
+                <div class="">
+                    <div class=" onereclogo">
                         <p>MyMediTales</p>
                         <!-- <svg width="120" height="20" fill="none">
                             <path opacity="0.6" fill-rule="evenodd" clip-rule="evenodd"
@@ -49,20 +50,21 @@
                         <!-- <sup style="margin-bottom:30px;font-size:7px">TM</sup> -->
                     </div>
                 </div>
-                <div class="row media ">
-
-                    <a href="https://MyMediTales.medium.com/" target="_blank"> <img
-                            src="../../assets/icon-medium.svg"></a>
-                    <a href="https://twitter.com/MyMediTales" target="_blank"><img src="../../assets/twitter.svg"></a>
-                    <a href="https://www.instagram.com/getMyMediTales/" target="_blank"> <img
-                            src="../../assets/instagram.svg"></a>
-                    <a href="https://www.facebook.com/getMyMediTales/" target="_blank"><img
-                            src="../../assets/facebook.svg"></a>
-                    <a href="https://www.youtube.com/channel/UCOpCpmOZcog5Gjo0Tuxg58A" target="_blank"><img
-                            src="../../assets/youtube.svg"></a>
-
+                <div class="row " class="mediaimgs">
+                    <div >
+                        <a href="https://MyMediTales.medium.com/" target="_blank"> <img
+                                src="../../assets/icon-medium.svg"></a>
+                        <a href="https://twitter.com/MyMediTales" target="_blank"><img
+                                src="../../assets/twitter.svg"></a>
+                        <a href="https://www.instagram.com/getMyMediTales/" target="_blank"> <img
+                                src="../../assets/instagram.svg"></a>
+                        <a href="https://www.facebook.com/getMyMediTales/" target="_blank"><img
+                                src="../../assets/facebook.svg"></a>
+                        <a href="https://www.youtube.com/channel/UCOpCpmOZcog5Gjo0Tuxg58A" target="_blank"><img
+                                src="../../assets/youtube.svg"></a>
+                    </div>
                 </div>
-                <div class="row playstore" style="float:right;">
+                <div class="row playstore">
                     <div class="col-sm-2 ">
                     </div>
                     <div class="col-sm-5 col-xs-6 playstore1">
@@ -143,26 +145,21 @@
                             </svg>
                         </a>
                     </div>
-
-
                 </div>
-
                 <div>
-
-                    <p class="parag01" style="text-align: right;">
-                        MyMediTalesis built with love by a dedicated<br>team in NYC and powered by a
+                    <p class="parag01">
+                        MyMediTales is built with love by a dedicated<br>team in NYC and powered by a
                         diligent<br>community of
-                        advocates and patients.Fun fact:<br>the MyMediTalesapp is currently on its 5th<br>version and
+                        advocates and patients. Fun fact:<br>the MyMediTales app is currently on its 5th<br>version and
                         has
                         had
-                        over 150 iterations!<br>
+                        over 150 iterations!
                     </p>
-                    <p class="parag01" style="text-align: right;">© 2021 MyMediTales</p>
+                    <p class="parag01 parag02">© 2021 MyMediTales</p>
 
                 </div>
             </div>
         </div>
     </div>
-
 </div>
 <!-- message box -->
