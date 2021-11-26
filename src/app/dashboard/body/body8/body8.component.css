@@ -1,7 +1,5 @@
 .tablet{   
     background-color: #4656d6;
-    /* margin-left:200px;
-    margin-top:100px;*/
     margin-top:100px;
     height: 290px;
     width:93% !important;
@@ -17,7 +15,6 @@
        color: #fff;
        background-color: #010743;
        font-size: 18px;
-       /* margin-bottom: 5px; */
        border-radius: 1px;
        font-weight: bold;
        margin-right: -320px;
@@ -28,10 +25,7 @@
     }
   .tablet .tablets1{
       text-align: center;
-      /* padding-top: 50px; */
       color:white;
-      /* letter-spacing: 1px; */
-      /* padding-left:400px; */
   }
   .tablet .tablets1 .head4{
     font-weight: bold;
