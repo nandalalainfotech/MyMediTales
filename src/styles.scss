@@ -142,7 +142,7 @@ body {
 }
 
 .headermain .navbar-collapse .row-2 .developers {
-  margin-top: -15px !important;
+  margin-top: 0px !important;
 }
 .headermain .navbar-collapse .row-1 .payers {
   margin-top: 10px !important;
@@ -172,7 +172,7 @@ body {
 }
 .headermain .navbar-collapse .row-3 {
   margin: 0 !important;
-  margin-top: 10px !important;
+  margin-top: 30px !important;
   background-color: #f6f6f9;
   padding: 20px 0px !important;
 }
@@ -608,13 +608,13 @@ body {
 }
 .about-vision .section-2 .section2-text1 {
   font-family: "Lato", sans-serif;
-  padding-top: 0px;
+  padding-top: 10px;
   line-height: 25px;
   font-size: 1.375rem;
 }
 .about-vision .section-2 .section2-text2 {
   font-family: "Lato", sans-serif;
-  padding-top: 0px;
+  padding-top: 10px;
   line-height: 1.5em;
   color: #77748b;
   font-size: 1.125em;
@@ -813,20 +813,21 @@ body {
 .termcontainer1 {
   background-color: #010743;
   overflow: hidden;
-  height: 650px;
+  height: 620px !important;
   position: relative;
   z-index: -1;
   /* top: 0; */
 }
-.termcontainer1 .termladyimg {
+.termcontainer1 .termsrow .termladyimg {
   position: relative;
-  margin-top: 100px;
+  margin-top: 30px;
   margin-left: 0px;
   z-index: 1;
+  height: 550px;
 }
-.termcontainer1 .termstext {
+.termcontainer1 .termsrow .termstext {
   padding-left: 100px;
-  margin-top: 120px;
+  margin-top: 60px;
   color: white;
   font-family: "Lato", sans-serif;
 }
@@ -836,10 +837,10 @@ body {
   letter-spacing: 1.5px;
   color: #fff;
 }
-.termcontainer1 .termstext .termsparag {
-  font-size: 1.12em;
+.termcontainer1 .termstext .termsparag p {
+  font-size: 18px;
   line-height: 1.5em;
-  margin-top: 20px;
+  // margin-top: 10px;
   color: #fff;
 }
 .termcontainer1 .wavelenth {
@@ -863,21 +864,22 @@ body {
   position: relative;
   //   height: 610px;
 }
-.mainmenu {
-  //   position: relative;
-  width: 25%;
-  float: left;
-  overflow-y: scroll;
+.termcontainer2 .sidemenu {
+  position: sticky;
+  top: 0;
 }
 // --------------------------sidemenu start-------------------------------------
 .termcontainer2 .sidemenu {
-  position: sticky;
+  // position: sticky;
+  width: 25%;
+  float: left;
+  overflow-y: scroll;
   height: 640px;
-  top: 0;
-  bottom: 0;
+  // top: 0;
+  // bottom: 0;
   //   max-height: 100vh;
 }
-.menutable {
+.termcontainer2 .menutable {
   font-size: 1.125em;
   line-height: 1.0625em;
   text-transform: uppercase;
@@ -887,7 +889,7 @@ body {
   margin-bottom: 1.75rem;
   margin-top: 1.5rem;
 }
-.privacy-ul {
+.termcontainer2 .sidemenu .privacy-ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -898,13 +900,13 @@ body {
   line-height: 1.375em;
   color: #4656d6;
 }
-.sidemenu .privacy-li .link {
+.termcontainer2 .sidemenu .privacy-li .link {
   text-decoration: none;
   color: #4656d6;
   line-height: 1.375em;
   list-style: none;
 }
-.sidemenu .privacy-li .link:hover {
+.termcontainer2 .sidemenu .privacy-li .link:hover {
   text-decoration: underline;
 }
 // --------------------------sidemenu end-------------------------------------
@@ -931,16 +933,16 @@ body {
 .termcontainer2 .date .link:hover {
   text-decoration: none;
 }
-.bodymenu ul li {
+.termcontainer2 .bodymenu ul li {
   list-style-type: disc;
 }
-.bodymenu .p1 {
+.termcontainer2 .bodymenu .p1 {
   color: #413d46;
   font-size: 1em;
   font-family: "Lato", sans-serif;
   line-height: 1.75em;
 }
-.bodymenu .p2 {
+.termcontainer2 .bodymenu .p2 {
   font-family: "Lato", sans-serif;
   line-height: 1.3em;
   color: #262224;
