@@ -18,7 +18,7 @@
         background-color: #ffff;
         width: 791px;
         height: 690px;
-        margin-left: 295px;
+        margin-left: 159px;
         margin-top: 37px;
         margin-bottom: 100px;
     }
@@ -156,13 +156,13 @@
     }
     
     .text2 {
-        font-size: 35px;
+        font-size: 34px;
         top: 10px;
         padding-bottom: 90px;
         margin-left: 28%;
     }
     
-    .pass {
+    .passsg {
         margin-top: 0;
         margin-bottom: 1rem;
         margin-left: 29%;
@@ -393,15 +393,15 @@
         border-radius: 8px;
     }
     
-    .menu {
+    .signupsg {
         padding-top: 5%;
     }
     
-    .menu1 {
+    .signupsg1 {
         padding-top: 3%;
     }
     
-    .menu3 {
+    .signupsg3 {
         padding-top: 2%;
     }
     
