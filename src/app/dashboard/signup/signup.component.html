@@ -1,10 +1,5 @@
 <mat-horizontal-stepper [linear]="isLinear" #stepper class="card bg_img">
-
     <mat-step [stepControl]="formNameGroup" label="Name">
-        <!-- <mat-progress-bar class="mat-progress-bar filex-container" mode="determinate" value="17"></mat-progress-bar>
-        <div class="pg_nation">
-            <p>1/6</p>
-        </div> -->
         <!-- <i class="fa fa-home" style="margin-top: 22px;"></i> -->
         <!-- <div class="mat-step-icon">
             <span class="home">&#xe851;</span></div> -->
@@ -16,7 +11,6 @@
             <p class="text-muted">First,Choose Your Username.</p>
             <p class="username"><b>Username</b></p>
             <form [formGroup]="formNameGroup" class="form" apperance="Fill">
-
                 <div class="example-form">
                     <mat-form-field class="example-full-width">
                         <input class="input" matInput placeholder="" required formControlName="userName" />
@@ -31,20 +25,10 @@
                     <p class="text-muted acc-already">Have an Account Already?</p>
                     <p class="login"><a href="">Log In</a> &nbsp; <i class="fa fa-chevron-right icon " aria-hidden="true"></i></p>
                 </div>
-
             </form>
         </div>
-
-
-
     </mat-step>
-
-
     <mat-step [stepControl]="formEmailGroup" label="Email">
-        <!-- <mat-progress-bar class="mat-progress-bar filex-container" mode="determinate" value="34"></mat-progress-bar>
-        <div class="pg_nation">
-            <p>2/6</p>
-        </div> -->
         <div class="home7">
             <mat-icon class="home1">&#xe0be;</mat-icon>
         </div>
@@ -71,10 +55,6 @@
         </div>
     </mat-step>
     <mat-step [stepControl]="formPasswordGroup" label="Password">
-        <!-- <mat-progress-bar class="mat-progress-bar filex-container" mode="determinate" value="50"></mat-progress-bar>
-        <div class="pg_nation">
-            <p>3/6</p>
-        </div> -->
         <div class="home7">
             <mat-icon class="home2">&#xe897;</mat-icon>
         </div>
@@ -85,7 +65,7 @@
 
                         <p class="text2"><b>Create Your Password</b></p>
                         <div class="pw_align">
-                            <p class="pass">Password</p>
+                            <p class="passsg">Password</p>
                             <mat-form-field class="example-full-width">
                                 <input type="password" matInput placeholder="" required formControlName="passWord1" />
                                 <mat-error class="eror1" *ngIf="
@@ -97,7 +77,7 @@
                         </div>
 
                         <div class="conpw_align">
-                            <p class="pass">Confirm Password</p>
+                            <p class="passsg">Confirm Password</p>
                             <mat-form-field class="example-full-width">
                                 <input type="password" matInput placeholder="" required formControlName="passWord2" />
                                 <mat-error class="eror1" *ngIf="
@@ -108,10 +88,6 @@
                             </mat-form-field>
                         </div>
                     </div>
-                    <!-- <div class="toggle_btn">
-                        <mat-slide-toggle>Show Password</mat-slide-toggle>
-                    </div> -->
-
                 </div>
                 <br />
                 <button class="button" mat-raised-button color="primary" matStepperNext>Create password</button>
@@ -128,7 +104,7 @@
         <!-- <mat-progress-bar mode="determinate" value=70 class="git">
         </mat-progress-bar>
         <p class="slit">4/6</p> -->
-        <div class="menu1">
+        <div class="signupsg1">
             <i class="material-icons"></i>
             <mat-label class="mark">Secure Your Account</mat-label>
             <form [formGroup]="formPhoneGroup">
@@ -154,12 +130,10 @@
         </div>
     </mat-step>
     <mat-step [stepControl]="formPinGroup" label="Pin">
-        <!-- <mat-progress-bar mode="determinate" value=80 class="git"></mat-progress-bar>
-        <p class="slit">5/6</p> -->
         <div class="home7">
             <mat-icon class="home4">&#xe0da;</mat-icon>
         </div>
-        <div class="menu">
+        <div class="signupsg">
             <mat-label class="mark1">Enter PIN</mat-label>
             <form [formGroup]="formPinGroup">
                 <div>
@@ -191,12 +165,10 @@
     </mat-step>
     <mat-step [stepControl]="formTermGroup" label="Terms">
         <form [formGroup]="formTermGroup">
-            <!-- <mat-progress-bar mode="determinate" value=100 class="git"></mat-progress-bar>
-        <p class="slit">6/6</p> -->
             <div class="home7">
                 <mat-icon class="home5">&#xe560;</mat-icon>
             </div>
-            <div class="menu3">
+            <div class="signupsg3">
                 <mat-label class="mark">Terms of service</mat-label>
                 <p class="scroll">This User Agreement (the “Agreement”) set forth the terms and conditions upon which MyMediTales LLC (“our” “we” or “MyMediTales”) offers you ( “you” “your” or “End-User”), access to use MyMediTales’s mobile application (the “App”) or website
                     located at www.MyMediTales.com (including any successor site) (the “Website”). By clicking “I Agree”, by accessing the MyMediTales personal health record (the “Service”), using the App, using the Website or otherwise indicating your

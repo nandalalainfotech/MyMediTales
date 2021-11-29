@@ -530,6 +530,7 @@
      border-radius: 1px;
      font-weight: bold;
      color:white;
+     margin-left: -100px;
   }
   .getstart:hover{
       color:white;
