@@ -1068,7 +1068,7 @@ svg {
     background-color: #010743;
     position: relative;
     overflow: hidden;
-    z-index: -2;
+    // z-index: -2;
 }
 
 .all-wave {
@@ -1190,29 +1190,96 @@ svg {
 
 .max {
     margin-top: -1px;
-}
+    padding: 11.5px;
 
-.club input[type=text] {
-    padding: 12px;
-    font-size: 17px;
-    border-right: 0px solid black;
-    float: left;
-    width: 50%;
-    margin-left: -1px;
-    border-left: 1px solid white;
-    margin-top: 20px;
 }
+// -------------------
+.flea .input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+ 
+  .flea .search-icon {
+    padding: 10px;
+    background: #fff;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+    display: inline-block;
+    width: 50px;
+    height: 60px;
+  }
+  .flea .input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border:none;
+  }
+  .flea .input-field:focus {
+    border: 2px solid dodgerblue;
+  }
+  .flea .input-container .max-btn {
+    background-color: #5466f7;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 0px !important;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .flea .input-container .max-btn:hover {
+    opacity: 1;
+    color:#FFF;
+  }
+// --------------------
+// .svg-icon.search-icon {
+//     display: inline-block;
+//     width: 50px;
+//     height: 50px;
+   
+    /* On hover: blue strokes */
+    // &:focus,
+    // &:hover {
+    //   .search-path {
+    //     stroke: #299ecc;
+    //   }
+    // }
+  
+    /* On click: thicker black strokes  */
+//     &:active {
+//       .search-path {
+//         stroke: #111516;
+//         stroke-width: 2px;
+//       }
+//     }
+//   }
+  
+// .club input[type=text] {
+//     padding: 11.5px;
+//     font-size: 17px;
+    
+//     float: left;
+//     width: 50%;
+//     margin-left: -1px;
+    
+//     margin-top: 20px;
+   
+// }
 
-.club button {
-    float: left;
-    width: 10%;
-    padding: 13px;
-    background: white;
-    color: black;
-    font-size: 17px;
-    margin-top: 20px;
-    border: 1px solid grey;
-}
+// .club button {
+//     float: left;
+//     width: 10%;
+//     padding: 13px;
+//     background: white;
+//     color: black;
+//     font-size: 17px;
+//     margin-top: 20px;
+//     border: 1px solid grey;
+// }
 
 // -----------------------------body-two-------------------
 .mobile-box .column {
@@ -3368,7 +3435,7 @@ transform: scale(1.075)
 
 // -----------------------------policy-privacy start--------------------------------------------
 
-/* ---------------------------termcontainer-1------------------------------ */
+/* ---------------------------privacycontainer1------------------------------ */
 
 .privacycontainer1 {
   background-color: #010743;
@@ -3424,7 +3491,7 @@ transform: scale(1.075)
 }
 
 
-/* ---------------------------termcontainer-1 end------------------------------ */
+/* ---------------------------privacycontainer1 end------------------------------ */
 
 .privacycontainer2 {
     margin-top: 100px;
