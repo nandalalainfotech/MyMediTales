@@ -7418,13 +7418,13 @@ p {
     // -------------------------------PRIVACY POLICY/ POLICY ARCHIVE----------------------------------
     // -------------------------------PRIVACY POLICY/ POLICY ARCHIVE END----------------------------------
     //------------------------------------PRIVACY POLICY /CARIN CODE----------------------------------- 
-    .carincodecontainer {
+    .carincodecontainer1 {
         background-color: #010743;
         overflow: hidden;
-        /* height:610px; */
+       
     }
     
-    .carinladyimg {
+    .carincodecontainer1 .carinladyimg{
         position: relative;
         padding-right: 40px;
         z-index: 1;
@@ -7432,165 +7432,157 @@ p {
         width: 750px;
     }
     
-    img {
-        max-width: 100%;
-        height: auto;
-    }
+   
     
-    .termsrow {
-        padding-top: 50px;
-    }
-    
-    .termstext {
-        padding-left: 60px;
-        padding-top: 20px;
-        color: white;
-        font-family: "Lato", sans-serif;
-    }
-    
-    .termstext h1 {
-        font-weight: bold;
-        font-size: 53px;
-        letter-spacing: 1px;
-        margin-left: 11%;
-    }
-    
-    .termstext .termsparag {
-        font-size: 18px;
-        font-weight: 400;
-        margin-top: 1.25rem;
-        margin-left: 11%;
-    }
-    /* .termsrow svg{
-  background-color: #ffff;
-} */
-
-
-/* ----------------------------------- */
-
-.hrule {
+  .carincodecontainer1 .carincoderow{
+    padding-top:50px;
+   
+  }
+  .carincodecontainer1 .carincodetext{
+    padding-left:60px;
+    padding-top: 20px;
+    color:white;
+    font-family: "Lato",sans-serif;
+  }
+  .carincodecontainer1 .carincodetext h1{
+      font-weight: bold;
+      font-size: 53px;
+      letter-spacing: 1px;
+      margin-left: 11%;
+  } 
+  .carincodecontainer1 .carincodetext  .carincodeparag{
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 1.25rem;
+    margin-left: 11%;
+  }
+  
+  
+  /* ----------------------------------- */
+  
+  .carincodecontainer2 .hrule{
     border-bottom: 1px solid #cdccd9;
     padding-bottom: 3.125rem;
     position: relative;
     max-width: 62rem;
-}
-
-.sticky {
+  }
+  .carincodecontainer2 .sticky {
     position: -webkit-sticky;
-    position: -moz-sticky;
-    position: -ms-sticky;
-    position: -o-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
     position: sticky;
     top: 0px;
-}
-
-.termcontainer2 {
-    padding-top: 1px;
-}
-
-.menu {
+  }
+  .carincodecontainer2{
+    padding-top:1px;
+  }
+  .carincodecontainer2 .carincode-menu {
     width: 25%;
     float: left;
-    /* padding: 5px; */
-    /* border: 1px solid red; */
+    
     overflow-y: scroll;
-    height: 800px;
+    height:800px;
     position: sticky !important;
     top: 0;
     bottom: 0;
     overflow-y: scroll;
-    max-height: 100 vh;
-}
-
-.main {
+    
+    height: 1%;
+   
+  }
+  
+  .carincodecontainer2 .carincode-main {
     width: 75%;
     float: left;
     padding: 30px;
-    padding-top: 0;
-    /* border: 1px solid red; */
-}
-
-.menutable {
+    padding-top:0;
+    
+  }
+  .carincodecontainer2 .carincode-menu .carincode-menutable{
     text-align: center;
-    padding: 10px;
+    padding:10px;
     font-size: 18px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-.carintrust {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  }
+  .carincodecontainer2 .carincode-main .carintrust{
     font-size: 18px;
-    font-family: "Lato", sans-serif;
+    font-family: "Lato",sans-serif;
     color: #5c5969;
-}
-
-.menu ul li {
+  
+  }
+  .carincodecontainer2 .carincode-menu  ul li{
     list-style-type: none;
     margin-top: 1.5rem;
     line-height: 1.375em;
-}
-
-.carincodecircle {
-    position: absolute;
-    top: 0;
-    right: 0;
+  }
+ 
+  
+  .carincodecontainer2 .backsec {
+    font-family: "Volte-Semibold",sans-serif;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  .carincodecontainer2 .hrule h3{
+    font-family: "Volte-Semibold",sans-serif;
+    font-weight: bold;
+    font-size:30px;
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
+    
+  }
+  .carincodecontainer2 .p1{
+    color: #413d46;
+    font-size: 16px;
+    font-family: "Lato",sans-serif;
+    line-height: 1.75em;
+  }
+  
+  .carincodecontainer2 .p2{
+    font-family: "Lato",sans-serif;
+    line-height: 1.3;
+    color: #262224;
+    font-size: 18px;
+    font-weight:bold;
+    letter-spacing: 1px;
+    padding:20px 0px;
+  }
+  
+  .carincodecontainer2{
+    margin-top:100px !important;
+  }
+  .carincodecontainer2 .button-carin {
+    position: relative;
+    padding-left: 8px;
+    top: 30px;
+    right: 0px;
     border: 0;
     width: 2.25rem;
     height: 2.25rem;
     border-radius: 30rem;
-    background-color: #cdccd9;
+    background-color: #CDCCD9;
     color: #fff;
     cursor: pointer;
-    transition: background-color .2s ease;
-    margin-top: 1.875rem;
+    transition: background-color 0.2s ease;
 }
 
-// h1{
-//   font-family: "Volte-Semibold",sans-serif;
-//   font-weight: bold;
-//   font-size:45px;
-//   letter-spacing: 1px;
-// }
-.backsec {
-    font-family: "Volte-Semibold", sans-serif;
-    margin-bottom: 0.5rem;
-    font-weight: 700;
-    line-height: 1.2;
+/* .button-carin {
+    top: 25px;
+} */
+.carincodecontainer2 .button-carin::after {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+  transform: scale(0.7) !important;
+  transition: transform 0.1s ease-in-out;
+  top: 25%;
+  position: absolute;
 }
 
-h3 {
-    font-family: "Volte-Semibold", sans-serif;
-    font-weight: bold;
-    font-size: 30px;
-    margin-top: 1.875rem;
-    margin-bottom: 1.875rem;
-}
-
-.p1 {
-    color: #413d46;
-    font-size: 16px;
-    font-family: "Lato", sans-serif;
-    line-height: 1.75em;
-}
-
-.simplyput {
-    color: #5c5969;
-    font-size: 22px;
-    font-family: "Lato", sans-serif;
-    margin-top: 1.875rem;
-}
-
-.p2 {
-    font-family: "Lato", sans-serif;
-    line-height: 1.3;
-    color: #262224;
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    padding: 20px 0px;
-}
-
-div carincodecontainer2 {
-    margin-top: 500px !important;
+.carincodecontainer2 .button-carin:not(.collapsed)::after {
+  position: absolute;
+  top: 25%;
+  transition: transform 0.1s ease-in-out;
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
 }
 
 // ______________________PRIVACY POLICY /CARIN CODE END-----------------------------------
