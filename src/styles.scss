@@ -154,6 +154,7 @@ body {
 
 .headermain .navbar-collapse .solution-li {
     margin: 20px 5px;
+    padding:10px;
 }
 
 .headermain .navbar-collapse .solution-li:hover {
@@ -690,7 +691,8 @@ body {
   margin-left: -40px !important;
   margin-top: -645px !important;
   z-index: -2;
-  height: 510px !important;
+  width: 600px;
+  height: 515px !important;
 }
 
 /* -----------section-2-------------- */
