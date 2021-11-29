@@ -9014,3 +9014,181 @@ svg {
 }
 
 // --------------About- Patient-Partners END------------------------------------
+// ------------------Policies- Terms START---------------------------------------------
+
+.termscontainertop{
+    background-color: #010743;
+    overflow: hidden;
+    /* height:568px; */
+}
+.termladyimg {
+    position: relative;
+    padding-right:40px;
+    z-index: 1;
+    width:750px;
+     height:600px;
+}
+// img {
+//      max-width: 100%;
+//      height: auto;
+// }
+    
+.termsrows{
+    padding-top:50px;
+   
+}
+.termstexts{
+    padding-left:60px !important;
+    padding-top: 70px;;
+    color:white;
+    font-family: "Lato",sans-serif;
+}
+.termstexts h1{
+    font-weight: bold;
+    font-size: 55px;
+    letter-spacing: 1.5px;
+} 
+.termstexts  .termsparag{
+    font-size: 16px;
+    font-weight: 400;
+margin-top: 1.25rem;
+}
+.termsrows svg {
+    fill:#ffff; 
+    width:100%;
+    margin-top: -80px !important;
+  z-index: 1;
+
+}
+.termsrows .svg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    width: 100%;
+    height: 4rem;
+    fill: #fff;
+    /* margin-top:-50px; */
+    user-select: none;
+    transform: scaleY(1.001);
+}
+.hzrule{
+    border-bottom: 1px solid #cdccd9;
+    padding-bottom: 3.125rem;
+    position: relative;
+    max-width: 62rem;
+}
+.termscontainermain{
+    margin-top:75px;
+}
+.menu {
+    width: 25%;
+    float: left;
+    /* padding: 5px; */
+    /* border: 1px solid red; */
+    overflow-y: scroll;
+    height:800px;
+    position: sticky !important;
+    top: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    max-height: 100vh;
+  }
+  .termsmain {
+    width: 75%;
+    float: left;
+    padding: 30px;
+    /* border: 1px solid red; */
+  }
+.menutable{
+    text-align: center;
+    padding:10px;
+    font-size: 18px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.menu ul li{
+    list-style-type: none;
+    margin-top: 1.5rem;
+    line-height: 1.375em;
+}
+.dated{
+    font-size: 20px;
+}
+.termsmain h1{
+    font-family: "Volte-Semibold",sans-serif;
+    font-weight: bold;
+    font-size:50px;
+    letter-spacing: 1.5px;
+}
+.termsmain h3{
+    font-family: "Volte-Semibold",sans-serif;
+    font-weight: bold;
+    font-size:30px;
+    margin-top: 2.175rem;
+    margin-bottom: 1.875rem;
+    // margin-top: 2.175rem;
+    // margin-bottom: 1.875rem;
+}
+.termsmain .mainheadterms{
+    // margin-top: -0.1rem;
+}
+.termsmain .subheadings{
+    font-family: "Volte-Semibold",sans-serif;
+    font-weight: bold;
+    font-size:25px;
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
+}
+.termsmain .p1{
+    color: #413d46;
+    font-size: 16px;
+    font-family: "Lato",sans-serif;
+    line-height: 1.75em;
+}
+.termsmain .termsimplyput{
+    color: #5c5969;
+   font-size: 22px;
+   font-family: "Lato",sans-serif;
+   margin-top: 2.875rem;
+}
+.termsmain .p2{
+    font-family: "Lato",sans-serif;
+    line-height: 1.3;
+    color: #262224;
+    font-size: 18px;
+    font-weight:bold;
+    letter-spacing: 1px;
+    padding:20px 0px;
+}
+.termscontainermain .termsmain .accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+    transform: scale(0.7) !important;
+    transition: transform 0.1s ease-in-out;
+    top: 25%;
+    position: absolute;
+}
+.termscontainermain .termsmain .accordion-button:not(.collapsed)::after {
+    position: absolute;
+    top: 25%;
+    transition: transform 0.1s ease-in-out;
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+}
+.termscontainermain .termsmain .accordion-button {
+    position: relative;
+    padding-left: 8px;
+    top: 45px;
+    right: 0px;
+    border: 0;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 30rem;
+    background-color: #CDCCD9;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.termscontainermain .termsmain .button-line {
+    top: 25px;
+}
+// ------------------Policies- Terms  END---------------------------------------------
