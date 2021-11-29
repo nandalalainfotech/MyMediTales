@@ -3370,7 +3370,7 @@ transform: scale(1.075)
 
 /* ---------------------------termcontainer-1------------------------------ */
 
-.termcontainer1 {
+.privacycontainer1 {
   background-color: #010743;
   overflow: hidden;
   height: 620px !important;
@@ -3378,33 +3378,36 @@ transform: scale(1.075)
   z-index: -1;
   /* top: 0; */
 }
-.termcontainer1 .termsrow .termladyimg {
+.privacycontainer1 .privacyrow{
+    margin-top: 50px;
+}
+.privacycontainer1 .privacyrow .privacyladyimg {
   position: relative;
   margin-top: 30px;
   margin-left: 0px;
   z-index: 1;
   height: 550px;
 }
-.termcontainer1 .termsrow .termstext {
+.privacycontainer1 .privacyrow .privacytext {
   padding-left: 100px;
   margin-top: 60px;
   color: white;
   font-family: "Lato", sans-serif;
 }
-.termcontainer1 .termstext h1 {
+.privacycontainer1 .privacytext h1 {
   font-weight: bold;
   font-size: 55px;
   letter-spacing: 1.5px;
   color: #fff;
 }
-.termcontainer1 .termstext .termsparag p {
+.privacycontainer1 .privacytext .privacyparag p {
   font-size: 18px;
   line-height: 1.5em;
   // margin-top: 10px;
   color: #fff;
 }
 
-.termcontainer1 .wavelenth {
+.privacycontainer1 .privacy-wavelenth {
   position: absolute;
   left: 0;
   right: 0;
@@ -3423,18 +3426,18 @@ transform: scale(1.075)
 
 /* ---------------------------termcontainer-1 end------------------------------ */
 
-.termcontainer2 {
+.privacycontainer2 {
     margin-top: 100px;
     position: relative;
     //   height: 610px;
 }
-.termcontainer2 .sidemenu {
+.privacycontainer2 .sidemenu {
   position: sticky;
   top: 0;
 }
 
 // --------------------------sidemenu start-------------------------------------
-.termcontainer2 .sidemenu {
+.privacycontainer2 .sidemenu {
   // position: sticky;
   width: 25%;
   float: left;
@@ -3444,7 +3447,7 @@ transform: scale(1.075)
   // bottom: 0;
   //   max-height: 100vh;
 }
-.termcontainer2 .menutable {
+.privacycontainer2 .menutable {
   font-size: 1.125em;
   line-height: 1.0625em;
   text-transform: uppercase;
@@ -3454,66 +3457,66 @@ transform: scale(1.075)
   margin-bottom: 1.75rem;
   margin-top: 1.5rem;
 }
-.termcontainer2 .sidemenu .privacy-ul {
+.privacycontainer2 .sidemenu .privacy-ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.termcontainer2 .sidemenu .privacy-ul .privacy-li {
+.privacycontainer2 .sidemenu .privacy-ul .privacy-li {
     list-style-type: none;
     margin-top: 1.5rem;
     line-height: 1.375em;
     color: #4656D6;
 }
-.termcontainer2 .sidemenu .privacy-li .link {
+.privacycontainer2 .sidemenu .privacy-li .link {
   text-decoration: none;
   color: #4656d6;
   line-height: 1.375em;
   list-style: none;
 }
-.termcontainer2 .sidemenu .privacy-li .link:hover {
+.privacycontainer2 .sidemenu .privacy-li .link:hover {
   text-decoration: underline;
 }
 
 // --------------------------sidemenu end-------------------------------------
 // --------------------------bodymenu start-------------------------------------
-.termcontainer2 .bodymenu {
+.privacycontainer2 .bodymenu {
     width: 75%;
     float: left;
     padding: 30px;
     height: 100%;
 }
 
-.termcontainer2 .date {
+.privacycontainer2 .date {
     margin: 25px 0px;
 }
 
-.termcontainer2 .date h5 {
+.privacycontainer2 .date h5 {
     color: #413D46;
     font-size: 1.25em;
 }
 
-.termcontainer2 .date .link {
+.privacycontainer2 .date .link {
     color: #9710E6;
     font-family: "Lato", sans-serif;
     line-height: 1.3;
     text-decoration: underline;
 }
 
-.termcontainer2 .date .link:hover {
+.privacycontainer2 .date .link:hover {
     text-decoration: none;
 }
-.termcontainer2 .bodymenu ul li {
+.privacycontainer2 .bodymenu ul li {
   list-style-type: disc;
 }
-.termcontainer2 .bodymenu .p1 {
+.privacycontainer2 .bodymenu .p1 {
   color: #413d46;
   font-size: 1em;
   font-family: "Lato", sans-serif;
   line-height: 1.75em;
 }
-.termcontainer2 .bodymenu .p2 {
+.privacycontainer2 .bodymenu .p2 {
   font-family: "Lato", sans-serif;
   line-height: 1.3em;
   color: #262224;
@@ -3523,14 +3526,14 @@ transform: scale(1.075)
   padding: 20px 0px;
 }
 
-.termcontainer2 .bodymenu h1 {
+.privacycontainer2 .bodymenu h1 {
     font-family: "Volte-Semibold", sans-serif;
     font-weight: bold;
     font-size: 50px;
     letter-spacing: 1.5px;
 }
 
-.termcontainer2 .bodymenu h4 {
+.privacycontainer2 .bodymenu h4 {
     font-family: "Volte-Semibold", sans-serif;
     font-weight: bold;
     font-size: 1.8em;
@@ -3539,7 +3542,7 @@ transform: scale(1.075)
     margin-bottom: 1.875rem;
 }
 
-.termcontainer2 .bodymenu h3 {
+.privacycontainer2 .bodymenu h3 {
     font-family: "Volte-Semibold", sans-serif;
     font-weight: bold;
     font-size: 35px;
@@ -3547,19 +3550,19 @@ transform: scale(1.075)
     margin-bottom: 1.875rem;
 }
 
-.termcontainer2 .bodymenu .simply {
+.privacycontainer2 .bodymenu .simply {
     margin-left: 30px;
     margin-top: 50px;
 }
 
-.termcontainer2 .bodymenu .simplyput {
+.privacycontainer2 .bodymenu .simplyput {
     color: #5C5969;
     font-size: 22px;
     font-family: "Lato", sans-serif;
     margin-top: 1.875rem;
 }
 
-.termcontainer2 .bodymenu .accordion-button {
+.privacycontainer2 .bodymenu .accordion-button {
     position: relative;
     padding-left: 8px;
     top: 45px;
@@ -3574,7 +3577,7 @@ transform: scale(1.075)
     transition: background-color 0.2s ease;
 }
 
-.termcontainer2 .bodymenu .button-line {
+.privacycontainer2 .bodymenu .button-line {
     top: 25px;
 }
 
@@ -3582,7 +3585,7 @@ transform: scale(1.075)
 
 /* Custom style */
 
-.termcontainer2 .bodymenu .accordion-button::after {
+.privacycontainer2 .bodymenu .accordion-button::after {
     background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
     transform: scale(0.7) !important;
     transition: transform 0.1s ease-in-out;
@@ -3590,7 +3593,7 @@ transform: scale(1.075)
     position: absolute;
 }
 
-.termcontainer2 .bodymenu .accordion-button:not(.collapsed)::after {
+.privacycontainer2 .bodymenu .accordion-button:not(.collapsed)::after {
     position: absolute;
     top: 25%;
     transition: transform 0.1s ease-in-out;
