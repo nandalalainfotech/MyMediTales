@@ -10,49 +10,43 @@
         width: 100%;
     }
     
-    .card {
+    .shadow {
         /* box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%); */
         box-shadow: -35px 33px 36px -6px;
-        width: 40%;
+        /* width: 40%; */
         border-radius: 5px;
         background-color: #ffff;
-        width: 791px;
+        width: 743px;
         height: 690px;
-        margin-left: 159px;
-        margin-top: 37px;
+        /* margin-left: 159px;
+        margin-top: 37px;  */
         margin-bottom: 100px;
     }
-    /* .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-} */
-    /* .container {
-    padding: 2px 16px;
-} */
-    /* 
-::ng-deep .mat-progress-bar-fill::after {
+    /* ::ng-deep .mat-progress-bar-fill::after {
     background-color: #1E457C;
-} */
-    
-     ::ng-deep .mat-progress-bar-buffer {
+} 
+     */
+    /* ::ng-deep .mat-progress-bar-buffer {
         background: #E4E8EB;
     }
     
      ::ng-deep .mat-progress-bar {
         border-radius: 2px;
-    }
+    } */
     
     .text {
         font-size: 35px;
         top: 10px;
         padding-bottom: 90px;
-        margin-left: 25%;
+        margin-left: 18%;
     }
     
     .text1 {
         font-size: 35px;
         top: 10px;
         padding-bottom: 90px;
-        margin-left: 17%;
+        margin-left: 10%;
+        width: 477px;
     }
     
     .usernames1 {
@@ -75,7 +69,7 @@
         height: 35px;
     }
     
-    .usernames3 {
+    .Email3 {
         position: absolute!important;
         font-size: 18px;
         font-weight: bold;
@@ -83,7 +77,7 @@
         top: 180px;
     }
     
-    .usernames4 {
+    .Email4 {
         position: absolute;
         background-color: rgb(241, 245, 246);
         width: 329px;
@@ -95,7 +89,7 @@
         height: 35px;
     }
     
-    .usernames5 {
+    .password5 {
         position: absolute!important;
         font-size: 18px;
         font-weight: bold;
@@ -103,7 +97,7 @@
         top: 229px;
     }
     
-    .usernames6 {
+    .password6 {
         position: absolute;
         background-color: rgb(241, 245, 246);
         width: 329px;
@@ -115,7 +109,7 @@
         height: 35px;
     }
     
-    .usernames7 {
+    .phoneNumber7 {
         position: absolute!important;
         font-size: 18px;
         font-weight: bold;
@@ -123,7 +117,7 @@
         top: 280px;
     }
     
-    .usernames8 {
+    .phoneNumber8 {
         position: absolute;
         background-color: rgb(241, 245, 246);
         width: 329px;
@@ -135,7 +129,7 @@
         height: 35px;
     }
     
-    .usernames9 {
+    .pinNumber9 {
         position: absolute!important;
         font-size: 18px;
         font-weight: bold;
@@ -143,7 +137,7 @@
         top: 329px;
     }
     
-    .usernames10 {
+    .pinNumber10 {
         position: absolute;
         background-color: rgb(241, 245, 246);
         width: 329px;
@@ -179,23 +173,23 @@
         margin-bottom: 31px;
         width: 463px;
         line-height: 26px;
-        margin-left: 31%;
+        margin-left: 23%;
     }
     
     .text-muted1 {
-        font-size: 20px;
-        margin-top: -80px;
+        font-size: 17px;
+        margin-top: -98px;
         margin-bottom: 31px;
-        width: 463px;
-        line-height: 26px;
-        margin-left: 17%;
+        margin-left: 3%;
+        width: 623px;
+        color: rgb(158 155 155);
     }
     
     .username {
         font-size: 17px;
         margin-bottom: -5px;
         padding-top: 48px;
-        margin-left: 21%;
+        margin-left: 19%;
     }
     
     .conpw_align {
@@ -203,9 +197,9 @@
     }
     
     .email {
-        font-size: 17px;
+        font-size: 18px;
         margin-bottom: 0px;
-        margin-left: 21%;
+        margin-left: 23%;
     }
     
     .eror1 {
@@ -224,12 +218,13 @@
     
     .acc-already {
         padding-top: 125px;
+        margin-left: 141px;
     }
     
     .login {
         margin-top: -17px;
         font-size: 20px;
-        margin-left: 44%;
+        margin-left: 19%;
     }
     
     .icon {
@@ -366,7 +361,7 @@
     }
     
     .margin1 {
-        margin-left: 23%;
+        margin-left: 21%;
         width: 428px;
         margin-top: 33px;
         font-size: 15px;
@@ -376,7 +371,7 @@
     }
     
     .margin3 {
-        margin-left: 133px;
+        margin-left: 95px;
         width: 375px;
         margin-top: 2px;
         font-size: 15px;
@@ -385,16 +380,16 @@
     }
     
     .margin4 {
-        margin-left: 156px;
+        margin-left: 118px;
         width: 428px;
-        margin-top: 2px;
+        margin-top: 47 px;
         font-size: 15px;
         height: 45px;
         border-radius: 8px;
     }
     
     .signupsg {
-        padding-top: 5%;
+        padding-top: 3%;
     }
     
     .signupsg1 {
@@ -402,22 +397,23 @@
     }
     
     .signupsg3 {
-        padding-top: 2%;
+        padding-top: 3%;
     }
     
      ::ng-deep.mark {
-        font-size: 24px;
-        margin-left: 227px;
+        font-size: 30px;
+        margin-left: 149px;
         font-weight: bolder;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+        /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
         /* background-color: white; */
     }
     
      ::ng-deep.mark1 {
-        font-size: 24px;
-        margin-left: 272px;
+        font-size: 30px;
+        margin-left: 235px;
         font-weight: bolder;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
     }
     
      ::ng-deep .mark,
@@ -434,7 +430,7 @@
     }
     
     .flex {
-        width: 678px;
+        width: 578px;
         /* height: 12px; */
         margin-top: 13px;
         font-size: 18px;
@@ -473,7 +469,7 @@
     }
     
     .flex1 {
-        width: 683px;
+        width: 579px;
         /* height: 12px; */
         margin-top: 10px;
         font-size: 17px;
@@ -485,7 +481,7 @@
     
      ::ng-deep.mat-form-field {
         /* padding-bottom: 0.30375em; */
-        margin-top: 1px;
+        margin-top: 14px;
         margin-left: 38%;
         left: -104px;
         /* background-color: rgb(251, 251, 251); */
@@ -519,19 +515,19 @@
     
     .icon1 {
         margin-top: 39px;
-        margin-left: -18px !important;
+        margin-left: -22px !important;
         font-size: 18px;
         /* margin-top: 12px; */
     }
     
     .scroll {
-        width: 675px;
-        height: 390px;
+        width: 585px;
+        height: 340px;
         overflow-y: scroll;
-        margin-top: 5px;
-        font-size: 16px;
+        margin-top: 7px;
+        font-size: 14px;
         letter-spacing: .5px;
-        line-height: 1.5105rem;
+        line-height: 1.5rem;
         color: rgb(158 155 155);
     }
     
@@ -576,7 +572,7 @@
     
      ::ng-deep.mat-horizontal-content-container {
         margin-top: -31px;
-        margin-left: -30px;
+        margin-left: 51px;
     }
     
     .map {
@@ -589,18 +585,20 @@
     
     .map1 {
         font-weight: bolder;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
         background: transparent;
         font-size: 18px;
-        margin-left: 23%;
+        margin-left: 20%;
+        position: absolute;
+        margin-top: -25px;
     }
     
     .map3 {
         font-weight: bolder;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
         background: transparent;
-        font-size: 23px;
-        margin-left: 157px;
+        font-size: 19px;
+        margin-left: 119px;
     }
     
     .raised {
@@ -615,6 +613,10 @@
         margin-top: -13px;
         width: 417px;
         color: white;
+    }
+    
+    .position_sign {
+        position: absolute;
     }
     
     .raised1 {
@@ -665,12 +667,12 @@
     }
     
      ::ng-deep.mat-horizontal-stepper-header {
-        margin-top: 17px;
-        left: -215px;
+        margin-top: 49px;
+        left: -241px;
         display: unset!important;
         /* padding: 0px 33px; */
         margin-left: -9px;
-        padding: 0 83px !important;
+        padding: 0 81px !important;
     }
     
      ::ng-deep.mat-step-text-label {
@@ -751,11 +753,16 @@
         color: rgb(34, 141, 30);
         font-size: 18px;
     }
+    /* @media (min-width: 992px)
+.col-lg-8 {
+    flex: 0 0 66.666667%;
+    max-width: 63.666667%;
+} */
     
     .home {
         color: rgb(226, 37, 153);
-        top: -81px;
-        left: -7px;
+        top: -80px;
+        left: -24px;
         font-size: 19px;
         position: absolute !important;
         border-radius: 4px;
@@ -771,16 +778,16 @@
     
     .home1 {
         color: rgb(226, 37, 153);
-        top: -79px;
-        left: 104px;
+        top: -80px;
+        left: 77px;
         font-size: 17px;
         position: absolute !important;
     }
     
     .home2 {
         color: rgb(226, 37, 153);
-        top: -80px;
-        left: 214px;
+        top: -81px;
+        left: 179px;
         font-size: 17px;
         position: absolute;
         border-radius: 4px;
@@ -789,7 +796,7 @@
     .home3 {
         color: rgb(226, 37, 153);
         top: -79px;
-        left: 324px;
+        left: 280px;
         font-size: 17px;
         position: absolute;
         border-radius: 4px;
@@ -798,7 +805,7 @@
     .home4 {
         color: rgb(226, 37, 153);
         top: -80px;
-        left: 433px;
+        left: 380px;
         font-size: 17px;
         position: absolute;
         border-radius: 4px;
@@ -807,7 +814,7 @@
     .home5 {
         color: rgb(226, 37, 153);
         top: -78px;
-        left: 544px;
+        left: 482px;
         font-size: 17px;
         position: absolute;
         border-radius: 4px;
@@ -816,7 +823,7 @@
     .home6 {
         color: rgb(226, 37, 153);
         top: -80px;
-        left: 655px;
+        left: 583px;
         font-size: 17px;
         position: absolute;
         border-radius: 4px;
@@ -840,8 +847,8 @@
         display: flex;
         align-items: center;
         margin-bottom: 42px;
-        margin-top: -34px;
-        margin-left: 125px;
+        margin-top: 53px;
+        margin-left: 217px;
     }
     
      ::ng-deep.mat-step-header {
@@ -858,17 +865,21 @@
         margin-left: 93px;
     }
     
+    .mapsign {
+        position: absolute;
+    }
+    
     .cancel {
-        margin-left: 231px;
+        margin-left: 202px;
         margin-top: 427px;
         color: white;
     }
     
     .bg_img {
         /* background-image: url(../../../assets/pexels-karolina-grabowska-4210656.jpg); */
-        background-repeat: no-repeat;
+        /* background-repeat: no-repeat;
         background-size: 1000px 900px !important;
-        padding: 48px;
+        padding: 48px; */
     }
     
     .reset {
@@ -884,15 +895,13 @@
     }
     
      ::ng-deep.mat-stepper-horizontal-line {
-        min-width: 91px !important;
+        min-width: 79px !important;
         position: relative;
         border-top-width: 7px !important;
-        top: -15px !important;
-        left: -154px !important;
-        margin-left: -122px !important;
+        top: 1px !important;
+        left: -184px !important;
+        margin-left: -115px !important;
         border-radius: 4px;
         /* border-color: rgba(32, 168, 221, 0.54)!important; */
         border-color: #3A58FF;
-        ;
-        ;
     }

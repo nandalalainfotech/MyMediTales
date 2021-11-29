@@ -1,329 +1,346 @@
-<mat-horizontal-stepper [linear]="isLinear" #stepper class="card bg_img">
-    <mat-step [stepControl]="formNameGroup" label="Name">
-        <!-- <i class="fa fa-home" style="margin-top: 22px;"></i> -->
-        <!-- <div class="mat-step-icon">
-            <span class="home">&#xe851;</span></div> -->
-        <div class="home7">
-            <mat-icon class="home">&#xe851;</mat-icon>
-        </div>
-        <div style="padding-top: 2%;">
-            <p class="text"><b>Sign Up</b></p>
-            <p class="text-muted">First,Choose Your Username.</p>
-            <p class="username"><b>Username</b></p>
-            <form [formGroup]="formNameGroup" class="form" apperance="Fill">
-                <div class="example-form">
-                    <mat-form-field class="example-full-width">
-                        <input class="input" matInput placeholder="" required formControlName="userName" />
-                        <mat-error class="eror1" *ngIf="formNameGroup.controls['userName'].hasError('required')">
-                            Username is Required!
-                        </mat-error>
-                    </mat-form-field>
-                </div>
-                <br />
-                <button class="button" mat-raised-button color="primary" matStepperNext>Choose this username </button>
-                <div class="loginarea">
-                    <p class="text-muted acc-already">Have an Account Already?</p>
-                    <p class="login"><a href="">Log In</a> &nbsp; <i class="fa fa-chevron-right icon " aria-hidden="true"></i></p>
-                </div>
-            </form>
-        </div>
-    </mat-step>
-    <mat-step [stepControl]="formEmailGroup" label="Email">
-        <div class="home7">
-            <mat-icon class="home1">&#xe0be;</mat-icon>
-        </div>
-        <div style="padding-top: 2%;">
-            <p class="text1"><b>Provide Your Email Address</b></p>
-            <p class="text-muted1">Your email address will be used to change forgotten password, send account alerts and maintain your MyMediTales account.
-            </p>
-            <p class="email"><b>Email</b></p>
-            <form [formGroup]="formEmailGroup">
-                <div class="example-form">
-                    <mat-form-field class="example-full-width">
-                        <input matInput placeholder="" required formControlName="emailID" />
-                        <mat-error class="eror1" *ngIf="formEmailGroup.controls['emailID'].hasError('required')">
-                            Email is Required!
-                        </mat-error>
-                        <mat-error class="eror1" *ngIf="formEmailGroup.controls['emailID'].hasError('email')">
-                            Email is Not Valid!
-                        </mat-error>
-                    </mat-form-field>
-                </div>
-                <br />
-                <button class="button" mat-raised-button color="primary" matStepperNext>Use this Email</button>
-            </form>
-        </div>
-    </mat-step>
-    <mat-step [stepControl]="formPasswordGroup" label="Password">
-        <div class="home7">
-            <mat-icon class="home2">&#xe897;</mat-icon>
-        </div>
-        <div style="padding-top: 2%;">
-            <form [formGroup]="formPasswordGroup">
-                <div class="example-form">
-                    <div>
+<div class="row">
+    <div class="col-lg-2">&nbsp;</div>
+    <div class="col-lg-8">
 
-                        <p class="text2"><b>Create Your Password</b></p>
-                        <div class="pw_align">
-                            <p class="passsg">Password</p>
-                            <mat-form-field class="example-full-width">
-                                <input type="password" matInput placeholder="" required formControlName="passWord1" />
-                                <mat-error class="eror1" *ngIf="
+        <mat-horizontal-stepper [linear]="isLinear" #stepper class="shadow bg_img" style="position: relative;">
+            <div class="row" style="position: absolute;">
+                <mat-step [stepControl]="formNameGroup" label="Name">
+                    <!-- <i class="fa fa-home" style="margin-top: 22px;"></i> -->
+                    <!-- <div class="mat-step-icon">
+            <span class="home">&#xe851;</span></div> -->
+                    <div class="home7">
+                        <mat-icon class="home">&#xe851;</mat-icon>
+                    </div>
+                    <div style="padding-top: 3%; position: absolute;">
+                        <p class="text"><b>Sign Up</b></p>
+                        <p class="text-muted">First,Choose Your Username.</p>
+                        <p class="username"><b>Username</b></p>
+                        <form [formGroup]="formNameGroup" class="form" apperance="Fill">
+                            <div class="example-form">
+                                <mat-form-field class="example-full-width">
+                                    <input class="input" matInput placeholder="" required formControlName="userName" />
+                                    <mat-error class="eror1" *ngIf="formNameGroup.controls['userName'].hasError('required')">
+                                        Username is Required!
+                                    </mat-error>
+                                </mat-form-field>
+                            </div>
+                            <br />
+                            <button class="button" mat-raised-button color="primary" matStepperNext>Choose this username </button>
+                            <div class="loginarea">
+                                <p class="text-muted1 acc-already">Have an Account Already?</p>
+                                <p class="login"><a href="">Log In</a> &nbsp; <i class="fa fa-chevron-right icon " aria-hidden="true"></i></p>
+                            </div>
+                        </form>
+                    </div>
+                </mat-step>
+            </div>
+            <div class="row" style="position: absolute;">
+                <mat-step [stepControl]="formEmailGroup" label="Email">
+                    <div class="home7">
+                        <mat-icon class="home1">&#xe0be;</mat-icon>
+                    </div>
+                    <div style="padding-top: 2%; position: absolute;">
+                        <p class="text1"><b>Provide Your Email Address</b></p>
+                        <p class="text-muted1">Your email address will be used to change forgotten password, send account alerts and maintain your MyMediTales account.
+                        </p>
+                        <p class="email"><b>Email</b></p>
+                        <form [formGroup]="formEmailGroup">
+                            <div class="example-form">
+                                <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="" required formControlName="emailID" />
+                                    <mat-error class="eror1" *ngIf="formEmailGroup.controls['emailID'].hasError('required')">
+                                        Email is Required!
+                                    </mat-error>
+                                    <mat-error class="eror1" *ngIf="formEmailGroup.controls['emailID'].hasError('email')">
+                                        Email is Not Valid!
+                                    </mat-error>
+                                </mat-form-field>
+                            </div>
+                            <br />
+                            <button class="button" mat-raised-button color="primary" matStepperNext>Use this Email</button>
+                        </form>
+                    </div>
+                </mat-step>
+            </div>
+            <div class="row">
+                <mat-step [stepControl]="formPasswordGroup" label="Password">
+                    <div class="home7">
+                        <mat-icon class="home2">&#xe897;</mat-icon>
+                    </div>
+                    <div style="padding-top: 2%; position: absolute;">
+                        <form [formGroup]="formPasswordGroup">
+                            <div class="example-form">
+                                <div>
+
+                                    <p class="text2"><b>Create Your Password</b></p>
+                                    <div class="pw_align">
+                                        <p class="passsg">Password</p>
+                                        <mat-form-field class="example-full-width">
+                                            <input type="password" matInput placeholder="" required formControlName="passWord1" />
+                                            <mat-error class="eror1" *ngIf="
                formPasswordGroup.controls['passWord1'].hasError('required')
              ">
-                                    Password is Required!
-                                </mat-error>
-                            </mat-form-field>
-                        </div>
+                                                Password is Required!
+                                            </mat-error>
+                                        </mat-form-field>
+                                    </div>
 
-                        <div class="conpw_align">
-                            <p class="passsg">Confirm Password</p>
-                            <mat-form-field class="example-full-width">
-                                <input type="password" matInput placeholder="" required formControlName="passWord2" />
-                                <mat-error class="eror1" *ngIf="
+                                    <div class="conpw_align">
+                                        <p class="passsg">Confirm Password</p>
+                                        <mat-form-field class="example-full-width">
+                                            <input type="password" matInput placeholder="" required formControlName="passWord2" />
+                                            <mat-error class="eror1" *ngIf="
                formPasswordGroup.controls['passWord2'].hasError('required')
              ">
-                                    Confirm Password is Required!
-                                </mat-error>
-                            </mat-form-field>
-                        </div>
+                                                Confirm Password is Required!
+                                            </mat-error>
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                            <button class="button" mat-raised-button color="primary" matStepperNext>Create password</button>
+                        </form>
                     </div>
-                </div>
-                <br />
-                <button class="button" mat-raised-button color="primary" matStepperNext>Create password</button>
-            </form>
-        </div>
-    </mat-step>
-
-    <!-- 4/6 -->
-
-    <mat-step [stepControl]="formPhoneGroup" label="Phone">
-        <div class="home7">
-            <mat-icon class="home3">&#xe0d6;</mat-icon>
-        </div>
-        <!-- <mat-progress-bar mode="determinate" value=70 class="git">
+                </mat-step>
+            </div>
+            <!-- 4/6 -->
+            <div class="row">
+                <mat-step [stepControl]="formPhoneGroup" label="Phone">
+                    <div class="home7">
+                        <mat-icon class="home3">&#xe0d6;</mat-icon>
+                    </div>
+                    <!-- <mat-progress-bar mode="determinate" value=70 class="git">
         </mat-progress-bar>
         <p class="slit">4/6</p> -->
-        <div class="signupsg1">
-            <i class="material-icons"></i>
-            <mat-label class="mark">Secure Your Account</mat-label>
-            <form [formGroup]="formPhoneGroup">
-                <div>
-                    <h5 class="flex1">Add your mobile phone number to enable a second layer of security.We will text you a PIN that One Record will use to verify your account.</h5>
-                    <p class="icon2">Learn more</p> <i class="fa fa-external-link click" aria-hidden="true"></i>
-                    <div>
-                        <mat-label class="map1">Phone Number</mat-label>
+                    <div class="signupsg1" style="position: absolute;">
+                        <!-- <i class="material-icons"></i> -->
+                        <mat-label class="mark">Secure Your Account</mat-label>
+                        <form [formGroup]="formPhoneGroup">
+                            <div>
+                                <h5 class="flex1">Add your mobile phone number to enable a second layer of security.We will text you a PIN that One Record will use to verify your account.</h5>
+                                <p class="icon2">Learn more</p> <i class="fa fa-external-link click" aria-hidden="true"></i>
+                                <div>
+                                    <mat-label class="map1">Phone Number</mat-label>
+                                </div>
+                                <mat-form-field appearance="fill">
+                                    <input matInput placeholder="Phone Number" required formControlName="phone" class="current1">
+                                    <mat-error class="rows" *ngIf="formPhoneGroup.controls['phone'].hasError('required')">
+                                        Phone Number is Required
+                                    </mat-error>
+                                    <mat-error class="rows" *ngIf="!formPhoneGroup.get('phone').hasError('required') &&formPhoneGroup.get('phone').hasError('pattern')">
+                                        Please Enter Valid Number
+                                    </mat-error>
+                                </mat-form-field>
+                            </div>
+                            <br/>
+                            <button mat-raised-button color="primary" class="margin1 raised" matStepperNext>Send PIN</button>
+                        </form>
                     </div>
-                    <mat-form-field appearance="fill">
-                        <input matInput placeholder="Phone Number" required formControlName="phone" class="current1">
-                        <mat-error class="rows" *ngIf="formPhoneGroup.controls['phone'].hasError('required')">
-                            Phone Number is Required
-                        </mat-error>
-                        <mat-error class="rows" *ngIf="!formPhoneGroup.get('phone').hasError('required') &&formPhoneGroup.get('phone').hasError('pattern')">
-                            Please Enter Valid Number
-                        </mat-error>
-                    </mat-form-field>
-                </div>
-                <br/>
-                <button mat-raised-button color="primary" class="margin1 raised" matStepperNext>Send PIN</button>
-            </form>
-        </div>
-    </mat-step>
-    <mat-step [stepControl]="formPinGroup" label="Pin">
-        <div class="home7">
-            <mat-icon class="home4">&#xe0da;</mat-icon>
-        </div>
-        <div class="signupsg">
-            <mat-label class="mark1">Enter PIN</mat-label>
-            <form [formGroup]="formPinGroup">
-                <div>
-                    <h5 class="flex">A PIN is being sent to the phone number ending in<span class="fronts"> 8541.</span> You should recieve it shortly.</h5>
-                    <p class="icon">Email my PIN instead <i class="fa fa-envelope-o click1" aria-hidden="true"></i></p>
-                    <div>
-                        <mat-label class="map3">PIN</mat-label>
+                </mat-step>
+            </div>
+            <div class="row">
+                <mat-step [stepControl]="formPinGroup" label="Pin">
+                    <div class="home7">
+                        <mat-icon class="home4">&#xe0da;</mat-icon>
                     </div>
-                    <mat-form-field appearance="fill ">
+                    <div class="signupsg" style="position: absolute;">
+                        <mat-label class="mark1">Enter PIN</mat-label>
+                        <form [formGroup]="formPinGroup">
+                            <div>
+                                <h5 class="flex">A PIN is being sent to the phone number ending in<span class="fronts"> 8541.</span> You should recieve it shortly.</h5>
+                                <p class="icon">Email my PIN instead <i class="fa fa-envelope-o click1" aria-hidden="true"></i></p>
+                                <div>
+                                    <mat-label class="map3">PIN</mat-label>
+                                </div>
+                                <mat-form-field appearance="fill ">
 
-                        <input matInput placeholder="Enter PIN" required formControlName="pin" class="current" minlength="5" pattern="[0-9]*">
+                                    <input matInput placeholder="Enter PIN" required formControlName="pin" class="current" minlength="5" pattern="[0-9]*">
 
-                        <mat-error *ngIf="formPinGroup.controls['pin'].hasError('required')">
-                            Pin Number is Required!
-                        </mat-error>
-                        <mat-error *ngIf="formPinGroup.controls['pin'].hasError('minlength')">
-                            Pin Number Minimum Length is 5
-                        </mat-error>
+                                    <mat-error *ngIf="formPinGroup.controls['pin'].hasError('required')">
+                                        Pin Number is Required!
+                                    </mat-error>
+                                    <mat-error *ngIf="formPinGroup.controls['pin'].hasError('minlength')">
+                                        Pin Number Minimum Length is 5
+                                    </mat-error>
 
-                        <div>
-                            <p class="icon icon1">Send Another<i class="fa fa-spinner"></i></p>
+                                    <div>
+                                        <p class="icon icon1">Send Another&nbsp;<i class="fa fa-spinner"></i></p>
+                                    </div>
+                                </mat-form-field>
+                            </div>
+                            <br/>
+                            <button mat-raised-button color="primary" class="margin4" style="margin-top: 56px;" matStepperNext>Submit PIN</button>
+                        </form>
+                    </div>
+                </mat-step>
+            </div>
+            <div class="row">
+                <mat-step [stepControl]="formTermGroup" label="Terms">
+                    <form [formGroup]="formTermGroup">
+                        <div class="home7">
+                            <mat-icon class="home5">&#xe560;</mat-icon>
                         </div>
-                    </mat-form-field>
-                </div>
-                <br/>
-                <button mat-raised-button color="primary" class="margin4" matStepperNext>Submit PIN</button>
-            </form>
-        </div>
-    </mat-step>
-    <mat-step [stepControl]="formTermGroup" label="Terms">
-        <form [formGroup]="formTermGroup">
-            <div class="home7">
-                <mat-icon class="home5">&#xe560;</mat-icon>
+                        <div class="signupsg3" style="position: absolute;">
+                            <mat-label class="mark">Terms of service</mat-label>
+                            <p class="scroll">This User Agreement (the “Agreement”) set forth the terms and conditions upon which MyMediTales LLC (“our” “we” or “MyMediTales”) offers you ( “you” “your” or “End-User”), access to use MyMediTales’s mobile application (the
+                                “App”) or website located at www.MyMediTales.com (including any successor site) (the “Website”). By clicking “I Agree”, by accessing the MyMediTales personal health record (the “Service”), using the App, using the Website
+                                or otherwise indicating your assent, you agree to be bound by this Agreement. Additionally, by accessing the Website, you agree to be bound by MyMediTales’s Privacy Policy and all applicable laws. In the event of an inconsistency
+                                between this Agreement and the Privacy Policy, the terms of this Agreement shall control. Any reference to the singular in this Agreement includes the plural and vice versa and reference to a gender includes the other gender
+                                unless the context requires otherwise. Any reference to a “person” in these this Agreement includes any individual, firm, unincorporated association or body corporate. IF YOU DO NOT AGREE TO THIS AGREEMENT, DO NOT ACCESS
+                                OR USE THE SERVICE, APP OR WEBSITE. THIS IS A LEGALLY ENFORCEABLE CONTRACT. Simply put... By using the Website, App or Service you agree to all the terms described here. 1. DESCRIPTION OF SERVICE The Service is a personal
+                                health information retrieval and management service that allows users of the Service (“Members”) to consolidate certain health information (“Patient Information”) through the Service and share information with others (including
+                                family members, doctors and other third-party providers). The Service is provided to you by MyMediTales as an aid to assist you in organizing and managing your health information. 2. YOUR USE OF THE SERVICE MyMediTales
+                                may review the Patient Information that you maintain through the Service to normalize and label data for display, but MyMediTales is not responsible for any errors in the Patient Information resulting from such review process.
+                                MyMediTales makes no effort to review the Patient Information for any other purpose, including, but not limited to, accuracy, legality or non-infringement. MyMediTales is not responsible for any Patient Information provided
+                                by third-party providers or their patient portal sites. MyMediTales cannot guarantee or assume responsibility for the completeness, timeliness, accuracy, relevance, deletion or non-delivery of any Patient Information. Your
+                                right to access and use the Service is personal to you and is not transferable by you to any other person or entity. You are only entitled to access and use the Service for lawful purposes. Accurate information enables
+                                MyMediTales to provide the Service to you. You must provide true, accurate, current and complete information and may not misrepresent information (a) in your registration information, (b) about your family members or third-party
+                                providers, or (c) about your Patient Information. In order for the Service to function effectively, you must also keep such information listed above up-to-date and accurate. If you do not do this, the accuracy and effectiveness
+                                of the Service will be affected. Your access and use of the Service may be interrupted from time to time for any of several reasons, including, without limitation, unanticipated system failures, the malfunction of equipment,
+                                periodic updating, maintenance or repair of the App or other actions beyond the control of MyMediTales or that MyMediTales, in its sole discretion, may elect to take. MyMediTales cannot always foresee or anticipate technical
+                                or other difficulties which may result in, and MyMediTales shall therefore not be responsible or liable for, any (a) failure to obtain Patient Information, (b) loss of Patient Information or personalization settings, or
+                                (c) other service interruptions. Simply put... We cannot guarantee certain things. 3. LICENSE; RESERVATION OF RIGHTS 3.1 Limited License to Use the Service. Subject to End-User’s compliance with the terms and conditions
+                                of this Agreement, MyMediTales hereby grants to End-User a limited, personal, non-exclusive, non-transferable, license to use the App to access the Service solely for the End-User’s own personal purposes. Except for the
+                                licenses and rights expressly granted under this Agreement, no licenses or rights are granted by MyMediTales to End-User hereunder, by implication, estoppel or otherwise. All such other licenses and rights are reserved
+                                unto MyMediTales. 3.2 Other License Restrictions. End-User shall not (a) copy or modify the Service or App for any purpose; (b) reverse-engineer, decompile, modify, translate, disassemble or discover the source code for
+                                all or any portion of the Service or the App; (c) distribute, disclose, market, rent, lease or otherwise transfer the Service or the App to any other person or entity; or (d) use the App or the Service or permit, enable
+                                or assist a third party to create competing products or services. 3.3 Intellectual Property Rights. MyMediTales retains all intellectual property rights in and to the Service and the App and all related documentation interest
+                                (including all copyrights, patents, service marks, trademarks and other intellectual property rights), including, but not limited to, any and all updates, enhancements, customizations, revisions, modifications, future releases
+                                and any other changes thereto, and all related information, material and documentation. Except for rights specifically provided in this Agreement, End-User hereby assigns to MyMediTales all other intellectual property rights
+                                it may now or hereafter possess in the Service or the App and related documentation, and all derivative works and improvements thereof, and agrees to execute all documents, and take all actions, that may be necessary to
+                                confirm such rights. End-User also agrees to retain all proprietary marks, legends and patent and copyright notices that appear on the Service or the App and any related documentation delivered to End-User by MyMediTales
+                                and all whole or partial copies thereof. 3.4 Proprietary Rights in Website Content. MyMediTales retains all copyright and other exclusive rights in the contents of the Website (the “Content”). Elements of the Content are
+                                protected by copyright, trade dress and other laws, and may not be copied or imitated in whole or in part. Nothing shall be understood to be granting you any license under any patent, trademark or copyright of MyMediTales
+                                or of any third-party. Even though the Website may display certain third-party trademarks or brand names, that does not mean that MyMediTales owns or is connected with those third-parties. Those third-party trademarks are
+                                used only to identify the products and services of their respective owners. Do not assume that MyMediTales sponsors or endorses those brands, products or services. You are not permitted to use the trademarks displayed on
+                                the Website without MyMediTales’s prior written consent or the consent of the third-party that may own the trademarks. No Content may be modified, copied, distributed, framed, reproduced, republished, downloaded, displayed,
+                                posted, transmitted or sold in any form or by any means, in whole or in part, without MyMediTales’s prior written permission. You may download or print a copy of any portion of the Content solely for your personal, noncommercial
+                                use, provided that you keep all copyright or other exclusive notices intact. You may not republish Content contained on the Website or include the information in any other database or collection. Any other use of the Content
+                                is strictly prohibited. Simply put... Please respect our trademarks and brands. 4. WARRANTIES AND LIMITATIONS OF LIABILITY. 4.1 Warranties. MyMediTales warrants that MyMediTales will use commercially reasonable efforts
+                                to cause the Service and the App to operate in substantial conformance with its published documentation. MyMediTales’s sole obligation and End-User’s sole remedy with respect to any failure of the Service or the App to
+                                substantially conform to the documentation therefore is for MyMediTales to use commercially reasonable efforts to remedy any such failure as soon as is reasonably practicable, and if such failure is not remedied in a reasonable
+                                time, for End-User to terminate its access to the Service pursuant to Section 6.2. 4.2 No Specific Results. Specifically, MyMediTales does not represent, warrant or otherwise guarantee: (a) the reliability and suitability
+                                of the App; (b) the effectiveness, suitability or reliability of communicated information (including any data provided through the Service); (c) that the App will work without interruption or that it will be free of errors,
+                                viruses or other harmful components; (d) outcomes resulting from your use of the App; (e) that the information available on the App or through the Service is comprehensive or exhaustive, or that it addresses all relevant
+                                symptoms, medicines, and treatments for various diseases or medical conditions; or (f) any outcome with respect to health and well-being as a result of the application of this information. 4.3 No Practice of Medicine. The
+                                Website, Service and/or the App are not intended to be, and must not be taken to be, the practice of medicine or other healthcare services by MyMediTales. Use of the Website, Service and/or the App do not create a physician/patient
+                                or provider/patient relationship with MyMediTales. MyMediTales is not recommending or endorsing any specific treatment, physician, healthcare provider or medication. Simply put... We are not your doctor; we are a website
+                                and application. 4.4 Data Collection; Privacy Policy. Any personal data (for example, your name, address, telephone number or e-mail address) that you transmit to the Service or through the App will be used by MyMediTales
+                                in accordance with the Privacy Policy. Any other communication or material you transmit to the Service or through the App, such as questions, comments, suggestions or the like, will be treated as non-confidential and non-proprietary.
+                                4.5 Ability to Contract; Legal Age. The Website, Service and the App are offered and available to users who are 18 years of age or older. By using the Website, Services and/or the App, you represent and warrant that you
+                                are of legal age to form a binding contract with MyMediTales and meet all of the foregoing eligibility requirements. If you are under the age of 18, make sure that your parent or legal guardian reads and agrees with this
+                                Agreement on your behalf, as your parent or legal guardian shall be fully responsible for your compliance with this Agreement. If you do not meet all of these requirements, you must not access or use the Website, Service
+                                or the App. Simply put... You must either be 18 years or older or have parental permission to use the Website, Service and App. 4.6 Warranty Disclaimer. EXCEPT AS SET FORTH IN SECTION 4.1, YOU UNDERSTAND AND AGREE THAT
+                                THE WEBSITE, SERVICE AND APP IS PROVIDED ON AN “AS IS” AND “AS AVAILABLE” BASIS AND THAT MyMediTales DISCLAIMS ANY AND ALL WARRANTIES RELATING TO THE WEBSITE, SERVICE, APP OR ANY OTHER MATTER COVERED BY THIS AGREEMENT,
+                                INCLUDING, WITHOUT LIMITATION, ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. MyMediTales DOES NOT WARRANT THAT THE WEBSITE, SERVICE AND/OR APP WILL MEET YOUR REQUIREMENTS, WILL OPERATE WITHOUT
+                                INTERRUPTION OR DELAY AND/OR BE ERROR-FREE, OR THAT ALL FAILURES OF THE WEBSITE, SERVICE OR APP TO CONFORM TO THE DOCUMENTATION PROVIDED CAN OR WILL BE CORRECTED. MyMediTales MAKES NO WARRANTIES OR REPRESENTATIONS AS TO
+                                THE ACCURACY OF ANY CONTENT PROCESSED BY THE WEBSITE, SERVICE AND/OR APP. MATERIAL DOWNLOADED OR OTHERWISE OBTAINED THROUGH THE USE OF THE WEBSITE, SERVICE AND/OR APP IS DONE AT YOUR OWN CHOOSING AND RISK, AND YOU WILL
+                                BE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR LOSS OF DATA THAT RESULTS FROM THE DOWNLOAD OF ANY SUCH MATERIAL. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF CERTAIN WARRANTIES. ACCORDINGLY, SOME OF
+                                THE ABOVE LIMITATIONS MAY NOT APPLY TO YOU. 4.7 Limitations of Liability. IN NO EVENT SHALL MyMediTales, or our directors, officers, employees or agents BE LIABLE FOR LOST PROFITS OR BUSINESS, LOSS OF GOODWILL, LOSS OF
+                                DATA, INTERRUPTION OF BUSINESS, OR FOR ANY EXEMPLARY, PUNITIVE, SPECIAL, INDIRECT, INCIDENTAL OR CONSEQUENTIAL DAMAGES, REGARDLESS OF WHETHER SUCH DAMAGES ARISE UNDER ANY THEORY OF TORT, CONTRACT, STRICT LIABILITY OR OTHERWISE
+                                AND REGARDLESS OF WHETHER SUCH PARTY IS ADVISED OF THE POSSIBILITY OF ANY SUCH DAMAGES. The aggregate liability of MyMediTales for any and all claims arising under or in connection with this Agreement or its subject matter
+                                shall not exceed $500. The above limitation, or exclusion, may not apply to you to the extent that applicable law prohibits the limitation or exclusion of liability for incidental or consequential damages. Simply put...
+                                We are NOT responsible for certain things. 4.8 Essential Part of the Bargain. The parties acknowledge that the disclaimers and limitations set forth in this Section 4 are an essential element of this Agreement between the
+                                parties and the parties would not have entered into this Agreement without such disclaimers and limitations. 4.9 Telecommunication Services. Use of the Website and Service may be available through a compatible mobile device,
+                                Internet and/or network access and may require software. You agree that you are solely responsible for these requirements, including any applicable changes, updates and fees as well as the terms of your agreement with your
+                                mobile device and telecommunications providers. MyMediTales MAKES NO WARRANTIES OR REPRESENTATIONS OF ANY KIND, EXPRESS, STATUTORY OR IMPLIED AS TO: (a) THE AVAILABILITY OF TELECOMMUNICATION SERVICES FROM YOUR PROVIDER
+                                AND ACCESS TO THE SERVICE AT ANY TIME OR FROM ANY LOCATION; (b) ANY LOSS, DAMAGE, OR OTHER SECURITY INTRUSION OF THE TELECOMMUNICATION SERVICES; AND (c) ANY DISCLOSURE OF INFORMATION TO THIRD PARTIES OR FAILURE TO TRANSMIT
+                                ANY DATA, COMMUNICATIONS OR SETTINGS CONNECTED WITH THE SERVICE. Simply put... You agree to provide your own internet and cellular connection. 5. INDEMNIFICATION; UNAUTHORIZED USE 5.1 Indemnification. End-User hereby agrees
+                                to indemnify and hold harmless MyMediTales, our officers, employees, agents, subsidiaries, affiliates, licensors, suppliers and other partners from any and all damages, costs and expenses (including, without limitation,
+                                reasonable attorneys’ fees) suffered or incurred by MyMediTales in connection with any claims that MyMediTales is required to pay to third parties to the extent such damages, settlement amounts, costs and expenses are attributable
+                                to End-User’s (a) use of the Website, or (b) provision of content by the End-User Content through the Service or the App (“End-User Content”), including any actual or alleged volitions of third party intellectual property
+                                by such End-User Content. Simply put... You are responsible for certain things. 5.2 Notification of Unauthorized Use. End-User shall promptly notify MyMediTales in writing upon its discovery of any unauthorized use or infringement
+                                of the Website, Service, the App, or the related documentation, or MyMediTales's intellectual property rights with respect thereto. MyMediTales shall have the sole and exclusive right to bring an infringement action or
+                                proceeding against any infringing third party and, in the event that MyMediTales brings such an action or proceeding, End-User shall cooperate and provide full information and assistance to MyMediTales and its counsel in
+                                connection with any such action or proceeding. Simply put... You are responsible for notifying us of certain things. 6. TERM AND TERMINATION 6.1 Term. End-User’s access to the App and Service shall begin on the date End-User
+                                registers for the Service and shall continue until terminated earlier under the provisions of this Section 6. Simply put... We may stop providing the Service at any time. 6.2 Termination for Convenience. MyMediTales may
+                                terminate End-User’s access to all or part of the Website and/or use of the Service and the App at any time with or without notifying you. End-User may terminate access to the Service at any time by cancelling its account
+                                for the Service and uninstalling the App. 6.3 Effect of Termination. Upon the termination of the Service, all license rights of End-User under this Agreement regarding the Service shall automatically and immediately cease
+                                and End-User shall promptly cease all uses of the Service and shall uninstall the App. Sections 4.6, 4.7, 5, 6.3 and 7 shall survive the expiration or sooner termination of this Agreement. Simply put... Termination of the
+                                Service takes effect immediately. 7. GENERAL 7.1 Export Compliance. The Service and the App may be subject to U.S. and other national export controls and economic sanctions. Individuals or entities owned or controlled,
+                                registered in, or related to Cuba, Iran, Sudan, Syria, or North Korea are not permitted to use the App or access the Service without prior written permission from MyMediTales once granted by the appropriate jurisdiction.
+                                The rights and obligations of End-User shall be subject to such United States laws and regulations as shall from time to time govern the license and delivery of technology abroad by persons subject to the jurisdiction of
+                                the United States, including the Export Administration Act of 1979, as amended, any successor legislation to the Export Administration Act of 1979, and the Export Administration regulations issued by the Department of Commerce,
+                                International Trade Administration, Office of Export Administration. End-User shall certify that it shall not, directly or indirectly, export, re-export or transship the Service in such manner as to violate such laws and
+                                regulations in effect from time to time. End-User shall indemnify and hold harmless MyMediTales from and against any and all losses, claims and expenses incurred by MyMediTales as a result of the breach of End-User's obligations
+                                under this Section. 7.2 Independent Contractors. In making and performing this Agreement, the parties are acting and shall act as independent contractors. Neither party is, nor will be deemed to be, an agent, legal representative,
+                                joint venturer or partner of the other party for any purpose. 7.3 Force Majeure. In the event that MyMediTales is unable to perform its obligations under this Agreement because of acts of God, strikes, equipment or transmission
+                                failure, unavailability or poor performance of the Internet, or other causes reasonably beyond its control, MyMediTales shall not be liable to the End-User for any damages resulting from such failure to perform or otherwise
+                                from such causes. 7.4 Governing Law. This Agreement are governed by the laws of the State of New York, without regard to its choice of law provisions. The courts of general jurisdiction located within New York, New York,
+                                will have exclusive jurisdiction over any and all disputes arising out of, relating to or concerning this Agreement or in which this Agreement are a material fact. MyMediTales makes no representation that materials contained
+                                on the Website are appropriate or available for use in other locations, and accessing them from territories where their contents are illegal is prohibited. If you choose to access the Website from other locations you do
+                                so by your own choice, and are responsible for obeying local laws. 7.5 Dispute Resolution. Any controversy or claim between the parties or arising out of this Agreement or any use of the Service, the App, or the Website
+                                shall be determined by one disinterested arbitrator in binding arbitration pursuant to the Commercial Arbitration Rules and the Supplementary Procedures for Online Arbitration of the American Arbitration Association (the
+                                “AAA”). The arbitrator shall be experienced in agreements for information technology services, either as an attorney or as an information technology professional. If the parties fail to appoint an arbitrator within forty-five
+                                (45) days of the institution of the arbitration, the AAA shall select the arbitrator promptly thereafter. Any requests for accelerated, emergency or preliminary relief shall be submitted pursuant to the AAA’s Optional Rules
+                                for Emergency Measures of Protection. If any such requests are made before an arbitration panel is empaneled, then the AAA shall appoint one disinterested arbitrator as an arbitration panel to immediately hear and decide
+                                such request. The arbitration panel shall have the right to grant interim awards. Testimony shall be permitted by telephone, video conference and other forms of real-time telecommunications. If the arbitrator requires in-person
+                                hearings, the hearings shall be held in New York, New York. The arbitral award will be final and binding, and may be entered and enforced in any court of competent jurisdiction. 7.6 Waiver of Jury Trial and Class Actions.
+                                BY ENTERING INTO THIS AGREEMENT, YOU AND MyMediTales ACKNOWLEDGE AND AGREE TO WAIVE CERTAIN RIGHTS TO LITIGATE DISPUTES IN COURT, TO RECEIVE A JURY TRIAL OR TO PARTICIPATE AS A PLAINTIFF OR AS A CLASS MEMBER IN ANY CLAIM
+                                ON A CLASS OR CONSOLIDATED BASIS OR IN A REPRESENTATIVE CAPACITY. YOU AND MyMediTales BOTH AGREE THAT ANY ARBITRATION WILL BE CONDUCTED ON AN INDIVIDUAL BASIS AND NOT A CONSOLIDATED, CLASS-WIDE OR REPRESENTATIVE BASIS AND
+                                THE ARBITRATOR SHALL HAVE NO AUTHORITY TO PROCEED WITH AN ARBITRATION ON A CLASS OR REPRESENTATIVE BASIS. THE ARBITRATOR MAY AWARD INJUNCTIVE RELIEF ONLY IN FAVOR OF THE INDIVIDUAL PARTY SEEKING RELIEF AND ONLY TO THE EXTENT
+                                NECESSARY TO PROVIDE RELIEF WARRANTED BY THAT PARTY’S INDIVIDUAL CLAIM. IF FOR ANY REASON THE ARBITRATION CLAUSE SET FORTH IN THIS AGREEMENT IS DEEMED INAPPLICABLE OR INVALID, OR TO THE EXTENT THE ARBITRATION CLAUSE ALLOWS
+                                FOR LITIGATION OF DISPUTES IN COURT, YOU AND MyMediTales BOTH WAIVE, TO THE FULLEST EXTENT ALLOWED BY LAW, ANY RIGHT TO PURSUE OR TO PARTICIPATE AS A PLAINTIFF OR AS A CLASS MEMBER IN ANY CLAIM ON A CLASS OR CONSOLIDATED
+                                BASIS OR IN A REPRESENTATIVE CAPACITY. 7.7 Third-Party Sites. The Website may contain links to third-party websites. MyMediTales is not responsible for the content, accuracy or opinions expressed on those third-party websites,
+                                and those third-party websites are not investigated, monitored or checked for accuracy or completeness by us. Inclusion of any linked third-party website on or through the Website does not imply approval or endorsement
+                                of the linked third-party website by MyMediTales. If you decide to leave the Website and access these third-party websites, you do so at your own risk. Simply put... The Website may post links to third-party websites, but
+                                they’re not MyMediTales’s and MyMediTales is not responsible for them. 7.8 Public Statements. Either party may disclose the existence of this Agreement but may not represent to any third party any positions, statements,
+                                intentions or other actions on behalf of the other. 7.9 Assignment. End-User may not assign any of its rights or privileges, or delegate any of its duties or obligations hereunder to any third party without the prior written
+                                consent of MyMediTales. Any purported assignment in contravention of this Section shall be null and void. Subject to the foregoing, this Agreement shall be binding upon and inure to the benefit of the parties hereto and
+                                their respective permitted successors and assigns. 7.10 Notices. All notices and other communications hereunder shall be in writing and shall be deemed effective when delivered by hand, facsimile transmission, reputable
+                                overnight delivery service, or certified mail (return receipt requested), postage prepaid to: (a) in the case of End-User, to the address set forth in its account information, and (b) in the case of MyMediTales: MyMediTales,
+                                LLC Attn: User Agreement 599 Lexington Ave, New York, NY 10022 Email: support@MyMediTales.com Telephone: (800) 440-6598 7.11 Entire Agreement; Amendment. This Agreement, including MyMediTales’s Privacy Policy, constitutes
+                                the entire agreement between the parties concerning the subject matter hereof and supersedes all prior understandings and agreements between the parties, whether written or oral, regarding the subject matter hereof. MyMediTales
+                                may modify this Agreement upon providing written notice to you either via the e-mail registered under your account or by posting such changes through the App or the Website. Any use of the Website, App or the Service following
+                                any such modification constitutes an acceptance of the modification. If you do not accept any modification, you must immediately cease all usage of the App or Website. Simply put... If these terms change, we will notify
+                                you by posting the changes here. 7.12 Waivers. A waiver by either party of a breach or violation of any provision of this Agreement will not constitute or be construed as a waiver of any subsequent breach or violation of
+                                that provision or as a waiver of any breach or violation of any other provision of this Agreement. 7.13 Severability. If any provision of this Agreement is held to be unenforceable, it shall be severed and the remaining
+                                provisions will remain enforceable. The severed provision will be replaced by an enforceable provision most nearly reflecting the intention of the parties. 7.14 Admissibility. A printed version of this Agreement shall be
+                                admissible in judicial or administrative proceedings based upon or relating to use of our website to the same extent and subject to the same conditions as other business documents and records originally made and kept in
+                                printed form. 7.15 Headings. The section titles of this Agreement are displayed for convenience only and have no legal effect. 7.16 Third-Party Beneficiaries. Nothing in this Agreement shall be deemed to give any third-party
+                                rights or benefits.</p>
+                            <br/>
+                            <button mat-raised-button color="primary" class="margin3 raised2" matStepperNext>Accept terms and continue </button>
+
+                        </div>
+                    </form>
+                </mat-step>
             </div>
-            <div class="signupsg3">
-                <mat-label class="mark">Terms of service</mat-label>
-                <p class="scroll">This User Agreement (the “Agreement”) set forth the terms and conditions upon which MyMediTales LLC (“our” “we” or “MyMediTales”) offers you ( “you” “your” or “End-User”), access to use MyMediTales’s mobile application (the “App”) or website
-                    located at www.MyMediTales.com (including any successor site) (the “Website”). By clicking “I Agree”, by accessing the MyMediTales personal health record (the “Service”), using the App, using the Website or otherwise indicating your
-                    assent, you agree to be bound by this Agreement. Additionally, by accessing the Website, you agree to be bound by MyMediTales’s Privacy Policy and all applicable laws. In the event of an inconsistency between this Agreement and the
-                    Privacy Policy, the terms of this Agreement shall control. Any reference to the singular in this Agreement includes the plural and vice versa and reference to a gender includes the other gender unless the context requires otherwise.
-                    Any reference to a “person” in these this Agreement includes any individual, firm, unincorporated association or body corporate. IF YOU DO NOT AGREE TO THIS AGREEMENT, DO NOT ACCESS OR USE THE SERVICE, APP OR WEBSITE. THIS IS A LEGALLY
-                    ENFORCEABLE CONTRACT. Simply put... By using the Website, App or Service you agree to all the terms described here. 1. DESCRIPTION OF SERVICE The Service is a personal health information retrieval and management service that allows
-                    users of the Service (“Members”) to consolidate certain health information (“Patient Information”) through the Service and share information with others (including family members, doctors and other third-party providers). The Service
-                    is provided to you by MyMediTales as an aid to assist you in organizing and managing your health information. 2. YOUR USE OF THE SERVICE MyMediTales may review the Patient Information that you maintain through the Service to normalize
-                    and label data for display, but MyMediTales is not responsible for any errors in the Patient Information resulting from such review process. MyMediTales makes no effort to review the Patient Information for any other purpose, including,
-                    but not limited to, accuracy, legality or non-infringement. MyMediTales is not responsible for any Patient Information provided by third-party providers or their patient portal sites. MyMediTales cannot guarantee or assume responsibility
-                    for the completeness, timeliness, accuracy, relevance, deletion or non-delivery of any Patient Information. Your right to access and use the Service is personal to you and is not transferable by you to any other person or entity. You
-                    are only entitled to access and use the Service for lawful purposes. Accurate information enables MyMediTales to provide the Service to you. You must provide true, accurate, current and complete information and may not misrepresent
-                    information (a) in your registration information, (b) about your family members or third-party providers, or (c) about your Patient Information. In order for the Service to function effectively, you must also keep such information
-                    listed above up-to-date and accurate. If you do not do this, the accuracy and effectiveness of the Service will be affected. Your access and use of the Service may be interrupted from time to time for any of several reasons, including,
-                    without limitation, unanticipated system failures, the malfunction of equipment, periodic updating, maintenance or repair of the App or other actions beyond the control of MyMediTales or that MyMediTales, in its sole discretion, may
-                    elect to take. MyMediTales cannot always foresee or anticipate technical or other difficulties which may result in, and MyMediTales shall therefore not be responsible or liable for, any (a) failure to obtain Patient Information, (b)
-                    loss of Patient Information or personalization settings, or (c) other service interruptions. Simply put... We cannot guarantee certain things. 3. LICENSE; RESERVATION OF RIGHTS 3.1 Limited License to Use the Service. Subject to End-User’s
-                    compliance with the terms and conditions of this Agreement, MyMediTales hereby grants to End-User a limited, personal, non-exclusive, non-transferable, license to use the App to access the Service solely for the End-User’s own personal
-                    purposes. Except for the licenses and rights expressly granted under this Agreement, no licenses or rights are granted by MyMediTales to End-User hereunder, by implication, estoppel or otherwise. All such other licenses and rights
-                    are reserved unto MyMediTales. 3.2 Other License Restrictions. End-User shall not (a) copy or modify the Service or App for any purpose; (b) reverse-engineer, decompile, modify, translate, disassemble or discover the source code for
-                    all or any portion of the Service or the App; (c) distribute, disclose, market, rent, lease or otherwise transfer the Service or the App to any other person or entity; or (d) use the App or the Service or permit, enable or assist a
-                    third party to create competing products or services. 3.3 Intellectual Property Rights. MyMediTales retains all intellectual property rights in and to the Service and the App and all related documentation interest (including all copyrights,
-                    patents, service marks, trademarks and other intellectual property rights), including, but not limited to, any and all updates, enhancements, customizations, revisions, modifications, future releases and any other changes thereto,
-                    and all related information, material and documentation. Except for rights specifically provided in this Agreement, End-User hereby assigns to MyMediTales all other intellectual property rights it may now or hereafter possess in the
-                    Service or the App and related documentation, and all derivative works and improvements thereof, and agrees to execute all documents, and take all actions, that may be necessary to confirm such rights. End-User also agrees to retain
-                    all proprietary marks, legends and patent and copyright notices that appear on the Service or the App and any related documentation delivered to End-User by MyMediTales and all whole or partial copies thereof. 3.4 Proprietary Rights
-                    in Website Content. MyMediTales retains all copyright and other exclusive rights in the contents of the Website (the “Content”). Elements of the Content are protected by copyright, trade dress and other laws, and may not be copied
-                    or imitated in whole or in part. Nothing shall be understood to be granting you any license under any patent, trademark or copyright of MyMediTales or of any third-party. Even though the Website may display certain third-party trademarks
-                    or brand names, that does not mean that MyMediTales owns or is connected with those third-parties. Those third-party trademarks are used only to identify the products and services of their respective owners. Do not assume that MyMediTales
-                    sponsors or endorses those brands, products or services. You are not permitted to use the trademarks displayed on the Website without MyMediTales’s prior written consent or the consent of the third-party that may own the trademarks.
-                    No Content may be modified, copied, distributed, framed, reproduced, republished, downloaded, displayed, posted, transmitted or sold in any form or by any means, in whole or in part, without MyMediTales’s prior written permission.
-                    You may download or print a copy of any portion of the Content solely for your personal, noncommercial use, provided that you keep all copyright or other exclusive notices intact. You may not republish Content contained on the Website
-                    or include the information in any other database or collection. Any other use of the Content is strictly prohibited. Simply put... Please respect our trademarks and brands. 4. WARRANTIES AND LIMITATIONS OF LIABILITY. 4.1 Warranties.
-                    MyMediTales warrants that MyMediTales will use commercially reasonable efforts to cause the Service and the App to operate in substantial conformance with its published documentation. MyMediTales’s sole obligation and End-User’s sole
-                    remedy with respect to any failure of the Service or the App to substantially conform to the documentation therefore is for MyMediTales to use commercially reasonable efforts to remedy any such failure as soon as is reasonably practicable,
-                    and if such failure is not remedied in a reasonable time, for End-User to terminate its access to the Service pursuant to Section 6.2. 4.2 No Specific Results. Specifically, MyMediTales does not represent, warrant or otherwise guarantee:
-                    (a) the reliability and suitability of the App; (b) the effectiveness, suitability or reliability of communicated information (including any data provided through the Service); (c) that the App will work without interruption or that
-                    it will be free of errors, viruses or other harmful components; (d) outcomes resulting from your use of the App; (e) that the information available on the App or through the Service is comprehensive or exhaustive, or that it addresses
-                    all relevant symptoms, medicines, and treatments for various diseases or medical conditions; or (f) any outcome with respect to health and well-being as a result of the application of this information. 4.3 No Practice of Medicine.
-                    The Website, Service and/or the App are not intended to be, and must not be taken to be, the practice of medicine or other healthcare services by MyMediTales. Use of the Website, Service and/or the App do not create a physician/patient
-                    or provider/patient relationship with MyMediTales. MyMediTales is not recommending or endorsing any specific treatment, physician, healthcare provider or medication. Simply put... We are not your doctor; we are a website and application.
-                    4.4 Data Collection; Privacy Policy. Any personal data (for example, your name, address, telephone number or e-mail address) that you transmit to the Service or through the App will be used by MyMediTales in accordance with the Privacy
-                    Policy. Any other communication or material you transmit to the Service or through the App, such as questions, comments, suggestions or the like, will be treated as non-confidential and non-proprietary. 4.5 Ability to Contract; Legal
-                    Age. The Website, Service and the App are offered and available to users who are 18 years of age or older. By using the Website, Services and/or the App, you represent and warrant that you are of legal age to form a binding contract
-                    with MyMediTales and meet all of the foregoing eligibility requirements. If you are under the age of 18, make sure that your parent or legal guardian reads and agrees with this Agreement on your behalf, as your parent or legal guardian
-                    shall be fully responsible for your compliance with this Agreement. If you do not meet all of these requirements, you must not access or use the Website, Service or the App. Simply put... You must either be 18 years or older or have
-                    parental permission to use the Website, Service and App. 4.6 Warranty Disclaimer. EXCEPT AS SET FORTH IN SECTION 4.1, YOU UNDERSTAND AND AGREE THAT THE WEBSITE, SERVICE AND APP IS PROVIDED ON AN “AS IS” AND “AS AVAILABLE” BASIS AND
-                    THAT MyMediTales DISCLAIMS ANY AND ALL WARRANTIES RELATING TO THE WEBSITE, SERVICE, APP OR ANY OTHER MATTER COVERED BY THIS AGREEMENT, INCLUDING, WITHOUT LIMITATION, ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR
-                    PURPOSE. MyMediTales DOES NOT WARRANT THAT THE WEBSITE, SERVICE AND/OR APP WILL MEET YOUR REQUIREMENTS, WILL OPERATE WITHOUT INTERRUPTION OR DELAY AND/OR BE ERROR-FREE, OR THAT ALL FAILURES OF THE WEBSITE, SERVICE OR APP TO CONFORM
-                    TO THE DOCUMENTATION PROVIDED CAN OR WILL BE CORRECTED. MyMediTales MAKES NO WARRANTIES OR REPRESENTATIONS AS TO THE ACCURACY OF ANY CONTENT PROCESSED BY THE WEBSITE, SERVICE AND/OR APP. MATERIAL DOWNLOADED OR OTHERWISE OBTAINED THROUGH
-                    THE USE OF THE WEBSITE, SERVICE AND/OR APP IS DONE AT YOUR OWN CHOOSING AND RISK, AND YOU WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR LOSS OF DATA THAT RESULTS FROM THE DOWNLOAD OF ANY SUCH MATERIAL. SOME JURISDICTIONS
-                    DO NOT ALLOW THE EXCLUSION OF CERTAIN WARRANTIES. ACCORDINGLY, SOME OF THE ABOVE LIMITATIONS MAY NOT APPLY TO YOU. 4.7 Limitations of Liability. IN NO EVENT SHALL MyMediTales, or our directors, officers, employees or agents BE LIABLE
-                    FOR LOST PROFITS OR BUSINESS, LOSS OF GOODWILL, LOSS OF DATA, INTERRUPTION OF BUSINESS, OR FOR ANY EXEMPLARY, PUNITIVE, SPECIAL, INDIRECT, INCIDENTAL OR CONSEQUENTIAL DAMAGES, REGARDLESS OF WHETHER SUCH DAMAGES ARISE UNDER ANY THEORY
-                    OF TORT, CONTRACT, STRICT LIABILITY OR OTHERWISE AND REGARDLESS OF WHETHER SUCH PARTY IS ADVISED OF THE POSSIBILITY OF ANY SUCH DAMAGES. The aggregate liability of MyMediTales for any and all claims arising under or in connection with
-                    this Agreement or its subject matter shall not exceed $500. The above limitation, or exclusion, may not apply to you to the extent that applicable law prohibits the limitation or exclusion of liability for incidental or consequential
-                    damages. Simply put... We are NOT responsible for certain things. 4.8 Essential Part of the Bargain. The parties acknowledge that the disclaimers and limitations set forth in this Section 4 are an essential element of this Agreement
-                    between the parties and the parties would not have entered into this Agreement without such disclaimers and limitations. 4.9 Telecommunication Services. Use of the Website and Service may be available through a compatible mobile device,
-                    Internet and/or network access and may require software. You agree that you are solely responsible for these requirements, including any applicable changes, updates and fees as well as the terms of your agreement with your mobile device
-                    and telecommunications providers. MyMediTales MAKES NO WARRANTIES OR REPRESENTATIONS OF ANY KIND, EXPRESS, STATUTORY OR IMPLIED AS TO: (a) THE AVAILABILITY OF TELECOMMUNICATION SERVICES FROM YOUR PROVIDER AND ACCESS TO THE SERVICE
-                    AT ANY TIME OR FROM ANY LOCATION; (b) ANY LOSS, DAMAGE, OR OTHER SECURITY INTRUSION OF THE TELECOMMUNICATION SERVICES; AND (c) ANY DISCLOSURE OF INFORMATION TO THIRD PARTIES OR FAILURE TO TRANSMIT ANY DATA, COMMUNICATIONS OR SETTINGS
-                    CONNECTED WITH THE SERVICE. Simply put... You agree to provide your own internet and cellular connection. 5. INDEMNIFICATION; UNAUTHORIZED USE 5.1 Indemnification. End-User hereby agrees to indemnify and hold harmless MyMediTales,
-                    our officers, employees, agents, subsidiaries, affiliates, licensors, suppliers and other partners from any and all damages, costs and expenses (including, without limitation, reasonable attorneys’ fees) suffered or incurred by MyMediTales
-                    in connection with any claims that MyMediTales is required to pay to third parties to the extent such damages, settlement amounts, costs and expenses are attributable to End-User’s (a) use of the Website, or (b) provision of content
-                    by the End-User Content through the Service or the App (“End-User Content”), including any actual or alleged volitions of third party intellectual property by such End-User Content. Simply put... You are responsible for certain things.
-                    5.2 Notification of Unauthorized Use. End-User shall promptly notify MyMediTales in writing upon its discovery of any unauthorized use or infringement of the Website, Service, the App, or the related documentation, or MyMediTales's
-                    intellectual property rights with respect thereto. MyMediTales shall have the sole and exclusive right to bring an infringement action or proceeding against any infringing third party and, in the event that MyMediTales brings such
-                    an action or proceeding, End-User shall cooperate and provide full information and assistance to MyMediTales and its counsel in connection with any such action or proceeding. Simply put... You are responsible for notifying us of certain
-                    things. 6. TERM AND TERMINATION 6.1 Term. End-User’s access to the App and Service shall begin on the date End-User registers for the Service and shall continue until terminated earlier under the provisions of this Section 6. Simply
-                    put... We may stop providing the Service at any time. 6.2 Termination for Convenience. MyMediTales may terminate End-User’s access to all or part of the Website and/or use of the Service and the App at any time with or without notifying
-                    you. End-User may terminate access to the Service at any time by cancelling its account for the Service and uninstalling the App. 6.3 Effect of Termination. Upon the termination of the Service, all license rights of End-User under
-                    this Agreement regarding the Service shall automatically and immediately cease and End-User shall promptly cease all uses of the Service and shall uninstall the App. Sections 4.6, 4.7, 5, 6.3 and 7 shall survive the expiration or sooner
-                    termination of this Agreement. Simply put... Termination of the Service takes effect immediately. 7. GENERAL 7.1 Export Compliance. The Service and the App may be subject to U.S. and other national export controls and economic sanctions.
-                    Individuals or entities owned or controlled, registered in, or related to Cuba, Iran, Sudan, Syria, or North Korea are not permitted to use the App or access the Service without prior written permission from MyMediTales once granted
-                    by the appropriate jurisdiction. The rights and obligations of End-User shall be subject to such United States laws and regulations as shall from time to time govern the license and delivery of technology abroad by persons subject
-                    to the jurisdiction of the United States, including the Export Administration Act of 1979, as amended, any successor legislation to the Export Administration Act of 1979, and the Export Administration regulations issued by the Department
-                    of Commerce, International Trade Administration, Office of Export Administration. End-User shall certify that it shall not, directly or indirectly, export, re-export or transship the Service in such manner as to violate such laws and
-                    regulations in effect from time to time. End-User shall indemnify and hold harmless MyMediTales from and against any and all losses, claims and expenses incurred by MyMediTales as a result of the breach of End-User's obligations under
-                    this Section. 7.2 Independent Contractors. In making and performing this Agreement, the parties are acting and shall act as independent contractors. Neither party is, nor will be deemed to be, an agent, legal representative, joint
-                    venturer or partner of the other party for any purpose. 7.3 Force Majeure. In the event that MyMediTales is unable to perform its obligations under this Agreement because of acts of God, strikes, equipment or transmission failure,
-                    unavailability or poor performance of the Internet, or other causes reasonably beyond its control, MyMediTales shall not be liable to the End-User for any damages resulting from such failure to perform or otherwise from such causes.
-                    7.4 Governing Law. This Agreement are governed by the laws of the State of New York, without regard to its choice of law provisions. The courts of general jurisdiction located within New York, New York, will have exclusive jurisdiction
-                    over any and all disputes arising out of, relating to or concerning this Agreement or in which this Agreement are a material fact. MyMediTales makes no representation that materials contained on the Website are appropriate or available
-                    for use in other locations, and accessing them from territories where their contents are illegal is prohibited. If you choose to access the Website from other locations you do so by your own choice, and are responsible for obeying
-                    local laws. 7.5 Dispute Resolution. Any controversy or claim between the parties or arising out of this Agreement or any use of the Service, the App, or the Website shall be determined by one disinterested arbitrator in binding arbitration
-                    pursuant to the Commercial Arbitration Rules and the Supplementary Procedures for Online Arbitration of the American Arbitration Association (the “AAA”). The arbitrator shall be experienced in agreements for information technology
-                    services, either as an attorney or as an information technology professional. If the parties fail to appoint an arbitrator within forty-five (45) days of the institution of the arbitration, the AAA shall select the arbitrator promptly
-                    thereafter. Any requests for accelerated, emergency or preliminary relief shall be submitted pursuant to the AAA’s Optional Rules for Emergency Measures of Protection. If any such requests are made before an arbitration panel is empaneled,
-                    then the AAA shall appoint one disinterested arbitrator as an arbitration panel to immediately hear and decide such request. The arbitration panel shall have the right to grant interim awards. Testimony shall be permitted by telephone,
-                    video conference and other forms of real-time telecommunications. If the arbitrator requires in-person hearings, the hearings shall be held in New York, New York. The arbitral award will be final and binding, and may be entered and
-                    enforced in any court of competent jurisdiction. 7.6 Waiver of Jury Trial and Class Actions. BY ENTERING INTO THIS AGREEMENT, YOU AND MyMediTales ACKNOWLEDGE AND AGREE TO WAIVE CERTAIN RIGHTS TO LITIGATE DISPUTES IN COURT, TO RECEIVE
-                    A JURY TRIAL OR TO PARTICIPATE AS A PLAINTIFF OR AS A CLASS MEMBER IN ANY CLAIM ON A CLASS OR CONSOLIDATED BASIS OR IN A REPRESENTATIVE CAPACITY. YOU AND MyMediTales BOTH AGREE THAT ANY ARBITRATION WILL BE CONDUCTED ON AN INDIVIDUAL
-                    BASIS AND NOT A CONSOLIDATED, CLASS-WIDE OR REPRESENTATIVE BASIS AND THE ARBITRATOR SHALL HAVE NO AUTHORITY TO PROCEED WITH AN ARBITRATION ON A CLASS OR REPRESENTATIVE BASIS. THE ARBITRATOR MAY AWARD INJUNCTIVE RELIEF ONLY IN FAVOR
-                    OF THE INDIVIDUAL PARTY SEEKING RELIEF AND ONLY TO THE EXTENT NECESSARY TO PROVIDE RELIEF WARRANTED BY THAT PARTY’S INDIVIDUAL CLAIM. IF FOR ANY REASON THE ARBITRATION CLAUSE SET FORTH IN THIS AGREEMENT IS DEEMED INAPPLICABLE OR INVALID,
-                    OR TO THE EXTENT THE ARBITRATION CLAUSE ALLOWS FOR LITIGATION OF DISPUTES IN COURT, YOU AND MyMediTales BOTH WAIVE, TO THE FULLEST EXTENT ALLOWED BY LAW, ANY RIGHT TO PURSUE OR TO PARTICIPATE AS A PLAINTIFF OR AS A CLASS MEMBER IN
-                    ANY CLAIM ON A CLASS OR CONSOLIDATED BASIS OR IN A REPRESENTATIVE CAPACITY. 7.7 Third-Party Sites. The Website may contain links to third-party websites. MyMediTales is not responsible for the content, accuracy or opinions expressed
-                    on those third-party websites, and those third-party websites are not investigated, monitored or checked for accuracy or completeness by us. Inclusion of any linked third-party website on or through the Website does not imply approval
-                    or endorsement of the linked third-party website by MyMediTales. If you decide to leave the Website and access these third-party websites, you do so at your own risk. Simply put... The Website may post links to third-party websites,
-                    but they’re not MyMediTales’s and MyMediTales is not responsible for them. 7.8 Public Statements. Either party may disclose the existence of this Agreement but may not represent to any third party any positions, statements, intentions
-                    or other actions on behalf of the other. 7.9 Assignment. End-User may not assign any of its rights or privileges, or delegate any of its duties or obligations hereunder to any third party without the prior written consent of MyMediTales.
-                    Any purported assignment in contravention of this Section shall be null and void. Subject to the foregoing, this Agreement shall be binding upon and inure to the benefit of the parties hereto and their respective permitted successors
-                    and assigns. 7.10 Notices. All notices and other communications hereunder shall be in writing and shall be deemed effective when delivered by hand, facsimile transmission, reputable overnight delivery service, or certified mail (return
-                    receipt requested), postage prepaid to: (a) in the case of End-User, to the address set forth in its account information, and (b) in the case of MyMediTales: MyMediTales, LLC Attn: User Agreement 599 Lexington Ave, New York, NY 10022
-                    Email: support@MyMediTales.com Telephone: (800) 440-6598 7.11 Entire Agreement; Amendment. This Agreement, including MyMediTales’s Privacy Policy, constitutes the entire agreement between the parties concerning the subject matter hereof
-                    and supersedes all prior understandings and agreements between the parties, whether written or oral, regarding the subject matter hereof. MyMediTales may modify this Agreement upon providing written notice to you either via the e-mail
-                    registered under your account or by posting such changes through the App or the Website. Any use of the Website, App or the Service following any such modification constitutes an acceptance of the modification. If you do not accept
-                    any modification, you must immediately cease all usage of the App or Website. Simply put... If these terms change, we will notify you by posting the changes here. 7.12 Waivers. A waiver by either party of a breach or violation of any
-                    provision of this Agreement will not constitute or be construed as a waiver of any subsequent breach or violation of that provision or as a waiver of any breach or violation of any other provision of this Agreement. 7.13 Severability.
-                    If any provision of this Agreement is held to be unenforceable, it shall be severed and the remaining provisions will remain enforceable. The severed provision will be replaced by an enforceable provision most nearly reflecting the
-                    intention of the parties. 7.14 Admissibility. A printed version of this Agreement shall be admissible in judicial or administrative proceedings based upon or relating to use of our website to the same extent and subject to the same
-                    conditions as other business documents and records originally made and kept in printed form. 7.15 Headings. The section titles of this Agreement are displayed for convenience only and have no legal effect. 7.16 Third-Party Beneficiaries.
-                    Nothing in this Agreement shall be deemed to give any third-party rights or benefits.</p>
-                <br/>
-                <button mat-raised-button color="primary" class="margin3 raised2" matStepperNext>Accept terms and continue </button>
-
-            </div>
-        </form>
-    </mat-step>
-    <mat-step [stepControl]="formDoneGroup" label="Review">
-        <div class="home7">
-            <mat-icon class="home6">&#xe8dc;</mat-icon>
-        </div>
-
-        <form [formGroup]="formDoneGroup">
-
-            <div style="position: absolute;margin-top: -62px;">
-                <div>
-                    <h5 class="usernames1">UserName</h5>
-                    <span class="usernames2">{{formNameGroup.controls['userName'].value}}</span>
+            <mat-step [stepControl]="formDoneGroup" label="Review">
+                <div class="home7">
+                    <mat-icon class="home6">&#xe8dc;</mat-icon>
                 </div>
-                <div>
-                    <h5 class="usernames3">Email</h5>
-                    <span class="usernames4">{{formEmailGroup.controls['emailID'].value}}</span>
-                </div>
-                <div>
-                    <h5 class="usernames5">Password</h5>
-                    <span class="usernames6">*****</span>
-                </div>
-                <div>
-                    <h5 class="usernames7">Phone Number</h5>
-                    <span class="usernames8">{{formPhoneGroup.controls['phone'].value}}</span>
-                </div>
-                <div>
-                    <h5 class="usernames9">Pin</h5>
-                    <span class="usernames10">*****</span>
-                </div>
-            </div>
-            <button mat-raised-button color="primary" class="cancel" (click)="stepper.reset()" matStepperPrevious>&#x2715;<i class="conduct"></i>Cancel</button>
-            <button mat-raised-button color="primary" routerLink="/app-login" class="reset">Submit</button>
-        </form>
 
+                <form [formGroup]="formDoneGroup">
 
-        <!-- <button mat-raised-button color="warn" (click)="stepper.reset()" class="reset">Reset</button> -->
-        <!-- <img src="../../../assets/loginimage.png" class="crop"> -->
-
-    </mat-step>
-    >
-</mat-horizontal-stepper>
+                    <div style="position: absolute;margin-top: -62px;">
+                        <div>
+                            <h5 class="usernames1">UserName</h5>
+                            <span class="usernames2">{{formNameGroup.controls['userName'].value}}</span>
+                        </div>
+                        <div>
+                            <h5 class="Email3">Email</h5>
+                            <span class="Email4">{{formEmailGroup.controls['emailID'].value}}</span>
+                        </div>
+                        <div>
+                            <h5 class="password5">Password</h5>
+                            <span class="password6">*****</span>
+                        </div>
+                        <div>
+                            <h5 class="phoneNumber7">Phone Number</h5>
+                            <span class="phoneNumber8">{{formPhoneGroup.controls['phone'].value}}</span>
+                        </div>
+                        <div>
+                            <h5 class="pinNumber9">Pin</h5>
+                            <span class="pinNumber10">*****</span>
+                        </div>
+                    </div>
+                    <button mat-raised-button color="primary" class="cancel" (click)="stepper.reset()" matStepperPrevious>&#x2715;<i class="conduct"></i>Cancel</button>&nbsp;&nbsp;
+                    <button mat-raised-button color="primary" routerLink="/app-login" class="reset">Submit</button>
+                </form>
+            </mat-step>
+        </mat-horizontal-stepper>
+    </div>
+    <div class="col-lg-2">&nbsp;</div>
+</div>
