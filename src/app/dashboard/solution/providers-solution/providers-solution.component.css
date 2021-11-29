@@ -706,7 +706,8 @@
     .svg_style {
         margin-top: -135px;
         padding-left: 0px;
-        margin-right: 0px;
+        margin-right: -12px;
+        margin-left: -12px;
     }
     /* @media (min-width: 48rem) {
         .img_onerec_style {
@@ -1029,11 +1030,11 @@
     } */
     
     section {
-        margin-top: 100px;
+        /* margin-top: 100px;
         margin-right: auto;
-        margin-bottom: 0;
+        margin-bottom: 0; */
         /* margin-left: 0px; */
-        padding-top: 12.75rem;
-        padding-bottom: 3.75rem;
+        /* padding-top: 12.75rem;
+        padding-bottom: 3.75rem; */
         /* padding-right: 0rem; */
     }
