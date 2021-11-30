@@ -31,7 +31,7 @@
                             <button class="button" mat-raised-button color="primary" matStepperNext>Choose this username </button>
                             <div class="loginarea">
                                 <p class="text-muted1 acc-already">Have an Account Already?</p>
-                                <p class="login"><a href="">Log In</a> &nbsp; <i class="fa fa-chevron-right icon " aria-hidden="true"></i></p>
+                                <p class="login"><a href="">Log In</a> &nbsp; <i class="fa fa-chevron-right iconsg " aria-hidden="true"></i></p>
                             </div>
                         </form>
                     </div>
@@ -134,7 +134,7 @@
                                 <div>
                                     <mat-label class="map1">Phone Number</mat-label>
                                 </div>
-                                <mat-form-field appearance="fill">
+                                <mat-form-field appearance="fill" class="phonetext">
                                     <input matInput placeholder="Phone Number" required formControlName="phone" class="current1">
                                     <mat-error class="rowsignup" *ngIf="formPhoneGroup.controls['phone'].hasError('required')">
                                         Phone Number is Required
@@ -165,7 +165,7 @@
                                 <div>
                                     <mat-label class="map3">PIN</mat-label>
                                 </div>
-                                <mat-form-field appearance="fill ">
+                                <mat-form-field appearance="fill " class="pintext">
 
                                     <input matInput placeholder="Enter PIN" required formControlName="pin" class="current" minlength="5" pattern="[0-9]*">
 
@@ -196,7 +196,7 @@
                     </div>
                     <div class="signupsg3">
                         <div style="">
-                            <mat-label class="mark">Terms of service</mat-label>
+                            <mat-label class="mark2">Terms of service</mat-label>
                             <p class="scroll">This User Agreement (the “Agreement”) set forth the terms and conditions upon which MyMediTales LLC (“our” “we” or “MyMediTales”) offers you ( “you” “your” or “End-User”), access to use MyMediTales’s mobile application (the
                                 “App”) or website located at www.MyMediTales.com (including any successor site) (the “Website”). By clicking “I Agree”, by accessing the MyMediTales personal health record (the “Service”), using the App, using the Website
                                 or otherwise indicating your assent, you agree to be bound by this Agreement. Additionally, by accessing the Website, you agree to be bound by MyMediTales’s Privacy Policy and all applicable laws. In the event of an inconsistency
