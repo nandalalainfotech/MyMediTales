@@ -2,16 +2,17 @@
     <div class="col-lg-2">&nbsp;</div>
     <div class="col-lg-8">
 
-        <mat-horizontal-stepper [linear]="isLinear" #stepper class="shadow bg_img" style="position: relative;">
-            <div class="row" style="position: absolute;">
-                <mat-step [stepControl]="formNameGroup" label="Name">
-                    <!-- <i class="fa fa-home" style="margin-top: 22px;"></i> -->
-                    <!-- <div class="mat-step-icon">
+        <mat-horizontal-stepper [linear]="isLinear" #stepper class="shadowsignup ">
+
+            <mat-step [stepControl]="formNameGroup" label="Name">
+                <!-- <i class="fa fa-home" style="margin-top: 22px;"></i> -->
+                <!-- <div class="mat-step-icon">
             <span class="home">&#xe851;</span></div> -->
-                    <div class="home7">
-                        <mat-icon class="home">&#xe851;</mat-icon>
-                    </div>
-                    <div style="padding-top: 3%; position: absolute;">
+                <div class="home7">
+                    <mat-icon class="home">&#xe851;</mat-icon>
+                </div>
+                <div style="padding-top: 2%; ">
+                    <div style="position: absolute;">
                         <p class="text"><b>Sign Up</b></p>
                         <p class="text-muted">First,Choose Your Username.</p>
                         <p class="username"><b>Username</b></p>
@@ -32,14 +33,18 @@
                             </div>
                         </form>
                     </div>
-                </mat-step>
-            </div>
-            <div class="row" style="position: absolute;">
-                <mat-step [stepControl]="formEmailGroup" label="Email">
-                    <div class="home7">
-                        <mat-icon class="home1">&#xe0be;</mat-icon>
-                    </div>
-                    <div style="padding-top: 2%; position: absolute;">
+                </div>
+
+            </mat-step>
+
+
+            <mat-step [stepControl]="formEmailGroup" label="Email">
+
+                <div class="home7">
+                    <mat-icon class="home1">&#xe0be;</mat-icon>
+                </div>
+                <div style="padding-top: 2%;">
+                    <div style="position: absolute;">
                         <p class="text1"><b>Provide Your Email Address</b></p>
                         <p class="text-muted1">Your email address will be used to change forgotten password, send account alerts and maintain your MyMediTales account.
                         </p>
@@ -60,14 +65,16 @@
                             <button class="button" mat-raised-button color="primary" matStepperNext>Use this Email</button>
                         </form>
                     </div>
-                </mat-step>
-            </div>
-            <div class="row">
-                <mat-step [stepControl]="formPasswordGroup" label="Password">
-                    <div class="home7">
-                        <mat-icon class="home2">&#xe897;</mat-icon>
-                    </div>
-                    <div style="padding-top: 2%; position: absolute;">
+                </div>
+            </mat-step>
+
+
+            <mat-step [stepControl]="formPasswordGroup" label="Password">
+                <div class="home7">
+                    <mat-icon class="home2">&#xe897;</mat-icon>
+                </div>
+                <div style="padding-top: 4%;">
+                    <div style="position: absolute;">
                         <form [formGroup]="formPasswordGroup">
                             <div class="example-form">
                                 <div>
@@ -102,18 +109,20 @@
                             <button class="button" mat-raised-button color="primary" matStepperNext>Create password</button>
                         </form>
                     </div>
-                </mat-step>
-            </div>
+                </div>
+            </mat-step>
+
             <!-- 4/6 -->
-            <div class="row">
-                <mat-step [stepControl]="formPhoneGroup" label="Phone">
-                    <div class="home7">
-                        <mat-icon class="home3">&#xe0d6;</mat-icon>
-                    </div>
-                    <!-- <mat-progress-bar mode="determinate" value=70 class="git">
+
+            <mat-step [stepControl]="formPhoneGroup" label="Phone">
+                <div class="home7">
+                    <mat-icon class="home3">&#xe0d6;</mat-icon>
+                </div>
+                <!-- <mat-progress-bar mode="determinate" value=70 class="git">
         </mat-progress-bar>
         <p class="slit">4/6</p> -->
-                    <div class="signupsg1" style="position: absolute;">
+                <div class="signupsg1">
+                    <div style="position: absolute;">
                         <!-- <i class="material-icons"></i> -->
                         <mat-label class="mark">Secure Your Account</mat-label>
                         <form [formGroup]="formPhoneGroup">
@@ -125,10 +134,10 @@
                                 </div>
                                 <mat-form-field appearance="fill">
                                     <input matInput placeholder="Phone Number" required formControlName="phone" class="current1">
-                                    <mat-error class="rows" *ngIf="formPhoneGroup.controls['phone'].hasError('required')">
+                                    <mat-error class="rowsignup" *ngIf="formPhoneGroup.controls['phone'].hasError('required')">
                                         Phone Number is Required
                                     </mat-error>
-                                    <mat-error class="rows" *ngIf="!formPhoneGroup.get('phone').hasError('required') &&formPhoneGroup.get('phone').hasError('pattern')">
+                                    <mat-error class="rowsignup" *ngIf="!formPhoneGroup.get('phone').hasError('required') &&formPhoneGroup.get('phone').hasError('pattern')">
                                         Please Enter Valid Number
                                     </mat-error>
                                 </mat-form-field>
@@ -137,14 +146,15 @@
                             <button mat-raised-button color="primary" class="margin1 raised" matStepperNext>Send PIN</button>
                         </form>
                     </div>
-                </mat-step>
-            </div>
-            <div class="row">
-                <mat-step [stepControl]="formPinGroup" label="Pin">
-                    <div class="home7">
-                        <mat-icon class="home4">&#xe0da;</mat-icon>
-                    </div>
-                    <div class="signupsg" style="position: absolute;">
+                </div>
+            </mat-step>
+
+            <mat-step [stepControl]="formPinGroup" label="Pin">
+                <div class="home7">
+                    <mat-icon class="home4">&#xe0da;</mat-icon>
+                </div>
+                <div class="signupsg">
+                    <div style="position: absolute;">
                         <mat-label class="mark1">Enter PIN</mat-label>
                         <form [formGroup]="formPinGroup">
                             <div>
@@ -173,15 +183,17 @@
                             <button mat-raised-button color="primary" class="margin4" style="margin-top: 56px;" matStepperNext>Submit PIN</button>
                         </form>
                     </div>
-                </mat-step>
-            </div>
-            <div class="row">
-                <mat-step [stepControl]="formTermGroup" label="Terms">
-                    <form [formGroup]="formTermGroup">
-                        <div class="home7">
-                            <mat-icon class="home5">&#xe560;</mat-icon>
-                        </div>
-                        <div class="signupsg3" style="position: absolute;">
+                </div>
+            </mat-step>
+
+
+            <mat-step [stepControl]="formTermGroup" label="Terms">
+                <form [formGroup]="formTermGroup">
+                    <div class="home7">
+                        <mat-icon class="home5">&#xe560;</mat-icon>
+                    </div>
+                    <div class="signupsg3">
+                        <div style="position: absolute;">
                             <mat-label class="mark">Terms of service</mat-label>
                             <p class="scroll">This User Agreement (the “Agreement”) set forth the terms and conditions upon which MyMediTales LLC (“our” “we” or “MyMediTales”) offers you ( “you” “your” or “End-User”), access to use MyMediTales’s mobile application (the
                                 “App”) or website located at www.MyMediTales.com (including any successor site) (the “Website”). By clicking “I Agree”, by accessing the MyMediTales personal health record (the “Service”), using the App, using the Website
@@ -303,10 +315,14 @@
                             <br/>
                             <button mat-raised-button color="primary" class="margin3 raised2" matStepperNext>Accept terms and continue </button>
 
+
                         </div>
-                    </form>
-                </mat-step>
-            </div>
+                    </div>
+                </form>
+
+
+            </mat-step>
+
             <mat-step [stepControl]="formDoneGroup" label="Review">
                 <div class="home7">
                     <mat-icon class="home6">&#xe8dc;</mat-icon>
