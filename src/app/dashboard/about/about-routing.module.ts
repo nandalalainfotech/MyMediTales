@@ -5,6 +5,7 @@ import { AboutMediaComponent } from './about-media/about-media.component';
 import { AboutPatientPartnersComponent } from './about-patient-partners/about-patient-partners.component';
 import { AboutTeamComponent } from './about-team/about-team.component';
 import { AboutComponent } from './about.component';
+import { BlogOneComponent } from './blog-one/blog-one.component';
 
 const routes: Routes = [{
   path:"",
@@ -26,7 +27,10 @@ const routes: Routes = [{
       path:'app-about-media',
       component:AboutMediaComponent
     },
-   
+    {
+      path:'app-blog-one',
+      component:BlogOneComponent
+    },
   ]
 }];
 
