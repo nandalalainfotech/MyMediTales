@@ -4,6 +4,7 @@
         min-width: 150px;
         max-width: 500px;
         width: 100%;
+        margin-left: -61px;
     }
     
     .example-full-width {
@@ -143,7 +144,7 @@
     
     .passsg {
         margin-top: 0;
-        margin-bottom: 1rem;
+        margin-bottom: 0rem;
         margin-left: 29%;
         font-weight: 700;
     }
@@ -174,7 +175,7 @@
         font-size: 17px;
         margin-bottom: -5px;
         padding-top: 48px;
-        margin-left: 19%;
+        margin-left: 13%;
     }
     
     .conpw_align {
@@ -184,7 +185,8 @@
     .email {
         font-size: 18px;
         margin-bottom: 0px;
-        margin-left: 23%;
+        margin-left: 13%;
+        margin-top: 69px;
     }
     
     .eror1 {
@@ -196,25 +198,25 @@
         height: 50px;
         border-radius: 10px;
         top: 20px;
-        margin-left: 143px;
+        margin-left: 84px;
         color: white;
         font-size: 20px;
     }
     
     .acc-already {
         padding-top: 125px;
-        margin-left: 141px;
+        margin-left: 87px;
     }
     
     .login {
         margin-top: -17px;
         font-size: 20px;
-        margin-left: 19%;
+        margin-left: 14%;
     }
     
-    .icon {
+    .iconsg {
         font-size: 16px;
-        padding-left: 11px;
+        /* padding-left: 11px; */
         color: #007bff;
     }
     
@@ -308,7 +310,7 @@
     }
     
     .margin1 {
-        margin-left: 21%;
+        margin-left: 15%;
         width: 428px;
         margin-top: 33px;
         font-size: 15px;
@@ -327,7 +329,7 @@
     }
     
     .margin4 {
-        margin-left: 118px;
+        margin-left: 107px;
         width: 428px;
         margin-top: 47 px;
         font-size: 15px;
@@ -349,18 +351,23 @@
     
      ::ng-deep.mark {
         font-size: 30px;
-        margin-left: 149px;
+        margin-left: 129px;
         font-weight: bolder;
         text-align: center;
     }
     
      ::ng-deep.mark1 {
         font-size: 30px;
-        margin-left: 235px;
+        margin-left: 217px;
         font-weight: bolder;
     }
     
-     ::ng-deep .mark {
+    ::ng-deep.mark2 {
+        font-size: 30px;
+        margin-left: 160px;
+        font-weight: bolder;
+    }
+     ::ng-deep .mark,.mark1,.mark2{
         background: transparent;
     }
     
@@ -433,7 +440,7 @@
         margin-top: 12px;
         margin-bottom: 37px;
         font-weight: 888px;
-        margin-left: -11px!important;
+        margin-left: 0px!important;
     }
     
     .icon2 {
@@ -447,7 +454,7 @@
     
     .icon1 {
         margin-top: 39px;
-        margin-left: -22px !important;
+        margin-left: -9px !important;
         font-size: 18px;
     }
     
@@ -517,16 +524,20 @@
         font-weight: bolder;
         background: transparent;
         font-size: 18px;
-        margin-left: 20%;
-        position: absolute;
+        margin-left: 16%;
         margin-top: -25px;
     }
-    
+    .phonetext {
+    margin-left: 198px;
+    }
+    .pintext{
+        margin-left: 211px;
+    }
     .map3 {
         font-weight: bolder;
         background: transparent;
         font-size: 19px;
-        margin-left: 119px;
+        margin-left: 107px;
     }
     
     .raised {
@@ -659,7 +670,7 @@
     .home {
         color: rgb(226, 37, 153);
         top: -80px;
-        left: -24px;
+        left: -25px;
         font-size: 19px;
         position: absolute !important;
         border-radius: 4px;
@@ -680,7 +691,7 @@
     .home2 {
         color: rgb(226, 37, 153);
         top: -81px;
-        left: 179px;
+        left: 178px;
         font-size: 17px;
         position: absolute;
         border-radius: 4px;
@@ -689,7 +700,7 @@
     .home3 {
         color: rgb(226, 37, 153);
         top: -79px;
-        left: 280px;
+        left: 279px;
         font-size: 17px;
         position: absolute;
         border-radius: 4px;
