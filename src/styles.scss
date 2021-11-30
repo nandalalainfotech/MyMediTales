@@ -1188,11 +1188,11 @@ svg {
     box-sizing: border-box;
 }
 
-.max {
-    margin-top: -1px;
-    padding: 11.5px;
+// .max {
+//     margin-top: -1px;
+//     padding: 11.5px;
 
-}
+// }
 // -------------------
 .flea .input-container {
     display: -ms-flexbox; /* IE10 */
@@ -3668,6 +3668,178 @@ transform: scale(1.075)
 }
 
 // -----------------------------policy-privacy end--------------------------------------------
+
+//------------------------------------PRIVACY POLICY /CARIN CODE----------------------------------- 
+.carincodecontainer1 {
+    background-color: #010743;
+    overflow: hidden;
+   
+}
+
+.carincodecontainer1 .carinladyimg{
+    position: relative;
+    padding-right: 40px;
+    z-index: 1;
+    height: 600px;
+    width: 750px;
+}
+
+
+
+.carincodecontainer1 .carincoderow{
+padding-top:50px;
+
+}
+.carincodecontainer1 .carincodetext{
+padding-left:60px;
+padding-top: 20px;
+color:white;
+font-family: "Lato",sans-serif;
+}
+.carincodecontainer1 .carincodetext h1{
+  font-weight: bold;
+  font-size: 53px;
+  letter-spacing: 1px;
+  margin-left: 11%;
+} 
+.carincodecontainer1 .carincodetext  .carincodeparag{
+font-size: 18px;
+font-weight: 400;
+margin-top: 1.25rem;
+margin-left: 11%;
+}
+
+
+/* ----------------------------------- */
+
+.carincodecontainer2 .hrule{
+border-bottom: 1px solid #cdccd9;
+padding-bottom: 3.125rem;
+position: relative;
+max-width: 62rem;
+}
+.carincodecontainer2 .sticky {
+position: -webkit-sticky;
+position: -moz-sticky;
+position: -ms-sticky;
+position: -o-sticky;
+position: sticky;
+top: 0px;
+}
+.carincodecontainer2{
+padding-top:1px;
+}
+.carincodecontainer2 .carincode-menu {
+width: 25%;
+float: left;
+overflow-y: scroll;
+height:800px;
+position: sticky !important;
+top: 0;
+bottom: 0;
+overflow-y: scroll;
+height: 1%;
+
+}
+
+.carincodecontainer2 .carincode-main {
+width: 75%;
+float: left;
+padding: 30px;
+padding-top:0;
+
+}
+.carincodecontainer2 .carincode-menu .carincode-menutable{
+text-align: center;
+padding:10px;
+font-size: 18px;
+font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.carincodecontainer2 .carincode-main .carintrust{
+font-size: 18px;
+font-family: "Lato",sans-serif;
+color: #5c5969;
+
+}
+.carincodecontainer2 .carincode-menu  ul li{
+list-style-type: none;
+margin-top: 1.5rem;
+line-height: 1.375em;
+// font-size: 16px;
+color: #4656D6;
+}
+
+
+.carincodecontainer2 .backsec {
+font-family: "Volte-Semibold",sans-serif;
+margin-bottom: 0.5rem;
+font-weight: 700;
+line-height: 1.2;
+}
+.carincodecontainer2 .hrule h3{
+font-family: "Volte-Semibold",sans-serif;
+font-weight: bold;
+font-size:30px;
+margin-top: 1.875rem;
+margin-bottom: 1.875rem;
+
+}
+.carincodecontainer2 .p1{
+color: #413d46;
+font-size: 16px;
+font-family: "Lato",sans-serif;
+line-height: 1.75em;
+}
+
+.carincodecontainer2 .p2{
+font-family: "Lato",sans-serif;
+line-height: 1.3;
+color: #262224;
+font-size: 18px;
+font-weight:bold;
+letter-spacing: 1px;
+padding:20px 0px;
+}
+
+.carincodecontainer2{
+margin-top:100px !important;
+}
+.carincodecontainer2 .button-carin {
+position: relative;
+padding-left: 8px;
+top: 30px;
+right: 0px;
+border: 0;
+width: 2.25rem;
+height: 2.25rem;
+border-radius: 30rem;
+background-color: #CDCCD9;
+color: #fff;
+cursor: pointer;
+transition: background-color 0.2s ease;
+}
+
+/* .button-carin {
+top: 25px;
+} */
+.carincodecontainer2 .button-carin::after {
+background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+transform: scale(0.7) !important;
+transition: transform 0.1s ease-in-out;
+top: 25%;
+position: absolute;
+}
+
+.carincodecontainer2 .button-carin:not(.collapsed)::after {
+position: absolute;
+top: 25%;
+transition: transform 0.1s ease-in-out;
+background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+
+// ______________________PRIVACY POLICY /CARIN CODE END-----------------------------------
+
 // -------------------------------Solution-Patients 1st dropdropdown-------------------------------------------
 
 /* curve area */
@@ -7466,178 +7638,7 @@ ul .palx {
 //*************************************policy/archive End*******************************************//
 // -------------------------------PRIVACY POLICY/ POLICY ARCHIVE----------------------------------
 // -------------------------------PRIVACY POLICY/ POLICY ARCHIVE END----------------------------------
-//------------------------------------PRIVACY POLICY /CARIN CODE----------------------------------- 
-.carincodecontainer {
-    background-color: #010743;
-    overflow: hidden;
-    /* height:610px; */
-}
 
-.carinladyimg {
-    position: relative;
-    padding-right: 40px;
-    z-index: 1;
-    height: 600px;
-    width: 750px;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.termsrow {
-    padding-top: 50px;
-}
-
-.termstext {
-    padding-left: 60px;
-    padding-top: 20px;
-    color:white;
-    font-family: "Lato",sans-serif;
-  }
-  .carincodecontainer1 .carincodetext h1{
-      font-weight: bold;
-      font-size: 53px;
-      letter-spacing: 1px;
-      margin-left: 11%;
-  } 
-  .carincodecontainer1 .carincodetext  .carincodeparag{
-    font-size: 18px;
-    font-weight: 400;
-    margin-top: 1.25rem;
-    margin-left: 11%;
-  }
-  
-  
-  /* ----------------------------------- */
-  
-  .carincodecontainer2 .hrule{
-    border-bottom: 1px solid #cdccd9;
-    padding-bottom: 3.125rem;
-    position: relative;
-    max-width: 62rem;
-  }
-  .carincodecontainer2 .sticky {
-    position: -webkit-sticky;
-  position: -moz-sticky;
-  position: -ms-sticky;
-  position: -o-sticky;
-    position: sticky;
-    top: 0px;
-  }
-  .carincodecontainer2{
-    padding-top:1px;
-  }
-  .carincodecontainer2 .carincode-menu {
-    width: 25%;
-    float: left;
-    
-    overflow-y: scroll;
-    height:800px;
-    position: sticky !important;
-    top: 0;
-    bottom: 0;
-    overflow-y: scroll;
-    
-    height: 1%;
-   
-  }
-  
-  .carincodecontainer2 .carincode-main {
-    width: 75%;
-    float: left;
-    padding: 30px;
-    padding-top:0;
-    
-  }
-  .carincodecontainer2 .carincode-menu .carincode-menutable{
-    text-align: center;
-    padding:10px;
-    font-size: 18px;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-  }
-  .carincodecontainer2 .carincode-main .carintrust{
-    font-size: 18px;
-    font-family: "Lato",sans-serif;
-    color: #5c5969;
-  
-  }
-  .carincodecontainer2 .carincode-menu  ul li{
-    list-style-type: none;
-    margin-top: 1.5rem;
-    line-height: 1.375em;
-  }
- 
-  
-  .carincodecontainer2 .backsec {
-    font-family: "Volte-Semibold",sans-serif;
-    margin-bottom: 0.5rem;
-    font-weight: 700;
-    line-height: 1.2;
-  }
-  .carincodecontainer2 .hrule h3{
-    font-family: "Volte-Semibold",sans-serif;
-    font-weight: bold;
-    font-size:30px;
-    margin-top: 1.875rem;
-    margin-bottom: 1.875rem;
-    
-  }
-  .carincodecontainer2 .p1{
-    color: #413d46;
-    font-size: 16px;
-    font-family: "Lato",sans-serif;
-    line-height: 1.75em;
-  }
-  
-  .carincodecontainer2 .p2{
-    font-family: "Lato",sans-serif;
-    line-height: 1.3;
-    color: #262224;
-    font-size: 18px;
-    font-weight:bold;
-    letter-spacing: 1px;
-    padding:20px 0px;
-  }
-  
-  .carincodecontainer2{
-    margin-top:100px !important;
-  }
-  .carincodecontainer2 .button-carin {
-    position: relative;
-    padding-left: 8px;
-    top: 30px;
-    right: 0px;
-    border: 0;
-    width: 2.25rem;
-    height: 2.25rem;
-    border-radius: 30rem;
-    background-color: #CDCCD9;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-}
-
-/* .button-carin {
-    top: 25px;
-} */
-.carincodecontainer2 .button-carin::after {
-  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
-  transform: scale(0.7) !important;
-  transition: transform 0.1s ease-in-out;
-  top: 25%;
-  position: absolute;
-}
-
-.carincodecontainer2 .button-carin:not(.collapsed)::after {
-  position: absolute;
-  top: 25%;
-  transition: transform 0.1s ease-in-out;
-  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
-}
-
-// ______________________PRIVACY POLICY /CARIN CODE END-----------------------------------
 // ---------------------------Solution-Payers START----------------------------
 .Containerfull {
     flex: 1 0 auto;
