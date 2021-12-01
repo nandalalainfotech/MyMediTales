@@ -31,6 +31,7 @@ const routes: Routes = [{
       path:'app-blog-one',
       component:BlogOneComponent
     },
+    
   ]
 }];
 
