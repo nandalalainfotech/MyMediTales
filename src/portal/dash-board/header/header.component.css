@@ -1,0 +1,55 @@
+.flex-head{
+    background-color:lightslategray;
+    /* width:100%; */
+    filter:brightness(90%);
+    height: 54px;
+    /* position: absolute; */
+}
+.navbar{
+    font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif!important;
+    font-size: 18px;
+    padding:22px;
+   width:100%;
+    /* color: #2B5084;
+    color: #263E6C; */
+}
+.navbar-brand img{
+margin-left: 60px;
+}
+.navbar-left li a img {
+color:red !important;
+/* background-color: white; */
+/* margin-top:3px !important; */
+}
+.home{
+    margin-left:-20px !important;
+    margin-top:-4px !important;
+}
+ li a:hover{
+    background:none;
+}
+.navbar-right li a{
+margin-top: -4px;
+padding-left:10px;
+
+
+}
+li a{
+    color:white;
+    font-size: 13px;
+}
+.navbar-right {
+    float: right!important;
+margin-right: 50px;
+padding-top:15px;
+
+
+
+}
+ul li{
+    margin-left: 22px !important;
+}
+.myMedi{
+  color: #E1D9D1 ;
+  margin-left: 20px;
+}

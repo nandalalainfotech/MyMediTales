@@ -1,0 +1,9 @@
+<nav mat-tab-nav-bar>
+    <a mat-tab-link  routerLink="./app-news-letter1" routerLinkActive #newsLetter="routerLinkActive" [active]="newsLetter.isActive">News Letter1</a>
+    <a mat-tab-link routerLink="./app-news-letter2" routerLinkActive #newsLetter="routerLinkActive" [active]="newsLetter.isActive">News Letter2</a>
+    <a mat-tab-link routerLink="./app-news-letter3" routerLinkActive #newsLetter="routerLinkActive" [active]="newsLetter.isActive">News Letter3</a>
+    <a mat-tab-link routerLink="./app-news-letter4" routerLinkActive #newsLetter="routerLinkActive" [active]="newsLetter.isActive">News Letter4</a>
+</nav>
+
+
+<router-outlet></router-outlet>

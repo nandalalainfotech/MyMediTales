@@ -1,0 +1,18 @@
+body {
+    margin: 0 !important;
+    font-family: 'Helvetica' !important;
+  }
+
+    .dataView1 {
+      position: absolute !important;
+      top: 58px;
+      min-height: inherit;
+      margin-left: 280px;
+      overflow-x: inherit;
+      bottom: 58px;
+      left: 0px;
+      right: 0px;
+      transition: 1500ms linear;
+      overflow: auto;
+  }
+  

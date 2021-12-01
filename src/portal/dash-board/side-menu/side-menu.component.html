@@ -1,0 +1,58 @@
+<div class="menu-trigger" (click)="isOpen = !isOpen">
+  <i class="gg-push-chevron-right-o"></i>
+  
+</div>
+
+<div class="side-menu" *ngIf="isOpen" [@sideMenu]>
+  <div class="menu-close" (click)="isOpen = !isOpen">
+    <i class="gg-push-chevron-left-o"></i>
+  </div>
+  <div class="menu-item">
+    <li routerLink="./app-news-letter" title="News Letter">
+      <span><i class="fa fa-newspaper-o" aria-hidden="true"></i></span>
+      News Letter
+    </li>
+  </div>
+  <div class="menu-item">
+    <li routerLink="./app-events" title="Events">
+      <span><i class="fa fa-user"></i></span>
+      Events
+    </li>
+  </div>
+  <div class="menu-item">
+    <li routerLink="./app-blog" title="Blog">
+      <span><i class="fa fa-bullhorn" aria-hidden="true"></i></span>
+      Blog
+    </li>
+  </div>
+  <div class="menu-item">
+    <li routerLink="./app-survey" title="Survey">
+      <span><i class="fas fa-smile"></i></span>
+      Survey
+    </li>
+  </div>
+  <div class="menu-item">
+    <li routerLink="./app-polls" title="Polls">
+      <span><i class='fas fa-poll-h'></i></span>
+      Polls
+    </li>
+  </div>
+  <div class="menu-item">
+    <li routerLink="./app-reports" title="Reports">
+      <span><i class="fa fa-file" aria-hidden="true"></i></span>
+      Reports
+    </li>
+  </div>
+  <div class="menu-item">
+    <li routerLink="./app-setup" title="Setup">
+      <span><i class="fa fa-cog"></i></span>
+      Setup
+    </li>
+  </div>
+  <div class="menu-item">
+    <li routerLink="./app-dashboard" title="Dashboard">
+      <span><i class="fa fa-dashboard"></i></span>
+      Dashboard
+    </li>
+  </div>
+</div>

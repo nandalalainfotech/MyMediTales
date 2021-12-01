@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { AboutComponent } from './about/about.component';
 import { BodyOneComponent } from './body/body-one/body-one.component';
 import { BodyThreeComponent } from './body/body-three/body-three.component';
@@ -35,7 +36,8 @@ import { LoginComponent } from './login/login.component';
   ],
   imports: [
     CommonModule,
-    DashboardRoutingModule
+    DashboardRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   exports: [],
