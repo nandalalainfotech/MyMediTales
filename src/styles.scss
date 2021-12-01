@@ -7231,8 +7231,8 @@ input {
 }
 
 .seter {
-    margin-top: -105px;
-    margin-left: -58px;
+    margin-top: 8px;
+    margin-left: -145px;
     font-weight: bolder;
     letter-spacing: 0.5px;
     width: 558px;
@@ -7250,11 +7250,11 @@ input {
 .geter {
     font-size: 15px;
     font-weight: lighter;
-    width: 502px;
+    width: 392px;
 }
 
 .flash {
-    margin-left: -56px;
+    margin-left: -132px;
     font-weight: 400;
 }
 
@@ -7266,24 +7266,9 @@ input {
     margin-top: 1.03rem;
 }
 
-@media (min-width: 84rem) {
-    .command {
-        width: inherit;
-        flex: 1;
-    }
-}
-
-@media (min-width: 48rem) {
-    .command {
-        margin-top: 0;
-        width: 60%;
-        justify-content: flex-end;
-    }
-}
-
 .command {
     display: flex;
-    margin-top: 2rem;
+    width: 674px;
     position: relative;
     flex-direction: column;
     align-items: center;
@@ -7297,11 +7282,9 @@ input {
 
 .resourceai {
     position: relative;
-    z-index: 1;
-    margin-top: -85px;
-    margin-left: -24px;
-    width: 700px;
-    height: 709px;
+    margin-top: -581px;
+    height: 609px;
+    left: 422px;
 }
 
 @media (min-width: 64rem) {
@@ -7549,7 +7532,11 @@ svg {
 
 .clear1 {
     margin-left: 35px;
-    margin-top: 447px;
+    margin-top: 212px;
+}
+
+.layersi {
+    margin-top: 142px;
 }
 
 .create {
@@ -7681,7 +7668,7 @@ svg {
     .renos .crystal1 {
         height: 696px;
         margin-top: 15px;
-        margin-left: -545px;
+        margin-left: -45px;
     }
 }
 
@@ -7743,6 +7730,7 @@ svg {
 
 .bandsi {
     margin-top: 30px;
+    width: 644px;
 }
 
 .expands {
@@ -7785,6 +7773,7 @@ svg {
     font-size: 0.8375em;
     letter-spacing: 1px;
     font-weight: 600;
+    width: 222px;
 }
 
 .condition1 {
@@ -7864,6 +7853,10 @@ ul .palx {
     }
 }
 
+.blinker {
+    margin-left: -97px;
+}
+
 @media (min-width: 48rem) {
     .blinker+.gimber {
         margin-top: 0px;
@@ -7877,8 +7870,9 @@ ul .palx {
 
 @media (min-width: 48rem) {
     .gimber {
-        flex: 1 1 0%;
-        max-width: 56rem;
+        margin-top: -261px;
+        margin-left: 372px;
+        width: 881px;
     }
 }
 
@@ -7893,6 +7887,7 @@ ul .palx {
     margin-top: 3.5rem;
     border-top: 1px solid rgb(217, 216, 226);
     padding-top: 3.5rem;
+    width: 704px;
 }
 
 @media (min-width: 64rem) {
