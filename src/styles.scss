@@ -5104,6 +5104,7 @@ p {
         margin-bottom: 8.75rem;
         // margin-right: 5rem;
         max-width: 32rem;
+        // margin-left: 1px;
     }
 }
 
@@ -5115,6 +5116,13 @@ p {
 @media (min-width: 48rem) {
     .contentstyle2+.contentstyle3 {
         margin-top: 1.25rem;
+    }
+}
+
+@media (min-width: 48rem) {
+    .contentstyle2 {
+        width: 22rem;
+        // font: bolder xx-large !important;
     }
 }
 
@@ -5213,9 +5221,9 @@ p {
 
 .countdownbox {
     position: absolute;
-    padding-left: 0px;
+    padding-left: 38px;
     padding-right: 0px;
-    top: 366px;
+    top: 318px;
     z-index: 3;
     margin: 117px;
 }
@@ -5240,8 +5248,8 @@ p {
     overflow: hidden;
     padding-top: 33px;
     padding-bottom: 33px;
-    margin-top: 10px;
-    margin-left: -5px;
+    margin-top: 75px;
+    margin-left: -20px;
 }
 
 @media (min-width: 64rem) {
@@ -5401,7 +5409,7 @@ p {
 
 @media (min-width: 48rem) {
     .mob_img {
-        width: 65%;
+        width: 59%;
         margin-right: 2rem;
         margin-bottom: 0;
     }
@@ -5465,7 +5473,7 @@ p {
 }
 
 .img_logos {
-    max-width: 210px !important;
+    max-width: 138px !important;
     height: auto !important;
 }
 
@@ -5502,13 +5510,13 @@ p {
 
 @media (min-width: 70rem) {
     .section1_style2+.middle_login {
-        margin-left: 7rem;
+        margin-left: 4rem;
     }
 }
 
 @media (min-width: 48rem) {
     .section1_style2+.middle_login {
-        margin-top: 110px;
+        margin-top: 190px;
         flex: 1;
     }
 }
@@ -5790,7 +5798,7 @@ p {
     background-color: #010743;
     // position: relative;
     color: #fff;
-    padding-bottom: 2.5rem;
+    padding-bottom: 0rem;
 }
 
 // @media (min-width: 64rem) {
@@ -5817,13 +5825,19 @@ p {
 }
 
 .info_content {
-    margin-left: 40rem;
-    bottom: 268px;
+    margin-left: 30rem;
+    bottom: 280px;
+    // width: 100px;
+}
+
+.content_text1 {
+    width: 23rem;
 }
 
 .content_text2 {
     font-size: 1.375rem;
     line-height: 1.4545em;
+    width: 36rem;
 }
 
 
