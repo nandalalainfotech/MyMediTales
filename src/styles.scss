@@ -4576,8 +4576,9 @@ top: 25px;
     top: 8%;
     fill: #ffa51f;
     margin-left: 32rem;
-    width: 15cm;
-    padding-top: 0cm;
+    width: 16cm;
+    height: 11cm;
+    margin-top: 40px;
 }
 
 
@@ -4593,15 +4594,96 @@ top: 25px;
     position: sticky;
     z-index: 1;
     width: 634px;
-    margin-left: 460px;
+    margin-left: 473px;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+// img {
+//     max-width: 100%;
+//     height: auto;
+// }
+
+.commodity {
+    position: relative;
+    background-color: #010743;
+    padding-top: 50px;
+    // padding-bottom: 40px;
+    z-index: 2;
 }
 
 
+.roll-commodity .conten1 {
+    color: #fff;
+    font-size: 3.0em;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.roll-commodity .conten2 {
+    font-size: 1.25em;
+    color: #fff;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.roll-commodity .btn_icons {
+    background-color: #4656d6;
+    color: #fff;
+    border-radius: 0.125rem;
+    padding: 0.75em 1.25em;
+    font-family: 'Karla', sans-serif;
+    font-size: 1.125em;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color .2s ease;
+    border: 0;
+    margin-top: 30px;
+    position: absolute;
+    top: 320px;text-decoration: none;
+}
+
+.roll-commodity .btn_icons:hover {
+    opacity: 0.9;
+    color: #fff;
+}
+
+.charcback {
+    position: absolute;
+    top: 8%;
+    fill: #ffa51f;
+    margin-left: -29rem;
+    margin-top: 20px;
+    width: 493px;
+    height: 490px;
+    padding-bottom: 16px;
+    z-index: -2;
+    overflow: hidden;
+}
+
+.half-commodity .womenimges {
+    z-index: 1;
+    margin-top: 70px;
+    padding-top: 20px;
+    width: 676px;
+    height: 469px;
+}
+
+.curvedline {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 101%;
+    height: 5rem;
+    fill: #fff;
+    user-select: none;
+    transform: scaleY(1.001);
+    padding-right: 0;
+    padding-left: 0;
+}
 /* text content */
 
 .content {
