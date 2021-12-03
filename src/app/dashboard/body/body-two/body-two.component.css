@@ -1,3 +1,20 @@
+
+@media (max-width: 600px) {
+.mobile .record {
+    font-size: 36px;
+    font-weight: bold;
+    color: #77748b;
+    font-family: "Lato", sans-serif;
+}
+.mobile .aggregate {
+    color: #5c5969;
+    font-family: "Lato", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+}
+
 /* 
 
 
