@@ -1362,7 +1362,6 @@ svg {
     padding: 10px;
 }
 
-
 .map .florida-map {
     width: 899px;
     height: 508px;
@@ -1597,7 +1596,6 @@ svg {
     background-color: rgba(255, 255, 255, 0.95);
     color: black;
     // transform: translateY(-50%);
-    
     border-radius: 24px;
     box-shadow: 1px 2px 7px 0 rgb(0 0 0 / 6%), 5px 8px 19px 0 rgb(0 0 0 / 10%);
 }
@@ -2442,7 +2440,6 @@ h4 .care1 {
 // .equality {
 //     margin-left: 330px;
 // }
-
 .plus li {
     content: '';
     display: inline-block;
@@ -3289,8 +3286,8 @@ h4 .care1 {
 }
 
 .downloads2 .arrow-r {
-   margin-left: -30px;
-   font-size: 18px;
+    margin-left: -30px;
+    font-size: 18px;
 }
 
 .downloads2 .transparent {
@@ -4556,6 +4553,8 @@ top: 25px;
 
 .provider1-button_1:hover {
     background-color: #5a6ae4;
+    text-decoration: none;
+    color: #fff;
 }
 
 .provider1-timegirl_img1 {
@@ -4659,6 +4658,8 @@ top: 25px;
 
 .provider2-button_1:hover {
     background-color: #5a6ae4;
+    text-decoration: none;
+    color: #fff;
 }
 
 
@@ -5512,7 +5513,6 @@ img {
 //     max-width: 100%;
 //     height: auto;
 // }
-
 .commodity {
     position: relative;
     background-color: #010743;
@@ -5520,7 +5520,6 @@ img {
     // padding-bottom: 40px;
     z-index: 2;
 }
-
 
 .roll-commodity .conten1 {
     color: #fff;
@@ -5552,7 +5551,8 @@ img {
     border: 0;
     margin-top: 30px;
     position: absolute;
-    top: 320px;text-decoration: none;
+    top: 320px;
+    text-decoration: none;
 }
 
 .roll-commodity .btn_icons:hover {
@@ -5595,6 +5595,8 @@ img {
     padding-right: 0;
     padding-left: 0;
 }
+
+
 /* text content */
 
 .content {
